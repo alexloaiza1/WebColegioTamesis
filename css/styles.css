@@ -24,7 +24,7 @@ header {
     color: var(--light-color);
     padding: 0.5rem 0;
     position: relative;
-    height: 130px;
+    height: 240px;
 
 
     header nav {
@@ -210,4 +210,59 @@ section {
 section h2 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
+}
+
+.color1 {
+    color: red;
+    /* Ajusta el color según tus necesidades */
+}
+
+.color2 {
+    color: blue;
+    /* Ajusta el color según tus necesidades */
+}
+
+.color3 {
+    color: green;
+    /* Ajusta el color según tus necesidades */
+}
+
+.custom-navbar {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.8), blue);
+    /* O puedes usar colores hexadecimales */
+    /* background: linear-gradient(to right, #ffffff, #0000ff); */
+}
+
+/* Opcional: Ajustar los colores del texto para mejor visibilidad */
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #ddd;
+}
+
+.custom-ul-padding {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.logo-move-left {
+    margin-left: -20px;
+    /* Ajusta el valor según sea necesario */
+}
+
+.color1 {
+    color: red;
+    /* Ajusta el color según tus necesidades */
+}
+
+.color2 {
+    color: blue;
+    /* Ajusta el color según tus necesidades */
+}
+
+.color3 {
+    color: green;
+    /* Ajusta el color según tus necesidades */
 }
