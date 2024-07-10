@@ -36,7 +36,7 @@ header {
 }
 
 .navbar {
-    margin-bottom: 50px;
+    margin-top: 30px;
 
 }
 
@@ -77,6 +77,8 @@ header nav ul li a {
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
+    margin-right: -30px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 header nav ul li a:hover {
@@ -266,3 +268,15 @@ section h2 {
     color: green;
     /* Ajusta el color según tus necesidades */
 }
+
+
+
+
+/*styles dos*/
+/*styles dos*/
+
+/*styles dos*/
+
+
+
+/*styles dos*/
