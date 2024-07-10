@@ -10,7 +10,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Montserrat', sans-serif;
+
 }
 
 body {
@@ -24,7 +24,9 @@ header {
     color: var(--light-color);
     padding: 0.5rem 0;
     position: relative;
-    height: 240px;
+    height: 225px;
+    font-family: "DynaPuff";
+
 
 
     header nav {
@@ -32,6 +34,7 @@ header {
         justify-content: center;
         align-items: center;
         width: 150%;
+
     }
 }
 
@@ -39,6 +42,7 @@ header {
     margin-top: 30px;
 
 }
+
 
 
 
@@ -51,7 +55,7 @@ header {
 }
 
 header .logo img {
-    width: 180px;
+    width: 165px;
     height: auto;
 }
 
@@ -76,9 +80,10 @@ header nav ul li a {
     color: var(--light-color);
     text-decoration: none;
     font-weight: bold;
+    font-size: 20px;
     transition: color 0.3s ease;
     margin-right: -30px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "DynaPuff", sans-serif;
 }
 
 header nav ul li a:hover {
@@ -254,21 +259,47 @@ section h2 {
     /* Ajusta el valor según sea necesario */
 }
 
-.color1 {
-    color: red;
-    /* Ajusta el color según tus necesidades */
+.swiper {
+    width: 600px;
+    height: 300px;
 }
 
-.color2 {
-    color: blue;
-    /* Ajusta el color según tus necesidades */
+
+html,
+body {
+    position: relative;
+    height: 100%;
 }
 
-.color3 {
-    color: green;
-    /* Ajusta el color según tus necesidades */
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
 }
 
+swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 
 
