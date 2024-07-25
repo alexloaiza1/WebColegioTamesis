@@ -19,32 +19,35 @@ body {
     color: var(--dark-color);
 }
 
+
+.custom-header {
+    position: relative;
+    /* Asegura que el header tenga un contexto de apilamiento */
+    z-index: 1000;
+    /* Ajusta el valor según sea necesario */
+}
+
 header {
     background: var(--primary-color);
     color: var(--light-color);
     padding: 0.5rem 0;
     position: relative;
     height: 225px;
-    font-family: "DynaPuff";
+    font-family: "DynaPuff", sans-serif;
+}
 
-
-
-    header nav {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 150%;
-
-    }
+header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* Ajustado para evitar problemas de diseño */
 }
 
 .navbar {
-    margin-top: 30px;
-
+    margin-top: 20px;
+    position: relative;
 }
-
-
-
 
 .logo-container {
     position: absolute;
@@ -65,10 +68,13 @@ header .logo img {
     color: var(--secondary-color);
 }
 
-
 header nav ul {
     display: flex;
     list-style: none;
+    padding: 0;
+    /* Añadido para eliminar padding por defecto */
+    margin: 0;
+    /* Añadido para eliminar margin por defecto */
 }
 
 header nav ul li {
@@ -92,16 +98,23 @@ header nav ul li a:hover {
 
 
 
+
 @media (max-width: 768px) {
     header nav ul {
         display: none;
         flex-direction: column;
         position: absolute;
         top: 100%;
-        right: 0;
+        right: 10px;
         background: var(--primary-color);
-        width: 100%;
-        text-align: right;
+        width: 110%;
+        text-align: center;
+        padding: 0;
+        padding-right: 40px;
+        /* Añadido para eliminar cualquier padding por defecto */
+        margin: 0;
+        /* Añadido para eliminar cualquier margin por defecto */
+        border-radius: 10px;
     }
 
     header nav ul.active {
@@ -110,10 +123,26 @@ header nav ul li a:hover {
 
     header nav ul li {
         margin: 1rem 0;
+        padding: 0.5rem;
+        /* Añadido para mejor espacio entre elementos */
     }
 
     .menu-toggle {
         display: flex;
+        align-items: stretch;
+        justify-content: center;
+        background: var(--primary-color);
+        border: none;
+        padding: 0.5rem;
+        cursor: pointer;
+    }
+
+    .menu-toggle span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background: var(--light-color);
+        margin: 5px 0;
     }
 }
 
@@ -250,18 +279,21 @@ section h2 {
 }
 
 .custom-ul-padding {
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 20px;
+
 }
 
 .logo-move-left {
-    margin-left: -20px;
+    margin-left: -5px;
     /* Ajusta el valor según sea necesario */
 }
 
 .swiper {
     width: 600px;
     height: 300px;
+    position: relative;
+    /* Asegura que el carrusel tenga un contexto de apilamiento */
+    z-index: 1;/
 }
 
 
@@ -297,7 +329,7 @@ swiper-slide {
 swiper-slide img {
     display: block;
     width: 100%;
-    height: 100%;
+    height: 450px;
     object-fit: cover;
 }
 
