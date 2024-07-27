@@ -18,10 +18,9 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link
-     rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
+   <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 
   </head>
   <body>
@@ -56,17 +55,15 @@
     </header>
     
     <section id="inicio" style="padding: 0;">
-        <swiper-container class="mySwiper" pagination="true">
-            <swiper-slide><img src="images/slide1.png"></swiper-slide>
-            <swiper-slide><img src="https://http2.mlstatic.com/D_NQ_765831-MLA77321130256_072024-OO.webp"></swiper-slide>
-            <swiper-slide>Slide 3</swiper-slide>
-            <swiper-slide>Slide 4</swiper-slide>
-            <swiper-slide>Slide 5</swiper-slide>
-            <swiper-slide>Slide 6</swiper-slide>
-            <swiper-slide>Slide 7</swiper-slide>
-            <swiper-slide>Slide 8</swiper-slide>
-            <swiper-slide>Slide 9</swiper-slide>
-        </swiper-container>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="images/Foto 1.jpg" alt="Foto 1"></div>
+          <div class="swiper-slide"><img src="images/foto 2.jpg" alt="Foto 2"></div>
+          <div class="swiper-slide"><img src="images/foto 3.jpg" alt="Foto 3"></div>
+          <div class="swiper-slide"><img src="https://http2.mlstatic.com/D_NQ_765831-MLA77321130256_072024-OO.webp" alt="Imagen"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
     </section>
   
     <section id="nosotros" class="about">
@@ -154,11 +151,10 @@
       </div>
     </footer>
   </body>
-  <!-- Swiper JS -->
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+ <!-- Swiper JS -->
+ <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-  <!-- Tu propio archivo JavaScript -->
+  <!-- Archivo JavaScript externo -->
   <script src="js/script.js"></script>
 
   <!-- Bootstrap JS Bundle with Popper -->
