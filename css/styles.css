@@ -27,6 +27,19 @@ body {
     /* Ajusta el valor según sea necesario */
 }
 
+.navbar-icons {
+    display: flex;
+    justify-content: right;
+    padding-bottom: 20px;
+}
+
+.navbar-icons i {
+    font-size: 32px;
+    margin: 0 10px;
+    vertical-align: middle;
+}
+
+
 header {
     background: var(--primary-color);
     color: var(--light-color);
@@ -60,6 +73,28 @@ header nav {
 header .logo img {
     width: 165px;
     height: auto;
+    margin-top: -30px;
+}
+
+/* Consulta de medios para pantallas de hasta 600px de ancho */
+@media (max-width: 600px) {
+    header .logo img {
+        width: 165px;
+        /* Tamaño del logo en pantallas pequeñas */
+        margin-top: -20px;
+        margin-left: 50px;
+        /* Ajusta el margen si es necesario */
+    }
+}
+
+/* Consulta de medios para pantallas de hasta 400px de ancho */
+@media (max-width: 768px) {
+    header .logo img {
+        width: 110px;
+        /* Tamaño del logo en pantallas aún más pequeñas */
+        margin-top: -10px;
+        /* Ajusta el margen si es necesario */
+    }
 }
 
 .hero h1 {
@@ -97,6 +132,14 @@ header nav ul li a:hover {
 }
 
 
+.ti-brand-facebook::before {
+    width: 48px;
+    height: 48px;
+    content: "\ec1a";
+
+}
+
+
 
 
 @media (max-width: 768px) {
@@ -107,7 +150,7 @@ header nav ul li a:hover {
         top: 100%;
         right: 10px;
         background: var(--primary-color);
-        width: 110%;
+        width: 100%;
         text-align: center;
         padding: 0;
         padding-right: 40px;
@@ -332,7 +375,7 @@ body {
 .swiper-slide img {
     display: block;
     width: 100%;
-    height: 445px;
+    height: 450px;
     object-fit: cover;
     border-radius: 10px;
     border-top-left-radius: 0px;
