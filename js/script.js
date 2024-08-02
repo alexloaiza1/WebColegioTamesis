@@ -31,4 +31,17 @@ document.addEventListener("DOMContentLoaded", () => {
       document.querySelector(".navbar-toggler").click();
     }
   });
+
+  document
+    .querySelectorAll(".navbar-nav .nav-link")
+    .forEach(function (navLink) {
+      navLink.addEventListener("click", function () {
+        var _opened = document
+          .querySelector(".navbar-collapse")
+          .classList.contains("show");
+        if (_opened) {
+          document.querySelector(".navbar-toggler").click();
+        }
+      });
+    });
 });
