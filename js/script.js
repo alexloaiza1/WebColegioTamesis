@@ -20,4 +20,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Verifica que Swiper esté inicializado correctamente
   console.log(swiper);
+
+  // Código para cerrar el menú al hacer clic fuera de él
+  document.addEventListener("click", function (event) {
+    var clickover = event.target;
+    var _opened = document
+      .querySelector(".navbar-collapse")
+      .classList.contains("show");
+    if (_opened && !clickover.closest(".navbar")) {
+      document.querySelector(".navbar-toggler").click();
+    }
+  });
 });
