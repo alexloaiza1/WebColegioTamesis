@@ -39,6 +39,12 @@ body {
     vertical-align: middle;
 }
 
+.navbar-iconsfooter {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
 
 header {
     background: var(--primary-color);
@@ -396,14 +402,92 @@ body {
     border-top-right-radius: 0px;
 }
 
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    /* Reduce el espacio entre los bloques */
+    padding: 0;
+}
 
+.footer-block {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    /* Añade un pequeño padding para el contenido interno */
+}
 
+.footer-block p {
+    margin: 2px 0;
+    /* Reduce el margen entre los párrafos */
+}
 
-/*styles dos*/
-/*styles dos*/
+.footer-block h4 {
+    margin-bottom: 5px;
+    /* Reduce el margen inferior del encabezado */
+}
 
-/*styles dos*/
+.navbar-iconsfooter {
+    display: flex;
+    gap: 8px;
+    /* Reduce el espacio entre los íconos */
+}
 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    /* Centra el contenedor */
+    padding: 0 10px;
+    /* Añade un poco de padding a los lados */
+}
 
+@media (max-width: 768px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+        /* Cambia a una sola columna en pantallas pequeñas */
+    }
 
-/*styles dos*/
+    .navbar-iconsfooter {
+        justify-content: flex-start;
+        /* Alinea los íconos a la izquierda en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-block p {
+        font-size: 14px;
+        /* Reduce el tamaño de fuente en pantallas muy pequeñas */
+    }
+
+    .navbar-iconsfooter svg {
+        width: 24px;
+        /* Reduce el tamaño de los íconos en pantallas muy pequeñas */
+        height: 24px;
+    }
+
+    .footer-block {
+        align-items: flex-start;
+        /* Alinea los elementos al inicio del contenedor */
+    }
+}
+
+.map-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 40%;
+    /* Ajusta el aspecto del mapa */
+    height: 0;
+    overflow: hidden;
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60%;
+    border-radius: 10px;
+    /* Redondea las esquinas del iframe */
+    border: none;
+    /* Elimina el borde del iframe */
+}
