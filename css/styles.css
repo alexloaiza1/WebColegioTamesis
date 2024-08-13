@@ -55,6 +55,15 @@ header {
     font-family: "DynaPuff", sans-serif;
 }
 
+
+
+@media (max-width: 480px) {
+    header {
+        height: 170px;
+        /* Ajusta la altura para pantallas muy pequeñas */
+    }
+}
+
 header nav {
     display: flex;
     justify-content: center;
@@ -490,4 +499,20 @@ body {
     /* Redondea las esquinas del iframe */
     border: none;
     /* Elimina el borde del iframe */
+}
+
+@media (max-width: 768px) {
+    .map-container iframe {
+        height: 100%;
+        /* Ajusta el iframe para que ocupe todo el contenedor en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .map-container iframe {
+        height: 80%;
+        /* Ajusta la altura para pantallas muy pequeñas */
+        border-radius: 5px;
+        /* Reduce el redondeo de las esquinas para pantallas más pequeñas */
+    }
 }
