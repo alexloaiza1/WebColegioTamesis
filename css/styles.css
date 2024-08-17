@@ -168,6 +168,81 @@ header nav ul li a:hover {
     border-radius: 10px;
 }
 
+/* Estilo para los enlaces de la barra de navegación principal */
+.navbar-nav .nav-link {
+    color: #ffffff;
+
+    /* Cambia al color blanco */
+}
+
+
+/* Estilo para los enlaces del submenú */
+.navbar-nav .dropdown-menu .dropdown-item {
+    color: #ffffff;
+    font-size: 16px;
+    text-align: center;
+    background-color: var(--secondary-color);
+}
+
+/* Cambia el color del texto y el fondo al pasar el ratón por encima */
+.navbar-nav .dropdown-menu .dropdown-item:hover {
+    color: var(--primary-color);
+    background-color: var(--accent-color);
+}
+
+/* Asegúrate de que el submenú tenga un fondo oscuro */
+.navbar-nav .dropdown-menu {
+    background-color: var(--secondary-color);
+}
+
+@media (max-width: 768px) {
+    .navbar-nav .dropdown-menu {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateX(-100%);
+        width: 100%;
+        background-color: var(--secondary-color);
+        opacity: 0;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    .navbar-nav .dropdown-menu.show {
+        transform: translateX(-10%);
+        opacity: 1;
+    }
+
+    /* Ocultar la flecha desplegable en pantallas pequeñas */
+    .navbar-nav .dropdown-toggle::after {
+        display: none;
+    }
+
+    .custom-submenu {
+        width: 200px;
+        /* Ajusta el valor según tus necesidades */
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .navbar-nav .dropdown-menu {
+        position: absolute;
+        display: none;
+        width: 50%;
+    }
+
+    .navbar-nav .dropdown-menu.show {
+        display: block;
+    }
+
+    /* Ocultar la flecha desplegable en pantallas grandes */
+    .navbar-nav .dropdown-toggle::after {
+        display: none;
+    }
+}
+
+
+
 
 @media (max-width: 768px) {
     header nav ul {
@@ -177,7 +252,7 @@ header nav ul li a:hover {
         top: 100%;
         right: -2px;
         background: var(--primary-color);
-        width: 100%;
+        width: 115%;
         text-align: center;
         padding: 0;
         padding-right: 40px;
