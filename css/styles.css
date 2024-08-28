@@ -59,7 +59,7 @@ header {
 
 @media (max-width: 480px) {
     header {
-        height: 197px;
+        height: 200px;
         /* Ajusta la altura para pantallas muy pequeñas */
     }
 }
@@ -126,7 +126,7 @@ header .logo img {
     header .logo img {
         width: 120px;
         /* Tamaño del logo en pantallas aún más pequeñas */
-        margin-top: -30px;
+        margin-top: -40px;
         /* Ajusta el margen si es necesario */
     }
 }
