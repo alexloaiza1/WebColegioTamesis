@@ -70,7 +70,7 @@ header {
 
 @media (max-width: 480px) {
     header {
-        height: 207px;
+        height: 206px;
         /* Ajusta la altura para pantallas muy pequeñas */
     }
 }
