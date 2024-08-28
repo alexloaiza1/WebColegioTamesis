@@ -64,6 +64,15 @@ header {
     }
 }
 
+
+/* Estilos específicos para pantallas pequeñas */
+@media (max-width: 480px) {
+    .encabezado {
+        margin-top: 30px;
+    }
+}
+
+
 header nav {
     display: flex;
     justify-content: center;
@@ -96,7 +105,7 @@ header .logo img {
     header .logo img {
         width: 165px;
         /* Tamaño del logo en pantallas pequeñas */
-        margin-top: -20px;
+        margin-top: -5px;
         margin-left: 50px;
         /* Ajusta el margen si es necesario */
     }
@@ -115,9 +124,9 @@ header .logo img {
 /* Consulta de medios para pantallas de hasta 400px de ancho */
 @media (max-width: 768px) {
     header .logo img {
-        width: 110px;
+        width: 115px;
         /* Tamaño del logo en pantallas aún más pequeñas */
-        margin-top: -10px;
+        margin-top: -30px;
         /* Ajusta el margen si es necesario */
     }
 }
@@ -166,6 +175,7 @@ header nav ul li a:hover {
 
 .sectionslider {
     border-radius: 10px;
+
 }
 
 /* Estilo para los enlaces de la barra de navegación principal */
@@ -444,6 +454,9 @@ section h2 {
 }
 
 
+
+
+
 html,
 body {
     position: relative;
@@ -464,6 +477,10 @@ body {
     width: 100%;
     height: 100%;
 }
+
+
+
+
 
 /* Estilo para cada slide dentro del Swiper */
 .swiper-slide {
