@@ -10,7 +10,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Montserrat', sans-serif;
+
 }
 
 body {
@@ -19,28 +19,96 @@ body {
     color: var(--dark-color);
 }
 
+
+.custom-header {
+    position: relative;
+    /* Asegura que el header tenga un contexto de apilamiento */
+    z-index: 1000;
+    /* Ajusta el valor según sea necesario */
+}
+
+.navbar-icons {
+    display: flex;
+    justify-content: right;
+    padding-bottom: 20px;
+}
+
+.navbar-icons i {
+    font-size: 32px;
+    margin: 0 10px;
+    vertical-align: middle;
+}
+
+.navbar-iconsfooter {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+
 header {
     background: var(--primary-color);
     color: var(--light-color);
     padding: 0.5rem 0;
     position: relative;
-    height: 240px;
+    height: 205px;
+    font-family: "DynaPuff", sans-serif;
+}
+
+.header2 {
+    background: var(--accent-color);
+    color: var(--light-color);
+    padding: 0.5rem 0;
+    position: relative;
+    height: 205px;
+    font-family: "DynaPuff", sans-serif;
+}
 
 
-    header nav {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 150%;
+
+
+
+@media (max-width: 480px) {
+    header {
+        height: 180px;
+        /* Ajusta la altura para pantallas muy pequeñas */
     }
 }
 
-.navbar {
-    margin-top: 30px;
+@media (max-width: 480px) {
+    .anuncio {
+        width: 100% !important;
+        /* La imagen ocupa todo el ancho del contenedor */
+        height: 60px !important;
+        /* Mantiene la proporción */
 
+        /* Limita la altura máxima */
+
+        /* Cubre el contenedor sin distorsionar */
+    }
 }
 
 
+/* Estilos específicos para pantallas pequeñas */
+@media (max-width: 480px) {
+    .encabezado {
+        margin-top: 30px;
+    }
+}
+
+
+header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* Ajustado para evitar problemas de diseño */
+}
+
+.navbar {
+    margin-top: 0px;
+    position: relative;
+}
 
 .logo-container {
     position: absolute;
@@ -51,8 +119,40 @@ header {
 }
 
 header .logo img {
-    width: 180px;
+    width: 165px;
     height: auto;
+    margin-top: -30px;
+}
+
+/* Consulta de medios para pantallas de hasta 600px de ancho */
+@media (max-width: 600px) {
+    header .logo img {
+        width: 165px;
+        /* Tamaño del logo en pantallas pequeñas */
+        margin-top: -5px;
+        margin-left: 50px;
+        /* Ajusta el margen si es necesario */
+    }
+
+    .titulo {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    .titulo {
+        font-size: 23px;
+    }
+}
+
+/* Consulta de medios para pantallas de hasta 400px de ancho */
+@media (max-width: 768px) {
+    header .logo img {
+        width: 120px;
+        /* Tamaño del logo en pantallas aún más pequeñas */
+        margin-top: -40px;
+        /* Ajusta el margen si es necesario */
+    }
 }
 
 .hero h1 {
@@ -61,10 +161,13 @@ header .logo img {
     color: var(--secondary-color);
 }
 
-
 header nav ul {
     display: flex;
     list-style: none;
+    padding: 0;
+    /* Añadido para eliminar padding por defecto */
+    margin: 0;
+    /* Añadido para eliminar margin por defecto */
 }
 
 header nav ul li {
@@ -76,14 +179,111 @@ header nav ul li a {
     color: var(--light-color);
     text-decoration: none;
     font-weight: bold;
+    font-size: 20px;
     transition: color 0.3s ease;
     margin-right: -30px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "DynaPuff", sans-serif;
 }
 
 header nav ul li a:hover {
     color: var(--accent-color);
 }
+
+
+.ti-brand-facebook::before {
+    width: 48px;
+    height: 48px;
+    content: "\ec1a";
+
+}
+
+.sectionslider {
+    border-radius: 10px;
+
+
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 767px) {
+    .sectionslider {
+        height: auto !important;
+        /* Establece la altura automática con !important en pantallas pequeñas */
+    }
+}
+
+/* Estilo para los enlaces de la barra de navegación principal */
+.navbar-nav .nav-link {
+    color: #ffffff;
+
+    /* Cambia al color blanco */
+}
+
+
+/* Estilo para los enlaces del submenú */
+.navbar-nav .dropdown-menu .dropdown-item {
+    color: #ffffff;
+    font-size: 16px;
+    text-align: center;
+    background-color: var(--secondary-color);
+}
+
+/* Cambia el color del texto y el fondo al pasar el ratón por encima */
+.navbar-nav .dropdown-menu .dropdown-item:hover {
+    color: var(--primary-color);
+    background-color: var(--accent-color);
+}
+
+/* Asegúrate de que el submenú tenga un fondo oscuro */
+.navbar-nav .dropdown-menu {
+    background-color: var(--secondary-color);
+}
+
+@media (max-width: 768px) {
+    .navbar-nav .dropdown-menu {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateX(-100%);
+        width: 100%;
+        background-color: var(--secondary-color);
+        opacity: 0;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    .navbar-nav .dropdown-menu.show {
+        transform: translateX(-10%);
+        opacity: 1;
+    }
+
+    /* Ocultar la flecha desplegable en pantallas pequeñas */
+    .navbar-nav .dropdown-toggle::after {
+        display: none;
+    }
+
+    .custom-submenu {
+        width: 200px;
+        /* Ajusta el valor según tus necesidades */
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .navbar-nav .dropdown-menu {
+        position: absolute;
+        display: none;
+        width: 50%;
+    }
+
+    .navbar-nav .dropdown-menu.show {
+        display: block;
+    }
+
+    /* Ocultar la flecha desplegable en pantallas grandes */
+    .navbar-nav .dropdown-toggle::after {
+        display: none;
+    }
+}
+
 
 
 
@@ -93,10 +293,17 @@ header nav ul li a:hover {
         flex-direction: column;
         position: absolute;
         top: 100%;
-        right: 0;
+        right: -2px;
         background: var(--primary-color);
-        width: 100%;
-        text-align: right;
+        width: 115%;
+        text-align: center;
+        padding: 0;
+        padding-right: 40px;
+
+        /* Añadido para eliminar cualquier padding por defecto */
+        margin: 0;
+        /* Añadido para eliminar cualquier margin por defecto */
+        border-radius: 10px;
     }
 
     header nav ul.active {
@@ -105,10 +312,27 @@ header nav ul li a:hover {
 
     header nav ul li {
         margin: 1rem 0;
+        padding: 0.5rem;
+        /* Añadido para mejor espacio entre elementos */
     }
 
     .menu-toggle {
         display: flex;
+        align-items: stretch;
+        justify-content: center;
+        background: var(--primary-color);
+        border: none;
+        padding: 0.5rem;
+        cursor: pointer;
+
+    }
+
+    .menu-toggle span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background: var(--light-color);
+        margin: 5px 0;
     }
 }
 
@@ -245,38 +469,175 @@ section h2 {
 }
 
 .custom-ul-padding {
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 20px;
+
 }
 
 .logo-move-left {
-    margin-left: -20px;
+    margin-left: -5px;
     /* Ajusta el valor según sea necesario */
 }
 
-.color1 {
-    color: red;
-    /* Ajusta el color según tus necesidades */
-}
-
-.color2 {
-    color: blue;
-    /* Ajusta el color según tus necesidades */
-}
-
-.color3 {
-    color: green;
-    /* Ajusta el color según tus necesidades */
+.swiper {
+    width: 600px;
+    height: 300px;
+    position: relative;
+    /* Asegura que el carrusel tenga un contexto de apilamiento */
+    z-index: 1;/
 }
 
 
 
 
-/*styles dos*/
-/*styles dos*/
 
-/*styles dos*/
+html,
+body {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor principal de Swiper */
+.swiper {
+    width: 100%;
+    height: 100%;
+}
 
 
 
-/*styles dos*/
+
+
+/* Estilo para cada slide dentro del Swiper */
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo para las imágenes dentro de cada slide */
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 460px;
+    object-fit: cover;
+    border-radius: 10px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    /* Reduce el espacio entre los bloques */
+    padding: 0;
+}
+
+.footer-block {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    /* Añade un pequeño padding para el contenido interno */
+}
+
+.footer-block p {
+    margin: 2px 0;
+    /* Reduce el margen entre los párrafos */
+}
+
+.footer-block h4 {
+    margin-bottom: 5px;
+    /* Reduce el margen inferior del encabezado */
+}
+
+.navbar-iconsfooter {
+    display: flex;
+    gap: 8px;
+    /* Reduce el espacio entre los íconos */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    /* Centra el contenedor */
+    padding: 0 10px;
+    /* Añade un poco de padding a los lados */
+}
+
+@media (max-width: 768px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+        /* Cambia a una sola columna en pantallas pequeñas */
+    }
+
+    .navbar-iconsfooter {
+        justify-content: flex-start;
+        /* Alinea los íconos a la izquierda en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-block p {
+        font-size: 14px;
+        /* Reduce el tamaño de fuente en pantallas muy pequeñas */
+    }
+
+    .navbar-iconsfooter svg {
+        width: 24px;
+        /* Reduce el tamaño de los íconos en pantallas muy pequeñas */
+        height: 24px;
+    }
+
+    .footer-block {
+        align-items: flex-start;
+        /* Alinea los elementos al inicio del contenedor */
+    }
+}
+
+.map-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 40%;
+    /* Ajusta el aspecto del mapa */
+    height: 0;
+    overflow: hidden;
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60%;
+    border-radius: 10px;
+    /* Redondea las esquinas del iframe */
+    border: none;
+    /* Elimina el borde del iframe */
+}
+
+@media (max-width: 768px) {
+    .map-container iframe {
+        height: 100%;
+        /* Ajusta el iframe para que ocupe todo el contenedor en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .map-container iframe {
+        height: 80%;
+        /* Ajusta la altura para pantallas muy pequeñas */
+        border-radius: 5px;
+        /* Reduce el redondeo de las esquinas para pantallas más pequeñas */
+    }
+}
