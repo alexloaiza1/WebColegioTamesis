@@ -70,9 +70,15 @@ header {
 
 @media (max-width: 480px) {
     header {
-        height: 180px;
+        height: 175px;
         /* Ajusta la altura para pantallas muy pequeñas */
     }
+
+    .sectionslider {
+        height: 430px !important;
+    }
+
+
 }
 
 @media (max-width: 480px) {
@@ -204,12 +210,7 @@ header nav ul li a:hover {
 }
 
 /* Media query para pantallas pequeñas */
-@media (max-width: 767px) {
-    .sectionslider {
-        height: auto !important;
-        /* Establece la altura automática con !important en pantallas pequeñas */
-    }
-}
+
 
 /* Estilo para los enlaces de la barra de navegación principal */
 .navbar-nav .nav-link {
