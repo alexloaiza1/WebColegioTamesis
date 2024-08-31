@@ -70,8 +70,21 @@ header {
 
 @media (max-width: 480px) {
     header {
-        height: 207px;
+        height: 180px;
         /* Ajusta la altura para pantallas muy pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .anuncio {
+        width: 100% !important;
+        /* La imagen ocupa todo el ancho del contenedor */
+        height: 60px !important;
+        /* Mantiene la proporción */
+
+        /* Limita la altura máxima */
+
+        /* Cubre el contenedor sin distorsionar */
     }
 }
 
@@ -187,6 +200,15 @@ header nav ul li a:hover {
 .sectionslider {
     border-radius: 10px;
 
+
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 767px) {
+    .sectionslider {
+        height: auto !important;
+        /* Establece la altura automática con !important en pantallas pequeñas */
+    }
 }
 
 /* Estilo para los enlaces de la barra de navegación principal */

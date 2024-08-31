@@ -94,17 +94,38 @@
       </div>
   </header>
     
-    <section class="sectionslider" id="inicio" style="padding: 0;">
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide"><img src="images/Foto 1.jpg" alt="Foto 1"></div>
-          <div class="swiper-slide"><img src="images/foto 2.jpg" alt="Foto 2"></div>
-          <div class="swiper-slide"><img src="images/foto 3.jpg" alt="Foto 3"></div>
-          <div class="swiper-slide"><img src="https://http2.mlstatic.com/D_NQ_765831-MLA77321130256_072024-OO.webp" alt="Imagen"></div>
+  <section class="sectionslider" id="inicio" style="padding: 0; height:390px">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <picture>
+            <!-- Imagen para pantallas pequeñas -->
+            <source srcset="images/2.png" media="(max-width: 767px)">
+            <!-- Imagen para pantallas grandes -->
+            <img src="images/bannergif.gif" alt="Foto 2" >
+          </picture>
         </div>
-        <div class="swiper-pagination"></div>
+        <div class="swiper-slide">
+          <img src="images/Foto 1.jpg" alt="Foto 1">
+        </div>
+        
+        <div class="swiper-slide">
+          <img src="images/foto 2.jpg" alt="Foto 2">
+        </div>
+
+        <div class="swiper-slide">
+          <img src="images/foto 3.jpg" alt="Foto 3">
+        </div>
+        
       </div>
-    </section>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+
+  <a href="corporativo.html">
+    <img class= "anuncio"src="images/bannerTecnicas.gif" width=100% height="auto">
+   </a>
+  
   
     <section id="nosotros" class="about">
       <div class="container">
