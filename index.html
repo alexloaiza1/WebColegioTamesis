@@ -1,233 +1,56 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Institución Educativa San Antonio de Padua</title>
-    <link rel="stylesheet" href="css/styles.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
-   <!-- Link Swiper's CSS -->
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Institución Educativa San Antonio de Padua</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
+  <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
 
-  </head>
-  <body>
-    <header class="custom-header">
-      <div class="container d-flex justify-content-between align-items-center py-2">
-          <div class="logo" style="margin-left: -60px; margin-top:20px;">
-              <img src="images/logo.png" alt="Logo Institución">
-          </div>
-          <div class="title ms-3">
-              <h2  class= "titulo" style="margin-top: -10px;">
-                  Institución Educativa San Antonio de Padua Támesis
-              </h2>
-          </div>
+</head>
 
-          <section>
-            <div>
-                <div class="navbar-icons">
-
-
-                    <a href="https://www.facebook.com/notiiesap" target="_blank" rel="noopener noreferrer">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-facebook">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                        <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
-                      </svg>
-                    </a>
-                 
-                  
-                  
-                  <a href="https://www.instagram.com/iesanantoniodepaduatamesis/" target="_blank" rel="noopener noreferrer">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-instagram">
-                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                      <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
-                      <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
-                      <path d="M16.5 7.5l0 .01" />
-                    </svg>
-                  </a>
-                  
-              
-                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-youtube">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <path d="M2 8a4 4 0 0 1 4 -4h12a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-12a4 4 0 0 1 -4 -4v-8z" />
-                    <path d="M10 9l5 3l-5 3z" />
-                  </svg>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-x">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <path d="M4 4l11.733 16h4.267l-11.733 -16z" />
-                    <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" />
-                  </svg>
-                    <!-- Puedes añadir más iconos aquí -->
-                </div>
-                <nav class="navbar navbar-expand-lg navbar-dark">
-                    <button  style="margin-left: 35px;"class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav ms-auto custom-ul-padding">
-                            <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#nosotros">Calificaciones</a></li>
-                            <li class="nav-item dropdown">
-                              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Nuestro Colegio
-                              </a>
-                              <ul class="dropdown-menu custom-submenu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="corporativo.html">Misión</a></li>
-                                <li><a class="dropdown-item" href="corporativo.html">Visión</a></li>
-                                <li><a class="dropdown-item" href="#historia">Historia</a></li>
-                                <li><h6><a class="dropdown-item" href="#historia">Personero(a)</a></h6></li>
-                              </ul>
-                            </li>
-                            <li class="nav-item"><a class="nav-link" href="#sedes">Sedes</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#programas">Programas</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#noticias">Noticias</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
-        </section>
-   
+<body>
+  <header class="custom-header">
+    <div class="container d-flex justify-content-between align-items-center py-2">
+      <div class="logo" style="margin-left: -60px; margin-top:20px;">
+        <img src="images/logo.png" alt="Logo Institución">
       </div>
-  </header>
-    
-  <section class="sectionslider" id="inicio" style="padding: 0; height:390px">
-    <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <picture>
-            <!-- Imagen para pantallas pequeñas -->
-            <source srcset="images/bannermovil.png" media="(max-width: 767px)">
-            <!-- Imagen para pantallas grandes -->
-            <img src="images/bannerprincipal.gif" alt="Foto 2" >
-          </picture>
-        </div>
-        <div class="swiper-slide">
-          <img src="images/Foto 1.jpg" alt="Foto 1">
-        </div>
-        
-        <div class="swiper-slide">
-          <img src="images/foto 2.jpg" alt="Foto 2">
-        </div>
-
-        <div class="swiper-slide">
-          <img src="images/foto 3.jpg" alt="Foto 3">
-        </div>
-        
+      <div class="title ms-3">
+        <h2 class="titulo" style="margin-top: -10px;">
+          Institución Educativa San Antonio de Padua Támesis
+        </h2>
       </div>
-      <div class="swiper-pagination"></div>
-    </div>
-  </section>
 
-  <a href="corporativo.html">
-    <img class= "anuncio"src="images/bannertecnicas.gif" width=100% height="100px">
-   </a>
-  
-  
-    <section id="nosotros" class="about">
-      <div class="container">
-        <h2>Sobre Nosotros</h2>
-        <p>
-          Somos una institución educativa comprometida con la excelencia
-          académica y el desarrollo integral de nuestros estudiantes.
-        </p>
-      </div>
-    </section>
+      <section>
+        <div>
+          <div class="navbar-icons">
 
-    <section id="programas" class="programs">
-      <div class="container">
-        <h2>Nuestros Programas</h2>
-        <div class="programs-grid">
-          <div class="program">
-            <h3>Primaria</h3>
-            <p>
-              Programa educativo para los niveles de educación básica primaria.
-            </p>
-          </div>
-          <div class="program">
-            <h3>Bachillerato</h3>
-            <p>Programa educativo para los niveles de educación media.</p>
-          </div>
-          <div class="program">
-            <h3>Extracurriculares</h3>
-            <p>
-              Actividades y programas complementarios para el desarrollo
-              integral de los estudiantes.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <section id="noticias" class="news">
-      <div class="container">
-        <h2>Últimas Noticias</h2>
-        <div class="news-grid">
-          <div class="news-item">
-            <h3>Noticia 1</h3>
-            <p>Detalles de la noticia 1.</p>
-          </div>
-          <div class="news-item">
-            <h3>Noticia 2</h3>
-            <p>Detalles de la noticia 2.</p>
-          </div>
-          <div class="news-item">
-            <h3>Noticia 3</h3>
-            <p>Detalles de la noticia 3.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contacto" class="contact">
-      <div class="container">
-        <h2>Contacto</h2>
-        <form action="#">
-          <div class="form-group">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" />
-          </div>
-          <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" />
-          </div>
-          <div class="form-group">
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje"></textarea>
-          </div>
-          <button type="submit">Enviar</button>
-        </form>
-      </div>
-    </section>
-
-    <footer>
-      <div class="container footer-grid">
-        <div class="footer-block">
-          <h4>Síguenos en</h4>
-          <div class="navbar-iconsfooter">
-            
             <a href="https://www.facebook.com/notiiesap" target="_blank" rel="noopener noreferrer">
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-facebook">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="icon icon-tabler icons-tabler-outline icon-tabler-brand-facebook">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                 <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
               </svg>
             </a>
 
+
+
             <a href="https://www.instagram.com/iesanantoniodepaduatamesis/" target="_blank" rel="noopener noreferrer">
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="icon icon-tabler icons-tabler-outline icon-tabler-brand-instagram">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                 <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
                 <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
@@ -236,50 +59,253 @@
             </a>
 
 
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-youtube">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="icon icon-tabler icons-tabler-outline icon-tabler-brand-youtube">
               <path stroke="none" d="M0 0h24v24H0z" fill="none" />
               <path d="M2 8a4 4 0 0 1 4 -4h12a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-12a4 4 0 0 1 -4 -4v-8z" />
               <path d="M10 9l5 3l-5 3z" />
             </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-x">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="icon icon-tabler icons-tabler-outline icon-tabler-brand-x">
               <path stroke="none" d="M0 0h24v24H0z" fill="none" />
               <path d="M4 4l11.733 16h4.267l-11.733 -16z" />
               <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" />
             </svg>
+            <!-- Puedes añadir más iconos aquí -->
           </div>
+          <nav class="navbar navbar-expand-lg navbar-dark">
+            <button style="margin-left: 35px;" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto custom-ul-padding">
+                <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
+                <li class="nav-item"><a class="nav-link" href="#nosotros">Calificaciones</a></li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Nuestro Colegio
+                  </a>
+                  <ul class="dropdown-menu custom-submenu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="corporativo.html">Misión</a></li>
+                    <li><a class="dropdown-item" href="corporativo.html">Visión</a></li>
+                    <li><a class="dropdown-item" href="corporativo.html#historia">Historia</a></li>
+                    <li>
+                      <h6><a class="dropdown-item" href="#historia">Personero(a)</a></h6>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#sedes">Sedes</a></li>
+                <li class="nav-item"><a class="nav-link" href="#programas">Programas</a></li>
+                <li class="nav-item"><a class="nav-link" href="#noticias">Noticias</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+              </ul>
+            </div>
+          </nav>
         </div>
-        <div class="footer-block">
-          <h4>Contacto</h4>
-          <p><a href="mailto:iesanantoniodepaduatamesis@gmail.com">iesanantoniodepaduatamesis@gmail.com</a></p>
-          <p>Teléfono: 604 590 5820</p>
-          <p>Dirección: Cra 12 #16 -101. Támesis-Antioquia.</p> 
-        </div>
-        <div class="footer-block">
-          <h4>Estamos aquí</h4>
-          <div class="map-container">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.308055212782!2d-75.717398590174!3d5.668521394289251!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e465628318b30f1%3A0xd5a0d44ffa14b795!2sInstitucion%20Educativa%20San%20Antonio%20de%20Padua!5e0!3m2!1ses!2sco!4v1723242983002!5m2!1ses!2sco"
-                style="border:0;"
-                allowfullscreen=""
-                loading="lazy">
-            </iframe>
-        </div>
-        </div>
-      </div> 
-      <div>
-        <p>&copy; 2024 Institución Educativa San Antonio de Padua. Todos los derechos reservados.</p>
-        
-      </div> 
-    </footer>
-    
-  </body>
- <!-- Swiper JS -->
- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      </section>
 
-  <!-- Archivo JavaScript externo -->
-  <script src="js/script.js"></script>
+    </div>
+  </header>
 
-  <!-- Bootstrap JS Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <section class="sectionslider" id="inicio" style="padding: 0; height:390px">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <picture>
+            <!-- Imagen para pantallas pequeñas -->
+            <source srcset="images/bannermovil.png" media="(max-width: 767px)">
+            <!-- Imagen para pantallas grandes -->
+            <img src="images/banner.png" alt="Foto 2">
+          </picture>
+        </div>
+        <div class="swiper-slide">
+          <img src="images/Foto 1.jpg" alt="Foto 1">
+        </div>
+
+        <div class="swiper-slide">
+          <img src="images/foto 2.jpg" alt="Foto 2">
+        </div>
+
+        <div class="swiper-slide">
+          <img src="images/foto 3.jpg" alt="Foto 3">
+        </div>
+
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+
+  <a href="corporativo.html">
+    <img class="anuncio" src="images/bannertecnicas.gif" width=100% height="100px">
+  </a>
+
+
+  <section id="nosotros" class="about">
+    <div class="container">
+      <h2>Sobre Nosotros</h2>
+      <p>
+        ¡Bienvenidos a la Institución Educativa San Antonio de Padua - Támesis!
+
+        Nuestro objetivo es formar los líderes del futuro y contribuir al desarrollo regional, al municipio de Támesis y
+        al futuro de nuestros estudiantes con una educación de alta calidad reconocida a nivel nacional. Brindamos un
+        entorno de aprendizaje colaborativo, con aulas y grupos diseñados para asegurar la atención personalizada de
+        nuestros docentes altamente calificados.
+
+        Aquí, los estudiantes desarrollan sus habilidades creativas, investigativas y prácticas en un ambiente que
+        fomenta el crecimiento individual.
+
+        Descubra más sobre nuestra oferta educativa en nuestro sitio web o contáctenos para más información. ¡Estamos
+        listos para ayudarle a conocer todo lo que podemos ofrecer!
+      </p>
+    </div>
+  </section>
+
+  <section id="programas" class="programs">
+    <div class="container">
+      <h2>Nuestros Programas</h2>
+      <div class="programs-grid">
+        <div class="program">
+          <h3>Primaria</h3>
+          <p>
+            Programa educativo para los niveles de educación básica primaria.
+          </p>
+        </div>
+        <div class="program">
+          <h3>Bachillerato</h3>
+          <p>Programa educativo para los niveles de educación media.</p>
+        </div>
+        <div class="program">
+          <h3>Extracurriculares</h3>
+          <p>
+            Actividades y programas complementarios para el desarrollo
+            integral de los estudiantes.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="noticias" class="news">
+    <div class="container">
+      <h2>Últimas Noticias</h2>
+      <div class="news-grid">
+        <div class="news-item">
+          <h3>Noticia 1</h3>
+          <p>Detalles de la noticia 1.</p>
+        </div>
+        <div class="news-item">
+          <h3>Noticia 2</h3>
+          <p>Detalles de la noticia 2.</p>
+        </div>
+        <div class="news-item">
+          <h3>Noticia 3</h3>
+          <p>Detalles de la noticia 3.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="contact">
+    <div class="container">
+      <h2>Contacto</h2>
+      <form action="#">
+        <div class="form-group">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" />
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" />
+        </div>
+        <div class="form-group">
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje"></textarea>
+        </div>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-block">
+        <h4>Síguenos en</h4>
+        <div class="navbar-iconsfooter">
+
+          <a href="https://www.facebook.com/notiiesap" target="_blank" rel="noopener noreferrer">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="icon icon-tabler icons-tabler-outline icon-tabler-brand-facebook">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+            </svg>
+          </a>
+
+          <a href="https://www.instagram.com/iesanantoniodepaduatamesis/" target="_blank" rel="noopener noreferrer">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="icon icon-tabler icons-tabler-outline icon-tabler-brand-instagram">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
+              <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+              <path d="M16.5 7.5l0 .01" />
+            </svg>
+          </a>
+
+
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="icon icon-tabler icons-tabler-outline icon-tabler-brand-youtube">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M2 8a4 4 0 0 1 4 -4h12a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-12a4 4 0 0 1 -4 -4v-8z" />
+            <path d="M10 9l5 3l-5 3z" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="icon icon-tabler icons-tabler-outline icon-tabler-brand-x">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M4 4l11.733 16h4.267l-11.733 -16z" />
+            <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" />
+          </svg>
+        </div>
+      </div>
+      <div class="footer-block">
+        <h4>Contacto</h4>
+        <p><a href="mailto:iesanantoniodepaduatamesis@gmail.com">iesanantoniodepaduatamesis@gmail.com</a></p>
+        <p>Teléfono: 604 590 5820</p>
+        <p>Dirección: Cra 12 #16 -101. Támesis-Antioquia.</p>
+      </div>
+      <div class="footer-block">
+        <h4>Estamos aquí</h4>
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.308055212782!2d-75.717398590174!3d5.668521394289251!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e465628318b30f1%3A0xd5a0d44ffa14b795!2sInstitucion%20Educativa%20San%20Antonio%20de%20Padua!5e0!3m2!1ses!2sco!4v1723242983002!5m2!1ses!2sco"
+            style="border:0;" allowfullscreen="" loading="lazy">
+          </iframe>
+        </div>
+      </div>
+    </div>
+    <div>
+      <p>&copy; 2024 Institución Educativa San Antonio de Padua. Todos los derechos reservados.</p>
+
+    </div>
+  </footer>
+
 </body>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Archivo JavaScript externo -->
+<script src="js/script.js"></script>
+
+<!-- Bootstrap JS Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+
 </html>

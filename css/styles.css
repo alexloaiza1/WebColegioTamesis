@@ -81,6 +81,76 @@ header {
 
 }
 
+/* Estilos generales para la sección */
+#nosotros {
+    background-color: #f9f9f9;
+    /* Color de fondo suave */
+    padding: 40px 20px;
+    /* Espaciado interno */
+    border-radius: 8px;
+    /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra sutil */
+    margin: 20px 0;
+    /* Margen vertical */
+}
+
+#nosotros .container {
+    max-width: 800px;
+    /* Ancho máximo */
+    margin: 0 auto;
+    /* Centrar horizontalmente */
+    padding: 20px;
+    /* Espaciado interno del contenedor */
+}
+
+#nosotros h2 {
+    font-size: 2em;
+    /* Tamaño de fuente del título */
+    color: #333;
+    /* Color del texto del título */
+    margin-bottom: 20px;
+    /* Espaciado debajo del título */
+    text-align: center;
+    /* Centrar el título */
+}
+
+#nosotros p {
+    line-height: 1.6;
+    /* Espaciado entre líneas */
+    color: #555;
+    /* Color del texto */
+    font-size: 1.1em;
+    /* Tamaño de fuente del párrafo */
+    text-align: justify;
+    /* Alinear el texto justificadamente */
+    margin-bottom: 20px;
+    /* Espaciado debajo del párrafo */
+}
+
+#nosotros p:last-of-type {
+    margin-bottom: 0;
+    /* Eliminar margen en el último párrafo */
+}
+
+@media (max-width: 768px) {
+    #nosotros {
+        padding: 30px 15px;
+        /* Ajustar el espaciado en pantallas más pequeñas */
+    }
+
+    #nosotros h2 {
+        font-size: 1.5em;
+        /* Reducir el tamaño del título en pantallas pequeñas */
+    }
+
+    #nosotros p {
+        font-size: 1em;
+        /* Ajustar el tamaño de la fuente del párrafo */
+    }
+}
+
+
 @media (max-width: 480px) {
     .anuncio {
         width: 100% !important;

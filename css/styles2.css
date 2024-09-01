@@ -1,0 +1,101 @@
+/* Asegúrate de que los estilos solo afecten a los elementos dentro de la clase .timeline */
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+    /* Aumenta el padding para un mayor espacio en pantallas grandes */
+}
+
+.timeline .container {
+    padding: 20px 30px;
+    /* Aumenta el padding para mayor separación y espacio en los contenedores */
+    position: relative;
+    border-radius: 8px;
+    /* Aumenta el radio de borde para un diseño más suave */
+    background: #f9f9f9;
+    margin-bottom: 30px;
+    /* Aumenta el margen inferior para separación entre los elementos */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    /* Añade una sombra sutil para destacar los elementos */
+}
+
+/* Ajusta el contenedor de fecha para un mejor contraste y estilo */
+.timeline .container .date {
+    position: absolute;
+    width: 140px;
+    /* Aumenta el ancho del contenedor de fecha */
+    text-align: center;
+    background: #333;
+    color: #fff;
+    border-radius: 8px;
+    /* Aumenta el radio de borde para el contenedor de fecha */
+    padding: 12px;
+    font-weight: bold;
+    font-size: 16px;
+    /* Aumenta el tamaño de la fuente para mayor legibilidad */
+}
+
+/* Ajusta el margen izquierdo del contenido para mayor separación en pantallas grandes */
+.timeline .container .content {
+    padding: 30px;
+    background: #fff;
+    border-radius: 8px;
+    /* Aumenta el radio de borde para el contenido */
+    position: relative;
+    margin-left: 160px;
+    /* Aumenta el margen izquierdo para mayor separación del contenedor de fecha */
+}
+
+/* Estilo para los contenedores alineados a la izquierda */
+.timeline .container.left {
+    margin-left: 0;
+    margin-right: 160px;
+    /* Aumenta el margen derecho para los contenedores alineados a la izquierda */
+}
+
+/* Eliminación de la línea central */
+.timeline::after {
+    content: none;
+    /* Quita la línea vertical central */
+}
+
+/* Ajustes para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .timeline .container {
+        padding: 15px;
+        /* Reduce el padding para mayor eficiencia de espacio en pantallas pequeñas */
+    }
+
+    .timeline .container .date {
+        width: 100%;
+        /* El contenedor de fecha ocupa todo el ancho disponible */
+        position: relative;
+        margin: 0;
+        /* Elimina el margen izquierdo */
+        text-align: center;
+        /* Centra el texto del contenedor de fecha */
+        background: #333;
+        color: #fff;
+        border-radius: 8px;
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .timeline .container .content {
+        margin-left: 0;
+        /* Elimina el margen izquierdo en pantallas pequeñas */
+        padding: 15px;
+        background: #fff;
+        border-radius: 8px;
+        /* Aumenta el radio de borde para el contenido */
+        clear: both;
+        /* Asegura que el contenido se coloque debajo del contenedor de fecha */
+    }
+
+    .timeline .container.left {
+        margin-left: 0;
+        margin-right: 0;
+        /* Elimina los márgenes en pantallas pequeñas */
+    }
+}
