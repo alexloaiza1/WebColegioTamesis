@@ -19,6 +19,18 @@ body {
     color: var(--dark-color);
 }
 
+.line-break {
+    display: block;
+    /* Fuerza que cada span se muestre en una nueva línea */
+    text-align: center;
+    /* Opcional: centra el texto dentro del enlace */
+    margin: 0;
+    /* Ajusta el margen según sea necesario */
+}
+
+
+
+
 
 .custom-header {
     position: relative;

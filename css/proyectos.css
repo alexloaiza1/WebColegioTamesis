@@ -9,6 +9,48 @@
     background-color: #f9f9f9;
 }
 
+.section-title {
+    text-align: center;
+    /* Centra el contenido dentro del div */
+    margin-bottom: 20px;
+    /* Espacio debajo del título */
+}
+
+.section-title h3 {
+    font-size: 2rem;
+    color: #176bbf;
+    /* Azul vibrante */
+    font-weight: 700;
+    margin: 0 auto;
+    /* Centrado horizontal */
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+    overflow: hidden;
+
+}
+
+.section-title h3::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 4px;
+    background: #ff6347;
+    /* Línea de color contrastante */
+    border-radius: 2px;
+    transition: width 0.3s ease-in-out;
+}
+
+.section-title h3:hover::after {
+    width: 100%;
+    /* Expansión de la línea al pasar el cursor */
+}
+
+
+
 /* Estilos para las tarjetas de proyecto */
 #projects-section .project-card {
     background: rgba(255, 255, 255, 0.9);
