@@ -86,23 +86,40 @@
                         <div class="collapse navbar-collapse" id="navbarNav">
                             <ul class="navbar-nav ms-auto custom-ul-padding">
                                 <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         Nuestro Colegio
                                     </a>
                                     <ul class="dropdown-menu custom-submenu" aria-labelledby="navbarDropdown">
-                                        <li><a class="dropdown-item" href="#mision">Misión</a></li>
-                                        <li><a class="dropdown-item" href="#mision">Visión</a></li>
+                                        <li><a class="dropdown-item" href="corporativo.html">Misión</a></li>
+                                        <li><a class="dropdown-item" href="corporativo.html">Visión</a></li>
                                         <li><a class="dropdown-item" href="corporativo.html#historia">Historia</a></li>
+                                        <li>
+                                            <a class="dropdown-item" href="corporativo.html#historia" style="font-size: 0.875rem;">
+                                                <span class="line-break">Gestión</span> 
+                                                <span class="line-break">Administrativa</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="corporativo.html#historia" style="font-size: 0.875rem;">
+                                                <span class="line-break">Gobierno</span> 
+                                                <span class="line-break">Estudiantil</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="corporativo.html#historia" style="font-size: 0.875rem;">
+                                                <span class="line-break">Talento</span> 
+                                                <span class="line-break">Humano</span>
+                                            </a>
+                                        </li>
                                     </ul>
                                 </li>
+                                <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#sedes">Sedes</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#programas">Programas</a></li>
                                 <li class="nav-item"><a class="nav-link" href="index.html#noticias">Noticias</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
                             </ul>
+                            
                         </div>
                     </nav>
                 </div>
@@ -110,13 +127,32 @@
 
         </div>
     </header>
-    <br>
-    <div class="section-title" >
-        <h3>Conoce Nuestros Proyectos</h3>
-    </div>
+    <section class="interactive-section">
+        <div class="section-title">
+            <h3 id="proyectos">Conoce Nuestros Proyectos</h3>
+            <h5>Selecciona un Proyecto</h5>
+    
+            <!-- Controles de selección y botón -->
+            <div id="controls">
+                <select id="project-select">
+                    <option value="" disabled selected>Pulsa aquí</option>
+                    <option value="PRAE">Proyecto Ambiental Escolar PRAE</option>
+                    <option value="steam">Espacio de Robótica-STEAM</option>
+                    <option value="lazos">Tejiendo Lazos</option>
+                    <!-- Añade más opciones según los proyectos disponibles -->
+                </select>
+                <button id="btn-ir">Ir</button>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Secciones de los proyectos -->
+    
+
     <section id="projects-section" class="projects-section">
-        <div class="project-card">
-            <h2>Proyecto Ambiental Escolar PRAE: Conservación de la Biodiversidad en la Cuenca del Río San Antonio</h2>
+        <div id="PRAE" class="project-card">
+            <h2 >Proyecto Ambiental Escolar PRAE: Conservación de la Biodiversidad en la Cuenca del Río San Antonio</h2>
             <img src="images/Prae.png" alt="Descripción del proyecto 1" class="project-image"
                 style="width: 285px; height: 250px; margin-right:30px">
             <img src="images/Prae.png" alt="Descripción del proyecto 1" class="project-image"
@@ -134,8 +170,8 @@
             </p>
         </div>
 
-        <div class="project-card">
-            <h2>Espacio de Robótica-STEAM: Innovación y Aprendizaje Práctico</h2>
+        <div id="steam" class="project-card">
+            <h2 >Espacio de Robótica-STEAM: Innovación y Aprendizaje Práctico</h2>
             <img src="images/Prae.png" alt="Descripción del proyecto 1" class="project-image"
                 style="width: 285px; height: 250px; margin-right:30px">
             <img src="images/Prae.png" alt="Descripción del proyecto 1" class="project-image"
@@ -156,7 +192,7 @@
             </p>
         </div>
 
-        <div class="project-card">
+        <div id="lazos" class="project-card">
             <h2>Tejiendo Lazos: Conectando Aprendizajes y Comunidad</h2>
             <img src="images/Prae.png" alt="Descripción del proyecto 1" class="project-image"
                 style="width: 285px; height: 250px; margin-right:30px">
@@ -240,6 +276,9 @@
     </footer>
 
 </body>
+
+<script src="js/scriptproyects.js"></script>
+
 <!-- Swiper JS -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
