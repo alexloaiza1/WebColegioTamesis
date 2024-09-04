@@ -19,6 +19,18 @@ body {
     color: var(--dark-color);
 }
 
+.line-break {
+    display: block;
+    /* Fuerza que cada span se muestre en una nueva línea */
+    text-align: center;
+    /* Opcional: centra el texto dentro del enlace */
+    margin: 0;
+    /* Ajusta el margen según sea necesario */
+}
+
+
+
+
 
 .custom-header {
     position: relative;
@@ -107,7 +119,7 @@ header {
 #nosotros h2 {
     font-size: 2em;
     /* Tamaño de fuente del título */
-    color: #333;
+    color: #333333;
     /* Color del texto del título */
     margin-bottom: 20px;
     /* Espaciado debajo del título */
