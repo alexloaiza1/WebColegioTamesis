@@ -1,0 +1,394 @@
+/* Nuevo archivo CSS - projects-section.css */
+
+/* Estilos generales para la sección de proyectos */
+#projects-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.section-title {
+    text-align: center;
+    /* Centra el contenido dentro del div */
+    margin-bottom: 20px;
+    /* Espacio debajo del título */
+}
+
+.section-title h3 {
+    font-size: 2rem;
+    color: #176bbf;
+    /* Azul vibrante */
+    font-weight: 700;
+    margin: 0 auto;
+    /* Centrado horizontal */
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+    overflow: hidden;
+
+}
+
+.section-title h3::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 4px;
+    background: #ff6347;
+    /* Línea de color contrastante */
+    border-radius: 2px;
+    transition: width 0.3s ease-in-out;
+}
+
+.section-title h3:hover::after {
+    width: 100%;
+    /* Expansión de la línea al pasar el cursor */
+}
+
+
+
+/* Estilos para las tarjetas de proyecto */
+#projects-section .project-card {
+    background: rgba(255, 255, 255, 0.9);
+    /* Fondo blanco con opacidad */
+    border: 2px solid transparent;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Estilos para las imágenes de los proyectos */
+#projects-section .project-card .project-image {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Estilos para proyectos impares y pares */
+#projects-section .project-card:nth-child(odd) {
+    grid-column: 1;
+    border-color: #6baed6;
+    /* Color para destacar proyectos impares */
+}
+
+#projects-section .project-card:nth-child(even) {
+    grid-column: 2;
+    border-color: #fd8d3c;
+    /* Color para destacar proyectos pares */
+}
+
+/* Efectos al pasar el mouse sobre las tarjetas */
+#projects-section .project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilos para los títulos de las tarjetas */
+#projects-section .project-card h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    border-bottom: 2px solid currentColor;
+    padding-bottom: 5px;
+}
+
+/* Estilos para los párrafos de las tarjetas */
+#projects-section .project-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 768px) {
+    #projects-section {
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    #projects-section .project-card {
+        grid-column: auto;
+        padding: 15px;
+        border-color: #ddd;
+    }
+
+    #projects-section .project-card h2 {
+        font-size: 1.2rem;
+    }
+
+    #projects-section .project-card p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Estilos específicos para la sección interactiva */
+.interactive-section {
+    background-color: #f0f8ff;
+    /* Color de fondo claro */
+    padding: 15px;
+    /* Reducción del padding */
+    border-radius: 8px;
+    border-left: 6px solid #007bff;
+    /* Borde colorido al lado izquierdo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra para un efecto elevado */
+    margin: 20px 0;
+    /* Margen vertical */
+    max-width: 100%;
+    /* Asegura que ocupe todo el ancho disponible */
+    width: 100%;
+    /* Ancho completo */
+    box-sizing: border-box;
+    /* Incluye el padding y el borde en el ancho total */
+}
+
+/* Estilos para el título de la sección */
+.interactive-section .section-title h3 {
+    font-size: 20px;
+    /* Tamaño de fuente */
+    text-align: center;
+    margin-bottom: 8px;
+    /* Reducción del margen inferior */
+    color: #333;
+    /* Color del texto */
+}
+
+/* Estilos para el subtítulo de la sección */
+.interactive-section .section-title h5 {
+    font-size: 14px;
+    /* Tamaño de fuente más pequeño */
+    text-align: center;
+    color: #666;
+    /* Color del texto */
+    margin-bottom: 15px;
+    /* Reducción del margen inferior */
+}
+
+/* Estilos para el contenedor de los controles */
+.interactive-section #controls {
+    display: flex;
+    justify-content: center;
+    /* Centra el contenido horizontalmente */
+    align-items: center;
+    gap: 8px;
+    /* Espacio entre los elementos */
+    margin-top: 10px;
+}
+
+/* Estilos para la lista desplegable */
+.interactive-section #project-select {
+    padding: 8px 12px;
+    /* Padding interno */
+    border: 1px solid #ddd;
+    /* Borde suave */
+    border-radius: 4px;
+    background-color: #fff;
+    /* Fondo blanco */
+    font-size: 14px;
+    /* Tamaño de fuente */
+    color: #333;
+    /* Color del texto */
+    appearance: none;
+    /* Quita el estilo por defecto del navegador */
+    cursor: pointer;
+    /* Cursor tipo puntero */
+    transition: border-color 0.3s, box-shadow 0.3s;
+    /* Transiciones suaves */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Sombra ligera */
+}
+
+/* Estilos para el hover y focus del select */
+.interactive-section #project-select:hover, .interactive-section #project-select:focus {
+    border-color: #007bff;
+    /* Color del borde al pasar el cursor o enfocar */
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+    /* Sombra al enfocar */
+    outline: none;
+    /* Quita el contorno por defecto */
+}
+
+/* Estilos para el botón "Ir" */
+.interactive-section #btn-ir {
+    padding: 8px 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.3s;
+    /* Transiciones suaves */
+    font-size: 14px;
+    /* Tamaño de fuente */
+}
+
+/* Estilos para el botón "Ir" cuando se pasa el cursor */
+.interactive-section #btn-ir:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+    /* Efecto de escala al pasar el cursor */
+}
+
+/* Estilos para el botón "Ir" cuando se hace clic */
+.interactive-section #btn-ir:active {
+    transform: scale(0.95);
+    /* Efecto de reducción al hacer clic */
+}
+
+/* Estilos específicos para la sección interactiva */
+.interactive-section {
+    background-color: #f0f8ff;
+    /* Color de fondo claro */
+    padding: 15px;
+    /* Reducción del padding */
+    border-radius: 8px;
+    border-left: 6px solid #007bff;
+    /* Borde colorido al lado izquierdo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra para un efecto elevado */
+    margin: 20px 0;
+    /* Margen vertical */
+    max-width: 100%;
+    /* Asegura que ocupe todo el ancho disponible */
+    width: 100%;
+    /* Ancho completo */
+    box-sizing: border-box;
+    /* Incluye el padding y el borde en el ancho total */
+}
+
+/* Estilos para el título de la sección */
+.interactive-section .section-title h3 {
+    font-size: 20px;
+    /* Tamaño de fuente */
+    text-align: center;
+    margin-bottom: 8px;
+    /* Reducción del margen inferior */
+    color: #333;
+    /* Color del texto */
+}
+
+/* Estilos para el subtítulo de la sección */
+.interactive-section .section-title h5 {
+    font-size: 14px;
+    /* Tamaño de fuente más pequeño */
+    text-align: center;
+    color: #666;
+    /* Color del texto */
+    margin-bottom: 15px;
+    /* Reducción del margen inferior */
+}
+
+/* Estilos para el contenedor de los controles */
+.interactive-section #controls {
+    display: flex;
+    justify-content: center;
+    /* Centra el contenido horizontalmente */
+    align-items: center;
+    gap: 8px;
+    /* Espacio entre los elementos */
+    margin-top: 10px;
+}
+
+/* Estilos para la lista desplegable */
+.interactive-section #project-select {
+    padding: 8px 12px;
+    /* Padding interno */
+    border: 1px solid #ddd;
+    /* Borde suave */
+    border-radius: 4px;
+    background-color: #fff;
+    /* Fondo blanco */
+    font-size: 14px;
+    /* Tamaño de fuente */
+    color: #333;
+    /* Color del texto */
+    appearance: none;
+    /* Quita el estilo por defecto del navegador */
+    cursor: pointer;
+    /* Cursor tipo puntero */
+    transition: border-color 0.3s, box-shadow 0.3s;
+    /* Transiciones suaves */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Sombra ligera */
+    position: relative;
+    /* Para posicionar la flechita */
+}
+
+/* Agrega la flechita al select */
+.interactive-section #project-select::after {
+    content: '\25BC';
+    /* Código Unicode para la flechita hacia abajo */
+    font-size: 12px;
+    color: #333;
+    /* Color de la flechita */
+    position: absolute;
+    right: 10px;
+    /* Espacio desde el borde derecho */
+    top: 50%;
+    transform: translateY(-50%);
+    /* Centra verticalmente */
+    pointer-events: none;
+    /* Asegura que la flechita no interfiera con el clic */
+}
+
+/* Estilos para el hover y focus del select */
+.interactive-section #project-select:hover, .interactive-section #project-select:focus {
+    border-color: #007bff;
+    /* Color del borde al pasar el cursor o enfocar */
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+    /* Sombra al enfocar */
+    outline: none;
+    /* Quita el contorno por defecto */
+}
+
+/* Estilos para el botón "Ir" */
+.interactive-section #btn-ir {
+    padding: 8px 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.3s;
+    /* Transiciones suaves */
+    font-size: 14px;
+    /* Tamaño de fuente */
+}
+
+/* Estilos para el botón "Ir" cuando se pasa el cursor */
+.interactive-section #btn-ir:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+    /* Efecto de escala al pasar el cursor */
+}
+
+/* Estilos para el botón "Ir" cuando se hace clic */
+.interactive-section #btn-ir:active {
+    transform: scale(0.95);
+    /* Efecto de reducción al hacer clic */
+}
+
+
+/* Media query para pantallas grandes */
+@media (min-width: 1024px) {
+    .interactive-section {
+        padding: 20px;
+        /* Aumenta el padding en pantallas grandes */
+        margin: 20px auto;
+        /* Centra la sección en pantallas grandes */
+        max-width: 100%;
+        /* Asegura que ocupe todo el ancho disponible */
+        width: 90%;
+        /* Ancho completo */
+    }
+}
