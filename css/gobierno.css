@@ -1,18 +1,23 @@
 /* Estilos generales */
-
-
 .titulo-sedes {
     border-radius: 8px;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     margin: 0;
+    padding-bottom: 10px;
+    /* Aumentar separación de la línea */
+
+    /* Añade una línea inferior */
 }
+
 
 .titulo-sedes h2 {
     color: #3190f0;
     font-size: 185%;
     font-weight: bold;
+    /* Color del texto */
 }
+
 
 .talento-container {
     display: flex;
@@ -21,7 +26,7 @@
 }
 
 .talento-card {
-    width: 250px;
+    width: 300px;
     margin: 20px;
     background-color: #fff;
     border: 1px solid #ddd;
@@ -31,7 +36,7 @@
 
 .talento-card-image {
     width: 100%;
-    height: 230px;
+    height: 370px;
     overflow: hidden;
     border-radius: 10px 10px 0 0;
 }
@@ -50,19 +55,38 @@
 
 .talento-card-info {
     padding: 20px;
-    height: 160px;
+    height: 120px;
+    background-color: #283593;
+    /* Cambiado el color de fondo */
+    color: white;
+    /* Cambiado el color del texto */
+    font-family: Arial, sans-serif;
+    /* Aplicada la nueva fuente */
 }
 
 .talento-card-info h2 {
+    font-size: 16px;
+    /* Tamaño ajustado según el diseño */
     font-weight: bold;
     margin-bottom: 10px;
+    color: white;
+    /* Asegura que el título sea visible */
 }
 
 .talento-card-info p {
-    font-size: 16px;
-    color: #666;
+    font-size: 14px;
+    color: #1ae84ee3;
+    /* Puedes ajustar si deseas otro contraste */
     margin: 0;
 }
+
+.name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+
 
 /* Animación al pasar el mouse sobre la tarjeta */
 .talento-card:hover {
