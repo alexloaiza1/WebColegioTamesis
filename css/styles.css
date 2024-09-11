@@ -581,7 +581,7 @@ body {
 
 body {
     background: #eee;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-family: "Quicksand", system-ui !important;
     font-size: 14px;
     color: #000;
     margin: 0;
@@ -617,6 +617,49 @@ body {
     border-radius: 10px;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
+}
+
+
+
+footer {
+    background: var(--primary-color);
+    color: var(--light-color);
+    padding: 1rem 2rem;
+    /* Ajusta los márgenes internos */
+    position: relative;
+    height: auto;
+    /* Cambiado a auto para permitir ajuste dinámico */
+    min-height: auto;
+    /* Altura mínima para mantener la estructura */
+    font-family: "Lato", sans-serif !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 700 !important;
+    /* Peso de fuente ajustado */
+    font-size: 1rem;
+    /* Tamaño de fuente ajustado */
+
+}
+
+/* Media Query para pantallas pequeñas */
+@media (max-width: 768px) {
+    footer {
+        padding: 1rem;
+        /* Reduce el padding en pantallas pequeñas */
+        min-height: 150px;
+        /* Ajusta la altura mínima */
+    }
+}
+
+/* Media Query para pantallas muy pequeñas (móviles) */
+@media (max-width: 480px) {
+    footer {
+        padding: 0.5rem;
+        /* Aún menos padding para móviles */
+    }
 }
 
 .footer-grid {

@@ -1,4 +1,17 @@
 /* Asegúrate de que los estilos solo afecten a los elementos dentro de la clase .timeline */
+
+
+
+.quicksand-body {
+    font-family: "Quicksand", system-ui !important;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+
 .timeline {
     position: relative;
     max-width: 1200px;
