@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Institución Educativa San Antonio de Padua</title>
   <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/styles2.css" />
+  <link rel="stylesheet" href="css/sedes.css"></li>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +17,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
   <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
+  <link rel="stylesheet" href="css/calificaciones.css">
 
 </head>
 
@@ -34,8 +36,6 @@
       <section>
         <div>
           <div class="navbar-icons">
-
-
             <a href="https://www.facebook.com/notiiesap" target="_blank" rel="noopener noreferrer">
               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -57,7 +57,6 @@
                 <path d="M16.5 7.5l0 .01" />
               </svg>
             </a>
-
 
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
               stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -83,8 +82,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav ms-auto custom-ul-padding">
-                <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
-                
+                <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                     data-bs-toggle="dropdown" aria-expanded="false">
@@ -101,13 +99,13 @@
                       </a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="gobierno.html" style="font-size: 0.875rem;">
+                      <a class="dropdown-item" href="corporativo.html#historia" style="font-size: 0.875rem;">
                           <span class="line-break">Gobierno</span> 
                           <span class="line-break">Estudiantil</span>
                       </a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="talentohumano.html" style="font-size: 0.875rem;">
+                      <a class="dropdown-item" href="corporativo.html#historia" style="font-size: 0.875rem;">
                           <span class="line-break">Talento</span> 
                           <span class="line-break">Humano</span>
                       </a>
@@ -115,10 +113,10 @@
                     
                   </ul>
                 </li>
-                <li class="nav-item"><a class="nav-link" href="sedes.html">Sedes</a></li>
+                <li class="nav-item"><a class="nav-link" href="#sedes">Sedes</a></li>
                 <li class="nav-item"><a class="nav-link" href="proyectos.html">Proyectos</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#noticias">Noticias</a></li>
                 <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
-                <li class="nav-item"><a class="nav-link" href="calificaciones.html">Calificaciones</a></li>
               </ul>
             </div>
           </nav>
@@ -127,132 +125,98 @@
 
     </div>
   </header>
+<br>
+  <div class="titulo-sedes">
+    <h2>Sedes rurales IESAP</h2>
+  </div>
+  
 
-  <section class="sectionslider" id="inicio" style="padding: 0; height:390px">
-    <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <picture>
-            <!-- Imagen para pantallas pequeñas -->
-            <source srcset="images/bannermovil.png" media="(max-width: 767px)">
-            <!-- Imagen para pantallas grandes -->
-            <img src="images/banner.png" alt="Foto 2">
-          </picture>
+  <section class="card-section">
+    <div class="card mb-4 shadow-lg border-0">
+      <div class="row g-0">
+        <div class="col-md-6">
+          <!-- Galería de imágenes -->
+          <div class="card-gallery position-relative">
+            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner rounded-start">
+                <div class="carousel-item active">
+                  <img src="images/sedes/lamesa1.jpeg" alt="Imagen 1" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/sedes/lamesa2.jpeg" alt="Imagen 2" class="d-block w-100">
+                </div>
+                <!-- Agrega más slides aquí -->
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
         </div>
-        <div class="swiper-slide">
-          <img src="images/Foto 1.jpg" alt="Foto 1">
-        </div>
-
-        <div class="swiper-slide">
-          <img src="images/foto 2.jpg" alt="Foto 2">
-        </div>
-
-        <div class="swiper-slide">
-          <img src="images/foto 3.jpg" alt="Foto 3">
-        </div>
-
-      </div>
-      <div class="swiper-pagination"></div>
-    </div>
-  </section>
-
-  <a href="corporativo.html">
-    <img class="anuncio" src="images/bannertecnicas.gif" width=100% height="100px">
-  </a>
-
-
-  <section id="nosotros" class="about">
-    <div class="container">
-      <h2>Sobre Nosotros</h2>
-      <p>
-        ¡Bienvenidos a la Institución Educativa San Antonio de Padua - Támesis!
-
-        Nuestro objetivo es formar los líderes del futuro y contribuir al desarrollo regional, al municipio de Támesis y
-        al futuro de nuestros estudiantes con una educación de alta calidad reconocida a nivel nacional. Brindamos un
-        entorno de aprendizaje colaborativo, con aulas y grupos diseñados para asegurar la atención personalizada de
-        nuestros docentes altamente calificados.
-
-        Aquí, los estudiantes desarrollan sus habilidades creativas, investigativas y prácticas en un ambiente que
-        fomenta el crecimiento individual.
-
-        Descubra más sobre nuestra oferta educativa en nuestro sitio web o contáctenos para más información. ¡Estamos
-        listos para ayudarle a conocer todo lo que podemos ofrecer!
-      </p>
-    </div>
-  </section>
-
-  <section id="programas" class="programs">
-    <div class="container">
-      <h2>Nuestros Programas</h2>
-      <div class="programs-grid">
-        <div class="program">
-          <h3>Primaria</h3>
-          <p>
-            Programa educativo para los niveles de educación básica primaria.
-          </p>
-        </div>
-        <div class="program">
-          <h3>Bachillerato</h3>
-          <p>Programa educativo para los niveles de educación media.</p>
-        </div>
-        <div class="program">
-          <h3>Extracurriculares</h3>
-          <p>
-            Actividades y programas complementarios para el desarrollo
-            integral de los estudiantes.
-          </p>
+        <div class="col-md-6">
+          <!-- Información del docente -->
+          <div class="card-body">
+            <hr class="mb-4">
+            <h2 class="text-primary fw-bold mb-3">La Mesa</h2>
+            <p class="text-muted">El modelo de Enseñanza para la Comprensión, creada a partir de las investigaciones de la Escuela de Posgrados de la Universidad de Harvard, promueve una idea potente; el entendimiento como principio básico de la educación.</p>
+            <p class="text-muted">En ese orden de ideas, este modelo de aprendizaje va más allá de que tus hijos retengan información y desarrollen habilidades. En su lugar, se centra la comprensión de conceptos y en su aplicación en contextos reales.</p>
+          </div>
         </div>
       </div>
     </div>
-  </section>
 
-  <section id="noticias" class="news">
-    <div class="container">
-      <h2>Últimas Noticias</h2>
-      <div class="news-grid">
-        <div class="news-item">
-          <h3>Noticia 1</h3>
-          <p>Detalles de la noticia 1.</p>
+    <div class="card mb-4 shadow-lg border-0">
+      <div class="row g-0">
+        <div class="col-md-6">
+          <!-- Galería de imágenes -->
+          <div class="card-gallery position-relative">
+            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner rounded-start">
+                <div class="carousel-item active">
+                  <img src="images/sedes/lamesa1.jpeg" alt="Imagen 1" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/sedes/lamesa2.jpeg" alt="Imagen 2" class="d-block w-100">
+                </div>
+                <!-- Agrega más slides aquí -->
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
         </div>
-        <div class="news-item">
-          <h3>Noticia 2</h3>
-          <p>Detalles de la noticia 2.</p>
-        </div>
-        <div class="news-item">
-          <h3>Noticia 3</h3>
-          <p>Detalles de la noticia 3.</p>
+        <div class="col-md-6">
+          <!-- Información del docente -->
+          <div class="card-body">
+            <hr class="mb-4">
+            <h2 class="text-primary fw-bold mb-3">La Mesa</h2>
+            <p class="text-muted">El modelo de Enseñanza para la Comprensión, creada a partir de las investigaciones de la Escuela de Posgrados de la Universidad de Harvard, promueve una idea potente; el entendimiento como principio básico de la educación.</p>
+            <p class="text-muted">En ese orden de ideas, este modelo de aprendizaje va más allá de que tus hijos retengan información y desarrollen habilidades. En su lugar, se centra la comprensión de conceptos y en su aplicación en contextos reales.</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
-
-  <section id="contacto" class="contact">
-    <div class="container">
-      <h2>Contacto</h2>
-      <form action="#">
-        <div class="form-group">
-          <label for="nombre">Nombre:</label>
-          <input type="text" id="nombre" name="nombre" />
-        </div>
-        <div class="form-group">
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" />
-        </div>
-        <div class="form-group">
-          <label for="mensaje">Mensaje:</label>
-          <textarea id="mensaje" name="mensaje"></textarea>
-        </div>
-        <button type="submit">Enviar</button>
-      </form>
-    </div>
-  </section>
+  
+  <!-- Agrega más tarjetas de presentación aquí si es necesario -->
+  
 
   <footer>
     <div class="container footer-grid">
       <div class="footer-block">
         <h4>Síguenos en</h4>
         <div class="navbar-iconsfooter">
-
           <a href="https://www.facebook.com/notiiesap" target="_blank" rel="noopener noreferrer">
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
               stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -272,8 +236,6 @@
               <path d="M16.5 7.5l0 .01" />
             </svg>
           </a>
-
-
           <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
             class="icon icon-tabler icons-tabler-outline icon-tabler-brand-youtube">

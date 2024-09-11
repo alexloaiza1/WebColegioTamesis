@@ -1,0 +1,12 @@
+.titulo-sedes {
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0;
+}
+
+.titulo-sedes h2 {
+    color: #3190f0;
+    font-size: 185%;
+    font-weight: bold;
+}
