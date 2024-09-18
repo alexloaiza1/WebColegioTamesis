@@ -1,4 +1,5 @@
 /* Asegúrate de que los estilos solo afecten a los elementos dentro de la clase .timeline */
+
 .timeline {
     position: relative;
     max-width: 1200px;
