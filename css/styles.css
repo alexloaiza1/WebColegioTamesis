@@ -586,7 +586,10 @@ body {
     color: #000;
     margin: 0;
     padding: 0;
+    font-weight: 500 !important;
+    /* Puedes usar 600 o bold, pero no ambos */
 }
+
 
 /* Contenedor principal de Swiper */
 .swiper {
