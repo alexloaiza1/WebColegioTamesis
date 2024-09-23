@@ -100,3 +100,56 @@
     font-size: 24px;
     margin-bottom: 20px;
 }
+
+.carta .container {
+    max-width: 800px;
+    /* Ancho máximo del contenedor */
+    margin: 40px auto;
+    /* Margen superior e inferior, y centrado */
+}
+
+.carta .carta-section {
+    background-color: #f9f9f9;
+    /* Fondo claro */
+    padding: 20px;
+}
+
+.carta .carta {
+    background-color: #fff;
+    /* Fondo blanco */
+    padding: 20px;
+    border: 1px solid #ddd;
+    /* Borde gris claro */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Sombra leve */
+}
+
+.carta .carta-titulo {
+    font-size: 24px;
+    /* Tamaño de título */
+    font-weight: bold;
+    /* Negrita */
+    margin-bottom: 10px;
+    /* Margen inferior */
+}
+
+.carta .carta-cuerpo {
+    font-size: 18px;
+    /* Tamaño de texto */
+    margin-bottom: 20px;
+    /* Margen inferior */
+}
+
+.carta .carta-firma {
+    font-size: 18px;
+    /* Tamaño de texto */
+    font-weight: bold;
+    /* Negrita */
+    margin-top: 20px;
+    /* Margen superior */
+}
+
+.carta .carta-firma strong {
+    font-size: 20px;
+    /* Tamaño de nombre */
+}
