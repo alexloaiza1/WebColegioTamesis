@@ -1,0 +1,106 @@
+/* Estilos generales */
+.titulo-sedes {
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin: 0;
+    padding-bottom: 10px;
+    /* Aumentar separación de la línea */
+
+    /* Añade una línea inferior */
+}
+
+
+.titulo-sedes h2 {
+    color: #3190f0;
+    font-size: 185%;
+    font-weight: bold;
+    /* Color del texto */
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Contenedor principal estilo periódico */
+.newspaper-container {
+    max-width: 1000px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    line-height: 1.6;
+}
+
+/* Cabecera de la noticia */
+.header {
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 36px;
+    margin: 0;
+    color: #333;
+}
+
+.header h2 {
+    font-size: 24px;
+    margin: 10px 0;
+    color: #555;
+}
+
+.header .date {
+    font-size: 14px;
+    color: #98df09;
+}
+
+/* Sección de imagen */
+.image-section {
+    text-align: center;
+    margin: 20px 0;
+
+}
+
+.news-image {
+    max-width: 50%;
+    height: auto;
+    border: 1px solid #ddd;
+}
+
+/* Estilo del contenido */
+.content {
+    column-count: 2;
+    column-gap: 30px;
+    text-align: justify;
+}
+
+.content p {
+    margin: 0 0 20px;
+}
+
+/* Sección multimedia (video) */
+.media-section {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.news-video {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+    .content {
+        column-count: 1;
+    }
+}
