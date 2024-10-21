@@ -273,9 +273,7 @@ header nav ul li a {
     font-family: "DynaPuff", sans-serif;
 }
 
-header nav ul li a:hover {
-    color: var(--accent-color);
-}
+
 
 
 .ti-brand-facebook::before {
@@ -314,6 +312,9 @@ header nav ul li a:hover {
 .navbar-nav .dropdown-menu .dropdown-item:hover {
     color: var(--primary-color);
     background-color: var(--accent-color);
+    border-radius: 10px;
+    padding: 4px;
+
 }
 
 /* Asegúrate de que el submenú tenga un fondo oscuro */
@@ -376,9 +377,9 @@ header nav ul li a:hover {
         flex-direction: column;
         position: absolute;
         top: 100%;
-        right: -2px;
+        right: -15px;
         background: var(--primary-color);
-        width: 115%;
+        width: 160%;
         text-align: center;
         padding: 0;
         padding-right: 40px;
@@ -388,6 +389,8 @@ header nav ul li a:hover {
         /* Añadido para eliminar cualquier margin por defecto */
         border-radius: 10px;
     }
+
+
 
     header nav ul.active {
         display: flex;
@@ -450,7 +453,7 @@ header nav ul li a:hover {
 }
 
 .program, .news-item {
-    background: var(--light-color);
+    background: ;
     padding: 1rem;
     border: 2px solid var(--primary-color);
     border-radius: 5px;
@@ -769,4 +772,44 @@ footer {
         border-radius: 5px;
         /* Reduce el redondeo de las esquinas para pantallas más pequeñas */
     }
+}
+
+
+.program {
+    position: relative;
+    left: 0;
+    /* Necesario para que el objeto decorativo se posicione dentro de este contenedor */
+    padding: 20px;
+    background-color: var(--light-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.decorative-corner {
+    width: 40px;
+    /* Ajusta el tamaño según tu preferencia */
+    height: 40px;
+    background-color: #1F6099;
+    /* Elige el color que prefieras */
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 8px 0 20px 0;
+    /* Redondeo de una esquina */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Sombra para darle un poco de profundidad */
+}
+
+.decorative-corner2 {
+    width: 40px;
+    height: 40px;
+    background-color: #b5cc42;
+    position: absolute;
+    top: 0;
+    /* Mantener en la parte superior */
+    left: 0;
+    border-radius: 4px 0 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: -1;
+    /* Coloca el cuadrado detrás del título */
 }
