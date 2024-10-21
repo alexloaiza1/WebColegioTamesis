@@ -799,16 +799,14 @@ footer {
 
 .decorative-corner2 {
     width: 40px;
-    /* Ajusta el tamaño según tu preferencia */
     height: 40px;
     background-color: #b5cc42;
-    /* Elige el color que prefieras */
     position: absolute;
     top: 0;
+    /* Mantener en la parte superior */
     left: 0;
     border-radius: 4px 0 20px 0;
-    /* Redondeo de una esquina */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    /* Sombra para darle un poco de profundidad */
-
+    z-index: -1;
+    /* Coloca el cuadrado detrás del título */
 }
