@@ -273,9 +273,7 @@ header nav ul li a {
     font-family: "DynaPuff", sans-serif;
 }
 
-header nav ul li a:hover {
-    color: var(--accent-color);
-}
+
 
 
 .ti-brand-facebook::before {
@@ -314,6 +312,9 @@ header nav ul li a:hover {
 .navbar-nav .dropdown-menu .dropdown-item:hover {
     color: var(--primary-color);
     background-color: var(--accent-color);
+    border-radius: 10px;
+    padding: 4px;
+
 }
 
 /* Asegúrate de que el submenú tenga un fondo oscuro */
@@ -376,9 +377,9 @@ header nav ul li a:hover {
         flex-direction: column;
         position: absolute;
         top: 100%;
-        right: -2px;
+        right: -15px;
         background: var(--primary-color);
-        width: 115%;
+        width: 160%;
         text-align: center;
         padding: 0;
         padding-right: 40px;
@@ -388,6 +389,8 @@ header nav ul li a:hover {
         /* Añadido para eliminar cualquier margin por defecto */
         border-radius: 10px;
     }
+
+
 
     header nav ul.active {
         display: flex;
