@@ -1,0 +1,21 @@
+a {
+  text-decoration: none !important;
+}
+
+
+
+
+.footer {
+  text-align: center; /* Para centrar si lo deseas */
+  margin-top: -40px;
+  padding: 0;
+}
+
+.footer-logo {
+  display: inline-block;
+  margin-right: 10px; /* Espacio entre logos, ajustable */
+  vertical-align: middle; /* Para asegurarte de que estén alineados en vertical */
+}
+
+
+
