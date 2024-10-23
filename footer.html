@@ -1,157 +1,217 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Institución Educativa San Antonio de Padua</title>
-    <link rel="icon" href="images/logo.png" />
 
-    <link rel="stylesheet" href="css/styles.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Institución Educativa San Antonio de Padua</title>
+  <link rel="icon" href="images/logo.png" />
+  
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Quicksand:wght@300..700&display=swap"
-      rel="stylesheet"
-    />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/footer.css" />
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css"
-    />
-    <!-- Link Swiper's CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-  </head>
-  <footer>
-    <div class="container footer-grid">
-      <div class="footer-block">
-        <h4>Síguenos en</h4>
-        <div class="navbar-iconsfooter">
-          <a
-            href="https://www.facebook.com/notiiesap"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="32"
-              height="32"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="icon icon-tabler icons-tabler-outline icon-tabler-brand-facebook"
-            >
-              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-              <path
-                d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"
-              />
-            </svg>
-          </a>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet" />
 
-          <a
-            href="https://www.instagram.com/iesanantoniodepaduatamesis/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="32"
-              height="32"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="icon icon-tabler icons-tabler-outline icon-tabler-brand-instagram"
-            >
-              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-              <path
-                d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z"
-              />
-              <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
-              <path d="M16.5 7.5l0 .01" />
-            </svg>
-          </a>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Quicksand:wght@300..700&display=swap"
+    rel="stylesheet" />
 
-          <a
-            href="https://youtube.com/@vocesiesap?si=u3nR9WDO0X5cb4Dy"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="32"
-              height="32"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="icon icon-tabler icons-tabler-outline icon-tabler-brand-youtube"
-            >
-              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-              <path
-                d="M2 8a4 4 0 0 1 4 -4h12a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-12a4 4 0 0 1 -4 -4v-8z"
-              />
-              <path d="M10 9l5 3l-5 3z" />
-            </svg>
-          </a>
-        </div>
-      </div>
-      <div class="footer-block">
-        <h4>Contacto</h4>
-        
-        <p>iesanantoniodepaduatamesis@gmail.com<br>contacto@iesap.edu.co</p>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<footer>
+  <div class="container footer-grid">
+    <div class="footer-block">
+      <h4>Síguenos en</h4>
+      <div class="navbar-iconsfooter">
+        <a href="https://www.facebook.com/notiiesap" target="_blank" rel="noopener noreferrer">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="icon icon-tabler icons-tabler-outline icon-tabler-brand-facebook">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+          </svg>
+        </a>
 
-        <p>Teléfonos: 3103935467---3163139209</p>
-        <p>Dirección: Cra 12 #16 -101. Támesis-Antioquia.</p>
-      </div>
-      <div class="footer-block">
-        <h4>Estamos aquí</h4>
-        <div class="map-container">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.308055212782!2d-75.717398590174!3d5.668521394289251!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e465628318b30f1%3A0xd5a0d44ffa14b795!2sInstitucion%20Educativa%20San%20Antonio%20de%20Padua!5e0!3m2!1ses!2sco!4v1723242983002!5m2!1ses!2sco"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-          >
-          </iframe>
-        </div>
+        <a href="https://www.instagram.com/iesanantoniodepaduatamesis/" target="_blank" rel="noopener noreferrer">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="icon icon-tabler icons-tabler-outline icon-tabler-brand-instagram">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
+            <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+            <path d="M16.5 7.5l0 .01" />
+          </svg>
+        </a>
+
+        <a href="https://youtube.com/@vocesiesap?si=u3nR9WDO0X5cb4Dy" target="_blank" rel="noopener noreferrer">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="icon icon-tabler icons-tabler-outline icon-tabler-brand-youtube">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M2 8a4 4 0 0 1 4 -4h12a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-12a4 4 0 0 1 -4 -4v-8z" />
+            <path d="M10 9l5 3l-5 3z" />
+          </svg>
+        </a>
       </div>
     </div>
-    <div>
-      <p>
-        &copy; 2024 Institución Educativa San Antonio de Padua. Todos los
-        derechos reservados.
-      </p>
+    <div class="footer-block">
+      <h4>Contacto</h4>
+
+      <p style="color: #95a5a6;">iesanantoniodepaduatamesis@gmail.com<br>contacto@iesap.edu.co</p>
+
+      <p style="color: #839192;">Teléfonos: 3103935467---3163139209 </p>
+      <p style="color: #839192;">Dirección: Cra 12 #16 -101. Támesis-Antioquia.</p>
     </div>
-  </footer>
+    <div class="footer-block">
+      <h4>Estamos aquí</h4>
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.308055212782!2d-75.717398590174!3d5.668521394289251!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e465628318b30f1%3A0xd5a0d44ffa14b795!2sInstitucion%20Educativa%20San%20Antonio%20de%20Padua!5e0!3m2!1ses!2sco!4v1723242983002!5m2!1ses!2sco"
+          style="border: 0" allowfullscreen="" loading="lazy">
+        </iframe>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    
+      <a href="index.html">
+        <img src="images/logo.png" alt="Institución Educativa San Antonio de Padua Logo" width="100" height="100" class="footer-logo">
+      </a>
+  
+  <a href="https://www.icfes.gov.co/resultados//" target="_blank" rel="noopener noreferrer">
+    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+      y="0px" width="200px" height="200px" viewBox="0 0 300 200" enable-background="new 0 0 300 200" xml:space="preserve"
+      class="footer-logo">
+      <g id="icfes">
+        <rect x="194.682" y="78.456" fill="#CCCECF" width="52.683" height="52.682" />
+        <path fill="#282A2C" d="M244.137,74.622h-46.029c-3.497,0-6.331,2.836-6.331,6.333v46.031c0,3.497,2.834,6.334,6.331,6.334h46.029
+              c3.5,0,6.335-2.837,6.335-6.334V80.955C250.472,77.458,247.637,74.622,244.137,74.622 M246.387,129.236h-50.529v-50.53h50.529
+              V129.236z" />
+        <path fill="#282A2C" d="M220.159,108.358c5.956-10.976,13.46-20.115,21.78-28.555c6.766-6.857,14.416-12.714,22.854-17.41
+              c1.716-0.955,3.956-1.043,5.981-1.313c0.551-0.075,1.65,0.586,1.713,1.02c0.089,0.642-0.503,1.394-0.85,2.073
+              c-0.091,0.175-0.345,0.293-0.545,0.377c-8.045,3.386-13.474,9.951-19.214,16.05c-7.715,8.189-14.774,16.949-20.948,26.382
+              c-1.953,2.987-3.816,6.043-5.583,9.148c-0.685,1.194-0.878,2.666-1.505,3.911c-1.046,2.08-1.902,4.437-3.49,6.029
+              c-2.434,2.437-5.938,1.597-6.963-1.663c-1.619-5.163-2.798-10.465-4.066-15.73c-1.603-6.634-3.061-13.305-4.684-19.936
+              c-0.624-2.575,0.459-4.38,3.16-4.748c3.057-0.414,6.382,1.313,7.762,4.87c1.52,3.921,2.473,8.077,3.487,12.174
+              C219.598,103.261,219.755,105.585,220.159,108.358" />
+        <path fill="#282A2C" d="M68.123,104.547c-1.953-5.571-0.201-10.389,2.602-14.965c2.859-4.671,6.224-8.942,10.75-12.13
+              c5.239-3.692,10.865-5.146,17.05-2.492c0.881,0.382,1.77,0.815,2.537,1.38c1.584,1.173,2.437,2.808,1.523,4.671
+              c-0.878,1.784-2.673,2.385-4.565,2.026c-1.05-0.199-2.168-0.724-2.967-1.427c-2.086-1.842-4.239-1.611-6.408-0.452
+              c-1.297,0.697-2.72,1.475-3.59,2.602c-2.988,3.868-5.794,7.878-8.589,11.896c-0.531,0.767-0.756,1.779-1.011,2.704
+              c-1.075,3.967,0.172,5.515,4.232,5.325c5.533-0.267,10.169-2.616,14.258-6.19c1.007-0.882,1.86-1.93,2.821-2.863
+              c1.429-1.394,2.953-1.279,4.385-0.057c1.391,1.188,1.796,2.861,0.523,4.149c-5.543,5.595-11.42,10.792-19.594,12.097
+              c-3.838,0.617-7.561,0.034-10.851-2.205c-4.49,6.164-11.81,3.927-14.691-0.984c-3.092-5.268-3.827-10.9-2.673-16.804
+              c0.541-2.768,1.272-5.504,2.103-8.195c0.344-1.097,1.064-2.147,1.831-3.023c1.498-1.698,3.863-1.981,5.69-0.871
+              c1.638,1,2.046,2.831,1.29,5.16c-1.007,3.089-2.042,6.18-2.845,9.324c-0.864,3.4-0.384,6.795,0.67,10.111
+              c0.856,2.714,1.566,3.047,4.024,1.85C67.022,104.993,67.435,104.84,68.123,104.547" />
+        <path fill="#282A2C" d="M130.344,114.742c-1.021-0.091-2.458-0.08-3.834-0.361c-7.554-1.564-11.015-7.832-8.146-15.049
+              c2.842-7.152,8.271-12.3,14.004-17.114c3.806-3.2,8.027-5.692,13.18-6.029c6.83-0.455,10.122,4.311,7.292,10.528
+              c-4.128,9.062-13.284,14.107-23.12,12.647c-1.315-0.193-1.974,0.188-2.322,1.362c-0.38,1.282-0.821,2.549-1.122,3.849
+              c-0.58,2.521-0.032,3.225,2.57,3.438c4.239,0.352,8.059-1.031,11.753-2.915c1.724-0.876,3.386-1.911,5.181-2.587
+              c1.792-0.671,3.845-0.887,4.974,1.12c1.098,1.957,0.076,3.702-1.501,4.884C143.785,112.619,137.554,114.574,130.344,114.742
+              M145.591,83.146c-0.183-0.206-0.362-0.411-0.541-0.617c-3.992,3.333-7.984,6.667-11.972,10.003
+              C137.929,92.533,144.458,87.242,145.591,83.146" />
+        <path fill="#282A2C" d="M160.207,107.698c6.647-0.148,12.574-1.57,18.075-5.428c-2.309-2.367-4.856-2.171-7.253-2.311
+              c-4.458-0.265-8.926-0.312-13.377-0.634c-1.526-0.111-3.071-0.62-4.498-1.211c-2.998-1.243-3.876-3.453-2.332-6.326
+              c0.896-1.673,2.093-3.32,3.526-4.549c6.149-5.278,12.691-9.904,21.013-11.123c3.254-0.476,6.209,0.427,8.969,2.01
+              c1.996,1.149,2.584,2.965,1.773,4.734c-0.749,1.645-2.68,2.454-4.751,1.799c-2.701-0.858-5.281-1.876-8.206-0.62
+              c-4.611,1.982-9.095,4.097-12.556,7.889c-0.083,0.092-0.068,0.274-0.193,0.836c1.282,0.154,2.544,0.352,3.812,0.448
+              c4.444,0.34,8.902,0.523,13.327,1.023c1.573,0.176,3.16,0.899,4.572,1.681c3.604,1.996,4.579,5.816,2.487,9.386
+              c-0.517,0.887-1.14,1.798-1.932,2.43c-6.755,5.4-14.412,8.017-23.062,6.762c-1.949-0.286-3.917-1.428-5.548-2.615
+              c-1.995-1.457-2.296-3.868-1.249-5.812c1.351-2.51,4.221-4.121,6.446-3.295c0.694,0.26,1.254,1.43,1.465,2.289
+              C160.889,105.754,160.444,106.601,160.207,107.698" />
+        <path fill="#282A2C" d="M112.517,81.199c2.44,0.162,4.73-0.032,6.791,0.561c1.577,0.456,3.088,1.719,4.207,2.989
+              c1.093,1.243,1.118,3.001-0.291,4.226c-1.297,1.131-2.892,0.957-4.103-0.095c-2.061-1.789-4.26-1.571-6.482-0.713
+              c-0.624,0.242-1.394,1.204-1.379,1.823c0.132,6.979,0.308,13.967,0.681,20.938c0.194,3.555-1.311,5.556-4.68,5.529
+              c-2.773-0.021-4.296-1.471-4.275-4.289c0.043-6.254,0.158-12.504,0.287-18.757c0.025-1.24-0.089-2.139-1.354-2.947
+              c-2.064-1.317-1.96-4.583,0.244-5.823c1.566-0.88,1.86-2.062,2.111-3.567c0.849-5.099,2.229-10.039,5.325-14.299
+              c3.246-4.464,7.586-6.632,13.154-5.722c5.196,0.847,9.245,7.118,7.815,11.913c-0.527,1.777-1.491,3.227-3.544,3.08
+              c-1.921-0.136-2.802-1.607-3.024-3.357c-0.323-2.506-1.042-5.027-3.752-5.431c-2.734-0.412-4.167,1.951-5.238,4.128
+              C113.459,74.521,112.549,77.845,112.517,81.199" />
+        <path fill="#282A2C" d="M73.623,133.82c-1.91,0.718-2.673,0.238-2.573-1.681c0.097-1.86,0.018-3.729,0.015-5.592
+              c-0.007-2.015-1.021-3.018-3.032-3.039c-2.186-0.021-3.218,0.882-3.264,3.028c-0.054,2.44-0.011,4.884-0.011,7.297
+              c-1.867,0.673-2.569,0.175-2.501-1.606c0.075-1.934,0.007-3.874-0.004-5.815c-0.007-2.052-1.1-2.953-3.092-2.949
+              c-1.964,0-3.114,0.788-3.082,2.913c0.039,2.087,0.093,4.182-0.068,6.256c-0.04,0.534-0.867,1.013-1.333,1.511
+              c-0.361-0.518-1.014-1.02-1.036-1.556c-0.111-2.528-0.165-5.075,0.025-7.595c0.054-0.72,0.892-1.81,1.555-1.971
+              c1.709-0.412,3.655-0.881,5.264-0.437c2.379,0.657,4.5,0.608,6.815-0.06c1.075-0.309,2.357-0.003,3.529,0.157
+              c1.917,0.266,2.838,1.406,2.802,3.378C73.587,128.649,73.623,131.24,73.623,133.82" />
+        <path fill="#282A2C"
+          d="M148.095,117.578c2.139-0.836,2.645,0.031,2.541,1.781c-0.075,1.32-0.015,2.656-0.015,4.179
+              c1.366-0.386,2.469-0.778,3.609-1.002c3.243-0.635,5.955,0.819,6.815,3.578c0.957,3.074-0.47,6.516-3.584,7.438
+              c-2.132,0.628-4.529,0.612-6.782,0.475c-1.821-0.114-2.717-1.312-2.638-3.398C148.21,126.258,148.095,121.877,148.095,117.578
+              M150.646,128.25c-0.186,0.069-0.369,0.136-0.555,0.206c0.612,1.471,0.898,3.257,1.931,4.321c1.121,1.159,4.236,0.291,5.497-1.058
+              c1.447-1.547,1.663-4.146,0.494-6.02c-1.038-1.677-3.136-2.271-5.331-1.719C150.221,124.605,150.568,126.464,150.646,128.25" />
+        <path fill="#282A2C" d="M101.77,134.348c-3.949,0.016-6.748-2.146-6.987-5.397c-0.269-3.655,2.447-6.348,6.586-6.543
+              c4.003-0.183,7.16,2.408,7.228,5.934C108.665,131.875,105.869,134.332,101.77,134.348 M105.941,128.521
+              c-0.032-2.885-2.046-5.085-4.583-5.004c-2.347,0.076-4.045,2.108-3.97,4.758c0.079,2.792,1.996,4.878,4.483,4.867
+              C104.282,133.133,105.97,131.217,105.941,128.521" />
+        <path fill="#282A2C"
+          d="M77.69,128.029c0.387,2.998,1.838,4.77,4.25,4.56c1.992-0.175,3.906-1.218,5.758-1.845
+              c0.007,1.893-1.924,3.405-5.038,3.577c-4.232,0.238-6.901-1.68-7.235-5.203c-0.355-3.718,1.663-6.119,5.586-6.662
+              c3.608-0.497,6.232,1.05,6.866,4.314C84.517,127.186,81.169,127.6,77.69,128.029 M77.708,126.979
+              c2.512-0.279,4.841-0.535,7.342-0.812c-0.691-2.245-2.146-2.767-3.859-2.616C79.371,123.714,78.038,124.595,77.708,126.979" />
+        <path fill="#282A2C"
+          d="M175.565,126.747c-3.365,0.426-6.697,0.844-10.173,1.281c-0.19,1.859,0.605,3.14,2.024,3.941
+              c3.017,1.691,5.539,0.487,7.798-1.965c0.257,2.218-1.42,3.838-3.942,4.23c-4.443,0.694-7.571-1.141-8.198-4.807
+              c-0.6-3.503,1.322-6.116,5.049-6.867C171.864,121.805,174.72,123.286,175.565,126.747 M172.753,126.189
+              c-0.871-2.293-2.319-2.854-4.097-2.616c-1.744,0.235-3.038,1.086-3.267,3.397C167.847,126.711,170.155,126.465,172.753,126.189" />
+        <path fill="#282A2C" d="M145.766,128.779c0.003,5.219-0.401,5.645-5.69,5.553c-1.168-0.023-2.433-0.14-3.458-0.623
+              c-0.731-0.346-1.523-1.357-1.573-2.118c-0.046-0.767,0.595-1.964,1.272-2.311c1.494-0.771,3.232-1.054,4.805-1.685
+              c0.781-0.312,1.813-0.829,2.025-1.487c0.201-0.612-0.358-2.007-0.892-2.201c-0.921-0.33-2.107-0.116-3.121,0.125
+              c-0.473,0.108-0.72,0.98-1.211,1.229c-0.505,0.263-1.182,0.184-1.781,0.25c0.111-0.576,0.032-1.335,0.373-1.702
+              c1.534-1.644,6.776-2.118,8.109-0.434c0.885,1.108,0.807,2.979,1.132,4.513C145.816,128.171,145.766,128.483,145.766,128.779
+              M143.14,127.936c-1.706,0.585-3.161,0.907-4.439,1.572c-1.516,0.784-1.559,2.7-0.054,3.291c1.082,0.425,2.516,0.516,3.59,0.157
+              c0.569-0.194,0.799-1.651,1.007-2.576C143.38,129.768,143.204,129.085,143.14,127.936" />
+        <path fill="#282A2C" d="M61.497,72.137c-2.601-0.018-4.715-1.897-4.64-4.117c0.075-2.195,2.329-4.157,4.755-4.15
+              c2.698,0.011,4.476,1.702,4.447,4.23C66.026,70.662,64.335,72.158,61.497,72.137" />
+        <path fill="#282A2C" d="M128.111,134.624c-1.397-0.426-2.845-0.738-4.16-1.343c-0.434-0.197-0.513-1.16-0.756-1.775
+              c0.677,0.055,1.405-0.036,2.014,0.19c1.132,0.418,2.157,1.303,3.293,1.45c0.67,0.084,1.752-0.742,2.1-1.432
+              c0.187-0.375-0.638-1.585-1.275-1.963c-1.197-0.712-2.738-0.888-3.852-1.685c-0.964-0.687-2.226-2.018-2.1-2.885
+              c0.136-0.942,1.62-2.183,2.688-2.389c1.666-0.318,3.49,0.034,5.213,0.305c0.516,0.084,0.953,0.837,1.336,1.354
+              c0.065,0.084-0.405,0.781-0.527,0.756c-0.602-0.139-1.179-0.415-1.755-0.661c-0.853-0.354-1.709-1.02-2.551-1.009
+              c-0.717,0.015-1.423,0.805-2.132,1.251c0.455,0.68,0.763,1.593,1.397,1.989c0.993,0.619,2.2,0.87,3.308,1.303
+              c1.583,0.619,3.157,1.361,2.784,3.454c-0.362,2.042-2.014,2.578-3.824,2.759c-0.373,0.032-0.742,0.043-1.114,0.07
+              C128.169,134.453,128.14,134.537,128.111,134.624" />
+        <path fill="#282A2C" d="M89.816,122.861h2.766c-0.208,3.914-0.133,7.825-0.71,11.642c-0.426,2.833-3.053,4.589-6.224,4.649
+              c4.669-2.5,4.128-6.587,4.164-10.469C89.831,126.775,89.816,124.867,89.816,122.861" />
+        <path fill="#282A2C"
+          d="M177.479,128.735c0-0.521-0.085-1.061,0.019-1.561c0.272-1.354,0.362-3.694,0.996-3.862
+              c2.21-0.578,4.618-0.43,6.952-0.471c0.196-0.003,0.401,0.643,0.604,0.988c-0.354,0.193-0.702,0.41-1.068,0.574
+              c-0.114,0.053-0.293-0.014-0.436-0.046c-4.505-1.075-4.505-1.075-4.505,3.533c0,1.632,0.097,3.28-0.064,4.898
+              c-0.046,0.487-0.807,0.906-1.24,1.354c-0.419-0.466-1.125-0.896-1.193-1.406c-0.168-1.313-0.057-2.669-0.057-4.003H177.479z" />
+        <path fill="#282A2C"
+          d="M119.088,124.262c-0.781-0.109-1.63-0.059-2.326-0.364c-2.53-1.107-3.68-0.469-3.712,2.213
+              c-0.014,2-0.079,4.009,0.021,6.004c0.097,1.864-0.598,2.428-2.559,1.724c0-3.063-0.025-6.152,0.029-9.246
+              c0.007-0.436,0.287-1.017,0.631-1.283c1.627-1.252,6.239-1.123,7.977,0.146C119.128,123.723,119.11,123.992,119.088,124.262" />
+        <path fill="#282A2C" d="M91.292,120.823c-0.728-0.554-1.197-0.913-1.67-1.273c0.452-0.386,0.878-1.045,1.354-1.086
+              c0.484-0.036,1.014,0.539,1.523,0.848C92.149,119.752,91.801,120.188,91.292,120.823" />
+        <path fill="#282A2C" d="M92.887,119.61c0,0.953-0.773,1.724-1.727,1.724c-0.949,0-1.724-0.771-1.724-1.724s0.774-1.726,1.724-1.726
+              C92.113,117.885,92.887,118.657,92.887,119.61" />
+      </g>
+    </svg>
+  </a>
+
+    <a href="https://www.mineducacion.gov.co/portal/" target="_blank" rel="noopener noreferrer">
+      <img src="images/logomen.png" alt="Ministerio de Educación Logo" width="150px" height="100" class="footer-logo">
+    </a>
+  </div>
+  
+    <p>
+      &copy; 2024 Institución Educativa San Antonio de Padua. Todos los
+      derechos reservados.
+    </p>
+  </div>
+</footer>
 
 <!-- Swiper JS -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
