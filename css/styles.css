@@ -338,6 +338,8 @@ header nav ul li a {
         
     }
 
+   
+
     .navbar-nav .dropdown-menu.show {
         transform: translateX(-10%);
         opacity: 1;
@@ -414,6 +416,10 @@ header nav ul li a {
         /* Añadido para mejor espacio entre elementos */
     }
 
+    .nav-link:focus {
+        outline: none;
+    }
+    
     .menu-toggle {
         display: flex;
         align-items: stretch;
