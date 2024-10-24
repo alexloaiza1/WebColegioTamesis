@@ -276,6 +276,8 @@ header nav ul li a {
 
 
 
+
+
 .ti-brand-facebook::before {
     width: 48px;
     height: 48px;
@@ -306,6 +308,7 @@ header nav ul li a {
     font-size: 16px;
     text-align: center;
     background-color: var(--secondary-color);
+
 }
 
 /* Cambia el color del texto y el fondo al pasar el ratón por encima */
@@ -332,17 +335,25 @@ header nav ul li a {
         background-color: var(--secondary-color);
         opacity: 0;
         transition: transform 0.3s ease, opacity 0.3s ease;
+        
     }
 
     .navbar-nav .dropdown-menu.show {
         transform: translateX(-10%);
         opacity: 1;
+        
     }
 
     /* Ocultar la flecha desplegable en pantallas pequeñas */
     .navbar-nav .dropdown-toggle::after {
         display: none;
     }
+
+    .navbar-nav .dropdown-toggle:focus {
+    outline: none !important;
+    
+    }
+
 
     .custom-submenu {
         width: 200px;
@@ -360,6 +371,8 @@ header nav ul li a {
 
     .navbar-nav .dropdown-menu.show {
         display: block;
+        outline: none;
+        box-shadow: none;
     }
 
     /* Ocultar la flecha desplegable en pantallas grandes */
@@ -389,11 +402,15 @@ header nav ul li a {
 
     header nav ul.active {
         display: flex;
+        outline: none;
+        box-shadow: none;
     }
 
     header nav ul li {
         margin: 0.25rem 0;
         padding: 0.5px;
+        outline: none;
+        box-shadow: none;
         /* Añadido para mejor espacio entre elementos */
     }
 
@@ -404,6 +421,8 @@ header nav ul li a {
         border: none;
         padding: 0.5rem;
         cursor: pointer;
+        outline: none;
+        box-shadow: none;
 
     }
 
@@ -413,6 +432,8 @@ header nav ul li a {
         height: 3px;
         background: var(--light-color);
         margin: 5px 0;
+        outline: none;
+        box-shadow: none;
     }
 }
 
