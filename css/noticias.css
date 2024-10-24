@@ -68,7 +68,7 @@ body {
 }
 
 .news-image {
-    max-width: 50%;
+    max-width: 100%;
     height: auto;
     border: 1px solid #ddd;
 }
