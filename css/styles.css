@@ -401,7 +401,6 @@ header nav ul li a {
         display: flex;
         align-items: stretch;
         justify-content: center;
-        background: var(--primary-color);
         border: none;
         padding: 0.5rem;
         cursor: pointer;
