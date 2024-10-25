@@ -1,0 +1,183 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=League+Spartan:wght@100..900&display=swap');
+
+
+.header {
+    padding: 0 ;
+    margin: 0 ;
+    box-sizing: border-box ;
+    font-family: "League Spartan", sans-serif;
+    background-color: #1a237e;
+    
+
+}
+
+.navbarsection {
+    align-items: center;
+    height: 140px;
+    background-color: #1a237e;
+    color: #fff;
+    margin-top: 0;
+    padding: 10px
+}
+
+.container .header {
+    width: 100%;
+    padding: 0 2rem;
+    /* background-color: red; */
+    position: relative;
+    position: fixed;
+    top: 0;
+}
+
+.navbar {
+    width: 100%;
+    height: 70px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo a {
+    position: relative;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+   
+}
+
+.navbar .logo a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    bottom: -5px;
+    transform: translateY(10px);
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.navbar .logo a:hover::after {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.navbar .links {
+    display: flex;
+    gap: 70px;
+}
+
+.navbar .links li {
+    list-style-type: none;
+}
+
+.navbar .links li a {
+    font-size: 22px;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+}
+
+.navbar .links li a:before {
+    position: absolute;
+    content: '';
+    top: 97%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    transition: all 0.5s linear;
+}
+
+.navbar .links li a:hover:before {
+    width: 100%;
+    background-color: #fff;
+}
+
+.navbar .action_btn {
+    background-color: orange;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+}
+
+.navbar .action_btn:hover {
+    scale: 1.05;
+    color: #fff;
+}
+
+.navbar .action_btn:active {
+    scale: 0.95;
+}
+
+.toggle_btn {
+    display: none;
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/* DROPDOWN MENU */
+.dropdown_menu {
+    position: relative ;
+    display: none;
+    top: 49px;
+    right: 2rem;
+    width: 300px !important;
+    height: 0;
+    background: rgba(70, 107, 209, 0.1); 
+    backdrop-filter: blur(60px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open {
+    z-index: 1000; /* Ensure it is on top of other elements */
+    height: 300px;
+    
+}
+
+.dropdown_menu .item {
+    list-style-type: none;
+    padding: 0.7rem;
+    display: flex;
+    justify-content: center;
+}
+
+.dropdown_menu .item a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    transition: 0.5s ease;
+}
+
+.dropdown_menu .item a:hover {
+    color: orange;
+}
+
+.dropdown_menu .action_btn {
+    background-color: orange;
+    text-decoration: none;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 20px;
+    display: flex;
+    font-size: 16px;
+    font-weight: bold;
+    justify-content: center;
+}

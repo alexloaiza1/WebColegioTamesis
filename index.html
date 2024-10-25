@@ -8,6 +8,13 @@
   <link rel="icon" href="images/logoicon.png">
 
   <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/stylenav.css" />
+  <link rel="stylesheet" href="css/media-queri.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+  integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,117 +31,44 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
   <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
-
 </head>
+<section class="navbarsection">
+  <header class="header">
+    <nav class="navbar">
+        <div class="logo"><a href=#></a><img src="images/newlogo3.png" alt="" style="height: 100px;"></div>
+        <ul class="links">
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="about">Nuestro Colegio</a></li>
+            <li><a href="sedes.html">Sedes</a></li>
+            <li><a href="proyectos.html">Proyectos</a></li>
+            <li><a href="contacto.html">PQRS</a></li>
+        </ul>
+        
+        <a href="#" class="action_btn ">Últimos Comunicados</a>
+        <div class="toggle_btn"><i class="fa-solid fa-bars"></i></div>
+        
+    </nav>
+    <div class="dropdown_menu">
+        <li class="item"><a href="#nosotros">Nosotros</a></li>
+        <li class="item"><a href="about">Nuestro Colegio</a></li>
+        <li class="item"><a href="sedes.html">Sedes</a></li>
+        <li class="item"><a href="proyectos.html">Proyectos</a></li>
+        <li class="item"><a href="contacto.html">PQRS</a></li>
 
-<body>
-  <header class="custom-header">
-    <div class="container d-flex justify-content-between align-items-center py-2">
-      <div class="logo" style="margin-left: -60px; margin-top:20px;">
-        <img src="images/logo.png" alt="Logo Institución">
-      </div>
-      <div class="title ms-3">
-        <h2 class="titulo" style="margin-top: -10px;">
-          Institución Educativa San Antonio de Padua Támesis
-        </h2>
-      </div>
-
-      <section>
-        <div>
-          <div class="navbar-icons">
-
-
-            <a href="https://www.facebook.com/notiiesap" target="_blank" rel="noopener noreferrer">
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="icon icon-tabler icons-tabler-outline icon-tabler-brand-facebook">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
-              </svg>
-            </a>
-
-
-
-            <a href="https://www.instagram.com/iesanantoniodepaduatamesis/" target="_blank" rel="noopener noreferrer">
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="icon icon-tabler icons-tabler-outline icon-tabler-brand-instagram">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
-                <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
-                <path d="M16.5 7.5l0 .01" />
-              </svg>
-            </a>
-
-
-            <a href="https://youtube.com/@vocesiesap?si=u3nR9WDO0X5cb4Dy" target="_blank" rel="noopener noreferrer">
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="icon icon-tabler icons-tabler-outline icon-tabler-brand-youtube">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <path d="M2 8a4 4 0 0 1 4 -4h12a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-12a4 4 0 0 1 -4 -4v-8z" />
-                <path d="M10 9l5 3l-5 3z" />
-              </svg>
-            </a>
-
-            <!-- Puedes añadir más iconos aquí -->
-          </div>
-          <nav class="navbar navbar-expand-lg navbar-dark">
-            <button style="margin-left: 35px;" class="navbar-toggler" type="button" data-bs-toggle="collapse"
-              data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-              aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav ms-auto custom-ul-padding">
-                <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
-
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="navbarDropdown" role="button"
-                    data-bs-toggle="dropdown" aria-expanded="false">
-                    Nuestro Colegio <span class="ms-1"><i class="ti ti-chevron-down"></i></span>
-                  </a>
-                  </a>
-                  <ul class="dropdown-menu custom-submenu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="corporativo.html">Misión</a></li>
-                    <li><a class="dropdown-item" href="corporativo.html">Visión</a></li>
-                    <li><a class="dropdown-item" href="corporativo.html#historia">Historia</a></li>
-                    <li>
-                      <a class="dropdown-item" href="corporativo.html#historia" style="font-size: 0.875rem;">
-                        <span class="line-break">Gestión</span>
-                        <span class="line-break">Administrativa</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="gobierno.html" style="font-size: 0.875rem;">
-                        <span class="line-break">Gobierno</span>
-                        <span class="line-break">Estudiantil</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="talentohumano.html" style="font-size: 0.875rem;">
-                        <span class="line-break">Talento</span>
-                        <span class="line-break">Humano</span>
-                      </a>
-                    </li>
-
-                  </ul>
-                </li>
-                <li class="nav-item"><a class="nav-link" href="sedes.html">Sedes</a></li>
-                <li class="nav-item"><a class="nav-link" href="proyectos.html">Proyectos</a></li>
-                <li class="nav-item"><a class="nav-link" href="contacto.html">PQRS</a></li>
-                <li class="nav-item"><a class="nav-link" href="calificaciones.html">Calificaciones</a></li>
-              </ul>
-            </div>
-          </nav>
-        </div>
-      </section>
-
+        <a href="#" class="action_btn ">Últimos Comunicados</a>
     </div>
   </header>
+</section>
 
-  <section class="sectionslider" id="inicio" style="padding: 0; height:390px">
+
+</section>
+
+
+<body>
+
+ 
+
+  <section class="sectionslider" id="inicio" style="padding: 0; height:auto">
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
@@ -233,7 +167,7 @@
       <div class="news-grid">
 
         <div class="news-item">
-          <div class="decorative-corner2"></div>
+          
           <h3>¡Nuevos horizontes educativos en la I.E San Antonio de Padua: Ahora con Prejardín, Jardín y Transición!
           </h3>
           <p><a href="noticias.html" class="btn btn-primary">Lee la nota completa aquí</a></p>
@@ -241,13 +175,13 @@
         </div>
 
         <div class="news-item">
-          <div class="decorative-corner2"></div>
+       
           <h3>Gran Éxito en la Feria Universitaria de la I.E San Antonio de Padua: Más de 30 Instituciones Participaron
           </h3>
           <p><a href="noticias.html" class="btn btn-primary">Lee la nota completa aquí</a></p>
         </div>
         <div class="news-item">
-          <div class="decorative-corner2"></div>
+          
            <h3>La Institución Educativa San Antonio de Padua lanza su nuevo sitio web: Ahora nos encuetras como iesap.edu.co</h3>
            <p><a href="noticias.html" class="btn btn-primary">Lee la nota completa aquí</a></p>
         </div>
@@ -269,6 +203,7 @@
 
 <!-- Archivo JavaScript externo -->
 <script src="js/script.js"></script>
+<script src="js/scriptnav.js"></script>
 
 <!-- Bootstrap JS Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
