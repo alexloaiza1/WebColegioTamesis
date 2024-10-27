@@ -1,17 +1,15 @@
-
-
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=League+Spartan:wght@100..900&display=swap');
 
 
 .header {
-    padding: 0 ;
-    margin: 0 ;
-    box-sizing: border-box ;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
     font-family: "League Spartan", sans-serif;
     background-color: #1a237e;
-    
+
 
 }
 
@@ -49,7 +47,7 @@
     font-size: 1.5rem;
     font-weight: bold;
     text-decoration: none;
-   
+
 }
 
 .navbar .logo a::after {
@@ -72,7 +70,7 @@
 
 .navbar .links {
     display: flex;
-    gap: 70px;
+    gap: 30px;
 }
 
 .navbar .links li {
@@ -133,13 +131,13 @@
 
 /* DROPDOWN MENU */
 .dropdown_menu {
-    position: relative ;
+    position: relative;
     display: none;
-    top: 49px;
+    top: 59px;
     right: 2rem;
     width: 300px !important;
     height: 0;
-    background: rgba(70, 107, 209, 0.1); 
+    background: rgba(70, 107, 209, 0.1);
     backdrop-filter: blur(60px);
     border-radius: 10px;
     overflow: hidden;
@@ -147,9 +145,10 @@
 }
 
 .dropdown_menu.open {
-    z-index: 1000; /* Ensure it is on top of other elements */
-    height: 300px;
-    
+    z-index: 1000;
+    /* Ensure it is on top of other elements */
+    height: 400px;
+
 }
 
 .dropdown_menu .item {
