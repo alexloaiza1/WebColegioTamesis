@@ -317,7 +317,7 @@ footer {
 .footer-block {
     display: flex;
     flex-direction: column;
-    padding: 20px ;
+    padding: 20px;
     /* Añade un pequeño padding para el contenido interno */
 }
 

@@ -7,7 +7,7 @@
     gap: 20px;
     padding: 40px;
     background-color: #f9f9f9;
-    
+
 }
 
 .section-title {
@@ -48,7 +48,7 @@
 .section-title h3:hover::after {
     width: 100%;
     /* Expansión de la línea al pasar el cursor */
-   
+
 }
 
 
@@ -394,5 +394,26 @@
         /* Asegura que ocupe todo el ancho disponible */
         width: 90%;
         /* Ancho completo */
+    }
+}
+
+
+#mission-vision .container {
+    max-width: 1200px;
+    /* Ancho máximo del contenedor */
+    margin: auto;
+    /* Centrar el contenedor */
+}
+
+
+.text-center {
+    text-align: center;
+    /* Centrar el texto */
+}
+
+@media (max-width: 768px) {
+    p {
+        font-size: 0.9rem;
+        /* Tamaño del texto en pantallas pequeñas */
     }
 }

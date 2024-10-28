@@ -133,7 +133,7 @@
 .dropdown_menu {
     position: relative;
     display: none;
-    top: 59px;
+    top: 90px;
     right: 2rem;
     width: 300px !important;
     height: 0;
@@ -192,7 +192,6 @@
     /* Esquinas redondeadas (opcional) */
     padding: 10px 0;
     /* Espaciado interno (opcional) */
-
 }
 
 /* Estilo para los elementos de la lista en el dropdown */
@@ -233,13 +232,11 @@
         /* Sin ancho máximo para que ocupe todo */
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         /* Sombra para dar profundidad */
-
     }
 
     /* Estilo para los elementos de la lista en el dropdown */
     .dropdown-menu.custom-submenu li {
-        margin: -8px;
-
+        margin: 0;
         /* Sin margen entre los elementos */
     }
 
