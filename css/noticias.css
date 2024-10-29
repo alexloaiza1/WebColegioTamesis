@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Quicksand:wght@300..700&display=swap');
+
+
 /* Estilos generales */
 .titulo-sedes {
     border-radius: 8px;
@@ -6,6 +9,7 @@
     margin: 0;
     padding-bottom: 10px;
     /* Aumentar separación de la línea */
+    padding: 0;
 
     /* Añade una línea inferior */
 }
@@ -18,89 +22,100 @@
     /* Color del texto */
 }
 
-/* Estilos generales */
-body {
-    font-family: 'Georgia', serif;
+
+/* Contenedor principal para el diseño de periódico */
+.newspaper-container {
+    font-family: 'Open Sans', sans-serif;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+    color: #333;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el encabezado de cada noticia */
+.newspaper-container .cabeza h1 {
+    font-size: 26px;
+    font-family: "Fjalla One", sans-serif;
+    line-height: 1.3;
+    font-weight: bold;
+    color: #222;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
 }
 
-/* Contenedor principal estilo periódico */
-.newspaper-container {
-    max-width: 1000px;
-    margin: 50px auto;
-    background-color: #fff;
-    padding: 20px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    line-height: 1.6;
-}
-
-/* Cabecera de la noticia */
-.header {
-    text-align: center;
-    border-bottom: 1px solid #ccc;
-    margin-bottom: 20px;
-}
-
-.header h1 {
-    font-size: 36px;
-    margin: 0;
-    color: #333;
-}
-
-.header h2 {
-    font-size: 24px;
-    margin: 10px 0;
-    color: #555;
-}
-
-.header .date {
+/* Fecha de publicación con estilo sobrio */
+.newspaper-container .cabeza .date {
     font-size: 14px;
-    color: #98df09;
+    color: #888;
+    margin-top: 5px;
 }
 
-/* Sección de imagen */
-.image-section {
+/* Estilo de la sección de imagen */
+.newspaper-container .image-section {
     text-align: center;
-    margin: 20px 0;
-
+    margin: 15px 0;
 }
 
-.news-image {
+.newspaper-container .news-image {
     max-width: 100%;
-    height: auto;
-    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.15);
 }
 
-/* Estilo del contenido */
-.content {
-    column-count: 2;
-    column-gap: 30px;
+/* Estilos para el contenido del artículo */
+.newspaper-container .content p {
+    line-height: 1.8;
+    color: #555;
+    margin: 15px 0;
     text-align: justify;
 }
 
-.content p {
-    margin: 0 0 20px;
+/* Primer párrafo destacado */
+.newspaper-container .content p:first-of-type {
+    font-weight: bold;
+    font-style: italic;
+    color: #333;
 }
 
-/* Sección multimedia (video) */
-.media-section {
+/* Efectos de transición para modernidad */
+.newspaper-container:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+
+
+#mision-vision {
+    background-color: #f8f9fa;
+    /* Color de fondo suave */
+    border-radius: 10px;
+    /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* Sombra sutil */
+    padding: 30px 15px;
+    /* Espaciado interno */
+
+}
+
+#mission-vision .container {
+    max-width: 1200px;
+    /* Ancho máximo del contenedor */
+    margin: auto;
+    /* Centrar el contenedor */
+}
+
+
+.text-center {
     text-align: center;
-    margin-top: 30px;
+    /* Centrar el texto */
 }
 
-.news-video {
-    max-width: 100%;
-    height: auto;
-    border: 2px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-/* Estilos responsivos */
-@media screen and (max-width: 768px) {
-    .content {
-        column-count: 1;
+@media (max-width: 768px) {
+    p {
+        font-size: 0.9rem;
+        /* Tamaño del texto en pantallas pequeñas */
     }
 }
