@@ -120,340 +120,376 @@
     </section>
 </header>
 
+
 <body>
 
-    <section class="interactive-section">
-        <div class="section-title">
-            <h3 id="proyectos">Conoce Nuestros Proyectos</h3>
-            <h5>Selecciona un Proyecto</h5>
+    <section id="mission-vision" class="py-1">
+        <section class="interactive-section">
+            <div class="section-title">
+                <div class=" section-title ">
+                    <h3 id=" proyectos">Conoce Nuestros Proyectos</h3>
+                    <h5>Selecciona un Proyecto</h5>
 
-            <!-- Controles de selección y botón -->
-            <div id="controls">
-                <select id="project-select">
-                    <option value="" disabled selected>Pulsa aquí</option>
-                    <option value="PRAE">Proyecto Ambiental Escolar PRAE</option>
-                    <option value="steam">Espacio de Robótica-STEAM</option>
-                    <option value="lazos">Tejiendo Lazos</option>
-                    <option value="familia">Escuela de Padres</option>
+                    <!-- Controles de selección y botón -->
+                    <div id="controls">
+                        <select id="project-select">
+                            <option value="" disabled selected>Pulsa aquí</option>
+                            <option value="PRAE">Proyecto Ambiental Escolar PRAE</option>
+                            <option value="steam">Espacio de Robótica-STEAM</option>
+                            <option value="lazos">Tejiendo Lazos</option>
+                            <option value="familia">Escuela de Padres</option>
+                            <option value="tropical">La Orquesta Tropical</option>
 
-                    <!-- Añade más opciones según los proyectos disponibles -->
-                </select>
-                <button id="btn-ir">Ir</button>
+
+                            <!-- Añade más opciones según los proyectos disponibles -->
+                        </select>
+                        <button id="btn-ir">Ir</button>
+                    </div>
+                </div>
+        </section>
+
+        <section id="projects-section" class="projects-section">
+
+
+            <div id="PRAE" class="project-card">
+                <h2>Proyecto Ambiental Escolar PRAE: Conservación de la Biodiversidad en la Cuenca del Río San
+                    Antonio
+                </h2>
+                <div class="card-gallery position-relative">
+                    <div id="carouselprae" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner rounded-start">
+                            <div class="carousel-item active">
+                                <img src="images/proyectos/prae.jpeg" alt="Descripción del proyecto 1"
+                                    class="d-block w-100 rounded-image">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/proyectos/prae.jpeg" alt="Descripción del proyecto 1"
+                                    class="d-block w-100 rounded-image">
+                            </div>
+                            <!-- Agrega más slides aquí si es necesario -->
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselprae"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon bg-dark rounded-circle p-2"
+                                aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselprae"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon bg-dark rounded-circle p-2"
+                                aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
+                    <div class="image-decoration mt-3">
+                        <svg width="100%" height="10px" viewBox="0 0 500 10" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0 5 Q 25 0, 50 5 T 100 5 T 150 5 T 200 5 T 250 5 T 300 5 T 350 5 T 400 5 T 450 5 T 500 5"
+                                fill="transparent" stroke="#0d6efd" stroke-width="3" />
+                        </svg>
+                    </div>
+
+                    <div class="image-decoration mt-3">
+                        <svg width="100%" height="10px" viewBox="0 0 500 10" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0 5 Q 25 0, 50 5 T 100 5 T 150 5 T 200 5 T 250 5 T 300 5 T 350 5 T 400 5 T 450 5 T 500 5"
+                                fill="transparent" stroke="#ffc107" stroke-width="3" />
+                        </svg>
+                    </div>
+                </div>
+
+                <p>
+                    El Proyecto Ambiental Escolar PRAE busca cambiar la actitud de la comunidad de Támesis hacia la
+                    conservación y protección de la biodiversidad en la cuenca del río San Antonio, mediante
+                    actividades
+                    educativas que fomentan la comprensión y el compromiso con el uso sostenible de los recursos
+                    naturales.
+                </p>
+                <p>
+                    El PRAE fomenta la participación activa de estudiantes, docentes y miembros de la comunidad en
+                    acciones
+                    concretas que fortalecen el conocimiento y la conciencia ambiental, contribuyendo así al
+                    desarrollo
+                    sostenible
+                    de la cuenca del río San Antonio.
+                </p>
             </div>
-        </div>
+
+            <div id="steam" class="project-card">
+                <h2>Espacio de Robótica-STEAM: Innovación y Aprendizaje Práctico</h2>
+                <div class="card-gallery position-relative">
+                    <div id="carouselsteam" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner rounded-start">
+                            <div class="carousel-item active">
+                                <img src="images/proyectos/tejiendo2.jpeg" alt="Descripción del proyecto 1"
+                                    class="d-block w-100 rounded-image">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/proyectos/tejiendo2.jpeg" alt="Descripción del proyecto 1"
+                                    class="d-block w-100 rounded-image">
+                            </div>
+                            <!-- Agrega más slides aquí si es necesario -->
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselsteam"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon bg-dark rounded-circle p-2"
+                                aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselsteam"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon bg-dark rounded-circle p-2"
+                                aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
+                    <div class="image-decoration mt-3">
+                        <svg width="100%" height="10px" viewBox="0 0 500 10" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0 5 Q 25 0, 50 5 T 100 5 T 150 5 T 200 5 T 250 5 T 300 5 T 350 5 T 400 5 T 450 5 T 500 5"
+                                fill="transparent" stroke="#0d6efd" stroke-width="3" />
+                        </svg>
+                    </div>
+
+                    <div class="image-decoration mt-3">
+                        <svg width="100%" height="10px" viewBox="0 0 500 10" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0 5 Q 25 0, 50 5 T 100 5 T 150 5 T 200 5 T 250 5 T 300 5 T 350 5 T 400 5 T 450 5 T 500 5"
+                                fill="transparent" stroke="#ffc107" stroke-width="3" />
+                        </svg>
+                    </div>
+                </div>
+                <p>
+                    El espacio de Robótica-STEAM ofrece a los estudiantes la oportunidad de investigar y divertirse
+                    mientras
+                    construyen conocimiento a través de la aplicación de principios científicos, tecnológicos, de
+                    ingeniería,
+                    arte y matemáticas. Mediante proyectos interactivos y colaborativos, los estudiantes desarrollan
+                    habilidades
+                    prácticas y creativas alineadas con nuestra misión y visión institucional, en coherencia con el
+                    Proyecto
+                    Educativo Institucional.
+                </p>
+                <p>
+                    Ubicados en nuestro Laboratorio STEAM, fomentamos un ambiente donde el aprendizaje y la
+                    experimentación
+                    se
+                    unen para potenciar la curiosidad, el pensamiento crítico y la innovación en cada estudiante.
+                </p>
+            </div>
+
+            <div id="lazos" class="project-card">
+                <h2>Tejiendo Lazos: Conectando Aprendizajes y Comunidad</h2>
+                <div class="card-gallery position-relative">
+                    <div id="carouselTejiendoLazos" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner rounded-start">
+                            <div class="carousel-item active">
+                                <img src="images/proyectos/tejiendo1.jpeg" alt="Descripción del proyecto 1"
+                                    class="d-block w-100 rounded-image">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/proyectos/tejiendo1.jpeg" alt="Descripción del proyecto 1"
+                                    class="d-block w-100 rounded-image">
+                            </div>
+                            <!-- Agrega más slides aquí si es necesario -->
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselTejiendoLazos"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon bg-dark rounded-circle p-2"
+                                aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselTejiendoLazos"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon bg-dark rounded-circle p-2"
+                                aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
+                    <div class="image-decoration mt-3">
+                        <svg width="100%" height="10px" viewBox="0 0 500 10" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0 5 Q 25 0, 50 5 T 100 5 T 150 5 T 200 5 T 250 5 T 300 5 T 350 5 T 400 5 T 450 5 T 500 5"
+                                fill="transparent" stroke="#0d6efd" stroke-width="3" />
+                        </svg>
+                    </div>
+
+                    <div class="image-decoration mt-3">
+                        <svg width="100%" height="10px" viewBox="0 0 500 10" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0 5 Q 25 0, 50 5 T 100 5 T 150 5 T 200 5 T 250 5 T 300 5 T 350 5 T 400 5 T 450 5 T 500 5"
+                                fill="transparent" stroke="#ffc107" stroke-width="3" />
+                        </svg>
+                    </div>
+                </div>
+                <p>
+                    "Tejiendo Lazos" es un programa diseñado para crear ambientes de aprendizaje significativos a
+                    través
+                    de
+                    actividades lúdico-pedagógicas. Estas actividades fomentan la interacción entre los niños y
+                    niñas
+                    del
+                    CDI,
+                    sus familias, docentes y los diferentes miembros de la Institución Educativa San Antonio de
+                    Padua
+                    (IESAP).
+                    El objetivo es fortalecer los vínculos y facilitar el proceso de adaptación a la educación
+                    formal,
+                    integrando
+                    a toda la comunidad educativa en un espacio de crecimiento compartido.
+                </p>
+            </div>
+
+            <div id="familia" class="project-card">
+                <h2>Escuela de Padres: Aprendiendo con las Familias</h2>
+                <div class="card-gallery position-relative">
+                    <div id="carouselfamilia" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner rounded-start">
+                            <div class="carousel-item active">
+                                <img src="images/proyectos/familia1.jpeg" alt="Descripción del proyecto 1"
+                                    class="d-block w-100 rounded-image">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/proyectos/familia2.jpeg" alt="Descripción del proyecto 1"
+                                    class="d-block w-100 rounded-image">
+                            </div>
+                            <!-- Agrega más slides aquí si es necesario -->
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselfamilia"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon bg-dark rounded-circle p-2"
+                                aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselfamilia"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon bg-dark rounded-circle p-2"
+                                aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
+                    <div class="image-decoration mt-3">
+                        <svg width="100%" height="10px" viewBox="0 0 500 10" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0 5 Q 25 0, 50 5 T 100 5 T 150 5 T 200 5 T 250 5 T 300 5 T 350 5 T 400 5 T 450 5 T 500 5"
+                                fill="transparent" stroke="#0d6efd" stroke-width="3" />
+                        </svg>
+                    </div>
+
+                    <div class="image-decoration mt-3">
+                        <svg width="100%" height="10px" viewBox="0 0 500 10" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0 5 Q 25 0, 50 5 T 100 5 T 150 5 T 200 5 T 250 5 T 300 5 T 350 5 T 400 5 T 450 5 T 500 5"
+                                fill="transparent" stroke="#ffc107" stroke-width="3" />
+                        </svg>
+                    </div>
+                </div>
+                <p>
+                    El proyecto "Aprendiendo con las Familias" busca crear espacios de reflexión para padres y
+                    acudientes
+                    sobre temas importantes como las pautas de crianza, la disciplina y la comunicación asertiva. A
+                    través
+                    de esta estrategia, se promueve el desarrollo personal de los adultos para que puedan brindar lo
+                    mejor
+                    de sí a sus hijos e hijas, contribuyendo a su felicidad y bienestar. Como señala Miguel de
+                    Zubiría,
+                    "Nuestra felicidad está ligada a cómo nos sentimos con nosotros mismos y con los demás".
+                </p>
+
+                <p>Además, el proyecto fomenta un ambiente de apoyo y colaboración, donde los padres pueden
+                    compartir
+                    experiencias y estrategias efectivas. Este intercambio no solo enriquece el aprendizaje, sino
+                    que
+                    también fortalece el sentido de comunidad, permitiendo que las familias se sientan acompañadas.
+                </p>
+            </div>
+
+
+
+            <div id="tropical" class="project-card">
+                <h2>La Orquesta Tropical: Melodías de Aprendizaje</h2>
+                <div class="card-gallery position-relative">
+                    <div id="carouselorquesta" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner rounded-start">
+                            <div class="carousel-item active">
+                                <img src="images/proyectos/orquesta1.jpeg" alt="Descripción del proyecto 1"
+                                    class="d-block w-100 rounded-image">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/proyectos/orquesta2.jpeg" alt="Descripción del proyecto 1"
+                                    class="d-block w-100 rounded-image">
+                            </div>
+                            <!-- Agrega más slides aquí si es necesario -->
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselorquesta"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon bg-dark rounded-circle p-2"
+                                aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselorquesta"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon bg-dark rounded-circle p-2"
+                                aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
+                    <div class="image-decoration mt-3">
+                        <svg width="100%" height="10px" viewBox="0 0 500 10" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0 5 Q 25 0, 50 5 T 100 5 T 150 5 T 200 5 T 250 5 T 300 5 T 350 5 T 400 5 T 450 5 T 500 5"
+                                fill="transparent" stroke="#0d6efd" stroke-width="3" />
+                        </svg>
+                    </div>
+
+                    <div class="image-decoration mt-3">
+                        <svg width="100%" height="10px" viewBox="0 0 500 10" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0 5 Q 25 0, 50 5 T 100 5 T 150 5 T 200 5 T 250 5 T 300 5 T 350 5 T 400 5 T 450 5 T 500 5"
+                                fill="transparent" stroke="#ffc107" stroke-width="3" />
+                        </svg>
+                    </div>
+                </div>
+                <p>
+                    La Orquesta Tropical es un proyecto institucional que busca optimizar el tiempo libre de los
+                    estudiantes
+                    a través del aprendizaje y la práctica de diversos instrumentos musicales. Esta agrupación está
+                    conformada por estudiantes y docentes de música, creando un espacio de colaboración y
+                    enriquecimiento
+                    cultural.
+                </p>
+
+                <p>A lo largo de su trayectoria, la Orquesta Tropical de la IESAP ha tenido destacadas
+                    participaciones
+                    tanto a nivel institucional como municipal. Un ejemplo de su éxito son las presentaciones
+                    realizadas
+                    en
+                    el marco de las fiestas del cacao, donde han demostrado su talento y dedicación. Este proyecto
+                    no
+                    solo
+                    promueve el desarrollo musical, sino que también fortalece la identidad cultural y el trabajo en
+                    equipo
+                    entre sus miembros, contribuyendo a una formación integral de los estudiantes.</p>
+            </div>
+
+
+        </section>
     </section>
+
+
 
     <!-- Secciones de los proyectos -->
 
 
-    <section id="projects-section" class="projects-section">
-        <div id="PRAE" class="project-card">
-            <h2>Proyecto Ambiental Escolar PRAE: Conservación de la Biodiversidad en la Cuenca del Río San Antonio
-            </h2>
-            <div class="card-gallery position-relative">
-                <div id="carouselprae" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner rounded-start">
-                        <div class="carousel-item active">
-                            <img src="images/proyectos/prae.jpeg" alt="Descripción del proyecto 1"
-                                class="d-block w-100 rounded-image">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="images/proyectos/prae.jpeg" alt="Descripción del proyecto 1"
-                                class="d-block w-100 rounded-image">
-                        </div>
-                        <!-- Agrega más slides aquí si es necesario -->
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselprae"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselprae"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-
-                <div class="image-decoration mt-3">
-                    <svg width="100%" height="10px" viewBox="0 0 500 10" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M0 5 Q 25 0, 50 5 T 100 5 T 150 5 T 200 5 T 250 5 T 300 5 T 350 5 T 400 5 T 450 5 T 500 5"
-                            fill="transparent" stroke="#0d6efd" stroke-width="3" />
-                    </svg>
-                </div>
-
-                <div class="image-decoration mt-3">
-                    <svg width="100%" height="10px" viewBox="0 0 500 10" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M0 5 Q 25 0, 50 5 T 100 5 T 150 5 T 200 5 T 250 5 T 300 5 T 350 5 T 400 5 T 450 5 T 500 5"
-                            fill="transparent" stroke="#ffc107" stroke-width="3" />
-                    </svg>
-                </div>
-            </div>
-
-            <p>
-                El Proyecto Ambiental Escolar PRAE busca cambiar la actitud de la comunidad de Támesis hacia la
-                conservación y protección de la biodiversidad en la cuenca del río San Antonio, mediante actividades
-                educativas que fomentan la comprensión y el compromiso con el uso sostenible de los recursos
-                naturales.
-            </p>
-            <p>
-                El PRAE fomenta la participación activa de estudiantes, docentes y miembros de la comunidad en
-                acciones
-                concretas que fortalecen el conocimiento y la conciencia ambiental, contribuyendo así al desarrollo
-                sostenible
-                de la cuenca del río San Antonio.
-            </p>
-        </div>
-
-        <div id="steam" class="project-card">
-            <h2>Espacio de Robótica-STEAM: Innovación y Aprendizaje Práctico</h2>
-            <div class="card-gallery position-relative">
-                <div id="carouselsteam" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner rounded-start">
-                        <div class="carousel-item active">
-                            <img src="images/proyectos/tejiendo2.jpeg" alt="Descripción del proyecto 1"
-                                class="d-block w-100 rounded-image">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="images/proyectos/tejiendo2.jpeg" alt="Descripción del proyecto 1"
-                                class="d-block w-100 rounded-image">
-                        </div>
-                        <!-- Agrega más slides aquí si es necesario -->
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselsteam"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselsteam"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-
-                <div class="image-decoration mt-3">
-                    <svg width="100%" height="10px" viewBox="0 0 500 10" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M0 5 Q 25 0, 50 5 T 100 5 T 150 5 T 200 5 T 250 5 T 300 5 T 350 5 T 400 5 T 450 5 T 500 5"
-                            fill="transparent" stroke="#0d6efd" stroke-width="3" />
-                    </svg>
-                </div>
-
-                <div class="image-decoration mt-3">
-                    <svg width="100%" height="10px" viewBox="0 0 500 10" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M0 5 Q 25 0, 50 5 T 100 5 T 150 5 T 200 5 T 250 5 T 300 5 T 350 5 T 400 5 T 450 5 T 500 5"
-                            fill="transparent" stroke="#ffc107" stroke-width="3" />
-                    </svg>
-                </div>
-            </div>
-            <p>
-                El espacio de Robótica-STEAM ofrece a los estudiantes la oportunidad de investigar y divertirse
-                mientras
-                construyen conocimiento a través de la aplicación de principios científicos, tecnológicos, de
-                ingeniería,
-                arte y matemáticas. Mediante proyectos interactivos y colaborativos, los estudiantes desarrollan
-                habilidades
-                prácticas y creativas alineadas con nuestra misión y visión institucional, en coherencia con el
-                Proyecto
-                Educativo Institucional.
-            </p>
-            <p>
-                Ubicados en nuestro Laboratorio STEAM, fomentamos un ambiente donde el aprendizaje y la
-                experimentación
-                se
-                unen para potenciar la curiosidad, el pensamiento crítico y la innovación en cada estudiante.
-            </p>
-        </div>
-
-        <div id="lazos" class="project-card">
-            <h2>Tejiendo Lazos: Conectando Aprendizajes y Comunidad</h2>
-            <div class="card-gallery position-relative">
-                <div id="carouselTejiendoLazos" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner rounded-start">
-                        <div class="carousel-item active">
-                            <img src="images/proyectos/tejiendo1.jpeg" alt="Descripción del proyecto 1"
-                                class="d-block w-100 rounded-image">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="images/proyectos/tejiendo1.jpeg" alt="Descripción del proyecto 1"
-                                class="d-block w-100 rounded-image">
-                        </div>
-                        <!-- Agrega más slides aquí si es necesario -->
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselTejiendoLazos"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselTejiendoLazos"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-
-                <div class="image-decoration mt-3">
-                    <svg width="100%" height="10px" viewBox="0 0 500 10" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M0 5 Q 25 0, 50 5 T 100 5 T 150 5 T 200 5 T 250 5 T 300 5 T 350 5 T 400 5 T 450 5 T 500 5"
-                            fill="transparent" stroke="#0d6efd" stroke-width="3" />
-                    </svg>
-                </div>
-
-                <div class="image-decoration mt-3">
-                    <svg width="100%" height="10px" viewBox="0 0 500 10" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M0 5 Q 25 0, 50 5 T 100 5 T 150 5 T 200 5 T 250 5 T 300 5 T 350 5 T 400 5 T 450 5 T 500 5"
-                            fill="transparent" stroke="#ffc107" stroke-width="3" />
-                    </svg>
-                </div>
-            </div>
-            <p>
-                "Tejiendo Lazos" es un programa diseñado para crear ambientes de aprendizaje significativos a través
-                de
-                actividades lúdico-pedagógicas. Estas actividades fomentan la interacción entre los niños y niñas
-                del
-                CDI,
-                sus familias, docentes y los diferentes miembros de la Institución Educativa San Antonio de Padua
-                (IESAP).
-                El objetivo es fortalecer los vínculos y facilitar el proceso de adaptación a la educación formal,
-                integrando
-                a toda la comunidad educativa en un espacio de crecimiento compartido.
-            </p>
-        </div>
-
-        <div id="familia" class="project-card">
-            <h2>Escuela de Padres: Aprendiendo con las Familias</h2>
-            <div class="card-gallery position-relative">
-                <div id="carouselfamilia" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner rounded-start">
-                        <div class="carousel-item active">
-                            <img src="images/proyectos/familia1.jpeg" alt="Descripción del proyecto 1"
-                                class="d-block w-100 rounded-image">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="images/proyectos/familia2.jpeg" alt="Descripción del proyecto 1"
-                                class="d-block w-100 rounded-image">
-                        </div>
-                        <!-- Agrega más slides aquí si es necesario -->
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselfamilia"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselfamilia"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-
-                <div class="image-decoration mt-3">
-                    <svg width="100%" height="10px" viewBox="0 0 500 10" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M0 5 Q 25 0, 50 5 T 100 5 T 150 5 T 200 5 T 250 5 T 300 5 T 350 5 T 400 5 T 450 5 T 500 5"
-                            fill="transparent" stroke="#0d6efd" stroke-width="3" />
-                    </svg>
-                </div>
-
-                <div class="image-decoration mt-3">
-                    <svg width="100%" height="10px" viewBox="0 0 500 10" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M0 5 Q 25 0, 50 5 T 100 5 T 150 5 T 200 5 T 250 5 T 300 5 T 350 5 T 400 5 T 450 5 T 500 5"
-                            fill="transparent" stroke="#ffc107" stroke-width="3" />
-                    </svg>
-                </div>
-            </div>
-            <p>
-                El proyecto "Aprendiendo con las Familias" busca crear espacios de reflexión para padres y
-                acudientes
-                sobre temas importantes como las pautas de crianza, la disciplina y la comunicación asertiva. A
-                través
-                de esta estrategia, se promueve el desarrollo personal de los adultos para que puedan brindar lo
-                mejor
-                de sí a sus hijos e hijas, contribuyendo a su felicidad y bienestar. Como señala Miguel de Zubiría,
-                "Nuestra felicidad está ligada a cómo nos sentimos con nosotros mismos y con los demás".
-            </p>
-
-            <p>Además, el proyecto fomenta un ambiente de apoyo y colaboración, donde los padres pueden compartir
-                experiencias y estrategias efectivas. Este intercambio no solo enriquece el aprendizaje, sino que
-                también fortalece el sentido de comunidad, permitiendo que las familias se sientan acompañadas.</p>
-        </div>
 
 
 
-        <div id="orquesta" class="project-card">
-            <h2>La Orquesta Tropical: Melodías de Aprendizaje</h2>
-            <div class="card-gallery position-relative">
-                <div id="carouselorquesta" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner rounded-start">
-                        <div class="carousel-item active">
-                            <img src="images/proyectos/orquesta1.jpeg" alt="Descripción del proyecto 1"
-                                class="d-block w-100 rounded-image">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="images/proyectos/orquesta2.jpeg" alt="Descripción del proyecto 1"
-                                class="d-block w-100 rounded-image">
-                        </div>
-                        <!-- Agrega más slides aquí si es necesario -->
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselorquesta"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselorquesta"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
 
-                <div class="image-decoration mt-3">
-                    <svg width="100%" height="10px" viewBox="0 0 500 10" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M0 5 Q 25 0, 50 5 T 100 5 T 150 5 T 200 5 T 250 5 T 300 5 T 350 5 T 400 5 T 450 5 T 500 5"
-                            fill="transparent" stroke="#0d6efd" stroke-width="3" />
-                    </svg>
-                </div>
-
-                <div class="image-decoration mt-3">
-                    <svg width="100%" height="10px" viewBox="0 0 500 10" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M0 5 Q 25 0, 50 5 T 100 5 T 150 5 T 200 5 T 250 5 T 300 5 T 350 5 T 400 5 T 450 5 T 500 5"
-                            fill="transparent" stroke="#ffc107" stroke-width="3" />
-                    </svg>
-                </div>
-            </div>
-            <p>
-                La Orquesta Tropical es un proyecto institucional que busca optimizar el tiempo libre de los
-                estudiantes
-                a través del aprendizaje y la práctica de diversos instrumentos musicales. Esta agrupación está
-                conformada por estudiantes y docentes de música, creando un espacio de colaboración y
-                enriquecimiento
-                cultural.
-            </p>
-
-            <p>A lo largo de su trayectoria, la Orquesta Tropical de la IESAP ha tenido destacadas participaciones
-                tanto a nivel institucional como municipal. Un ejemplo de su éxito son las presentaciones realizadas
-                en
-                el marco de las fiestas del cacao, donde han demostrado su talento y dedicación. Este proyecto no
-                solo
-                promueve el desarrollo musical, sino que también fortalece la identidad cultural y el trabajo en
-                equipo
-                entre sus miembros, contribuyendo a una formación integral de los estudiantes.</p>
-        </div>
-
-
-    </section>
-
-
-    </section>
 
 
 

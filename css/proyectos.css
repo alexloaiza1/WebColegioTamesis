@@ -253,14 +253,14 @@
 .interactive-section {
     background-color: #f0f8ff;
     /* Color de fondo claro */
-    padding: 15px;
+    padding: 15px 0;
     /* Reducción del padding */
     border-radius: 8px;
     border-left: 6px solid #007bff;
     /* Borde colorido al lado izquierdo */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     /* Sombra para un efecto elevado */
-    margin: 20px 0;
+    margin: -4px;
     /* Margen vertical */
     max-width: 100%;
     /* Asegura que ocupe todo el ancho disponible */
@@ -268,6 +268,9 @@
     /* Ancho completo */
     box-sizing: border-box;
     /* Incluye el padding y el borde en el ancho total */
+    clear: both;
+    /* Evita que otros elementos flotantes se solapen */
+
 }
 
 /* Estilos para el título de la sección */
