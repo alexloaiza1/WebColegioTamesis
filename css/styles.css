@@ -19,79 +19,9 @@ body {
     color: var(--dark-color);
 }
 
-.line-break {
-    display: block;
-    /* Fuerza que cada span se muestre en una nueva línea */
-    text-align: center;
-    /* Opcional: centra el texto dentro del enlace */
-    margin: 0;
-    /* Ajusta el margen según sea necesario */
-}
 
 
 
-
-
-.custom-header {
-    position: relative;
-    /* Asegura que el header tenga un contexto de apilamiento */
-    z-index: 1000;
-    /* Ajusta el valor según sea necesario */
-}
-
-.navbar-icons {
-    display: flex;
-    justify-content: right;
-    padding-bottom: 20px;
-}
-
-.navbar-icons i {
-    font-size: 32px;
-    margin: 0 10px;
-    vertical-align: middle;
-}
-
-.navbar-iconsfooter {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 20px;
-}
-
-
-header {
-    background: var(--primary-color);
-    color: var(--light-color);
-    padding: 0.5rem 0;
-    position: relative;
-    height: 205px;
-    font-family: "DynaPuff", sans-serif;
-}
-
-.header2 {
-    background: var(--accent-color);
-    color: var(--light-color);
-    padding: 0.5rem 0;
-    position: relative;
-    height: 205px;
-    font-family: "DynaPuff", sans-serif;
-}
-
-
-
-
-
-@media (max-width: 480px) {
-    header {
-        height: 175px;
-        /* Ajusta la altura para pantallas muy pequeñas */
-    }
-
-    .sectionslider {
-        height: 430px !important;
-    }
-
-
-}
 
 /* Estilos generales para la sección */
 #nosotros {
@@ -163,275 +93,6 @@ header {
 }
 
 
-@media (max-width: 480px) {
-    .anuncio {
-        width: 100% !important;
-        /* La imagen ocupa todo el ancho del contenedor */
-        height: 60px !important;
-        /* Mantiene la proporción */
-
-        /* Limita la altura máxima */
-
-        /* Cubre el contenedor sin distorsionar */
-    }
-}
-
-
-/* Estilos específicos para pantallas pequeñas */
-@media (max-width: 480px) {
-    .encabezado {
-        margin-top: 30px;
-    }
-}
-
-
-header nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    /* Ajustado para evitar problemas de diseño */
-}
-
-.navbar {
-    margin-top: 0px;
-    position: relative;
-}
-
-.logo-container {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1;
-}
-
-header .logo img {
-    width: 165px;
-    height: auto;
-    margin-top: -30px;
-}
-
-/* Consulta de medios para pantallas de hasta 600px de ancho */
-@media (max-width: 600px) {
-    header .logo img {
-        width: 165px;
-        /* Tamaño del logo en pantallas pequeñas */
-        margin-top: -5px;
-        margin-left: 50px;
-        /* Ajusta el margen si es necesario */
-    }
-
-    .titulo {
-        font-size: 20px;
-    }
-}
-
-@media (min-width: 601px) and (max-width: 1024px) {
-    .titulo {
-        font-size: 23px;
-    }
-}
-
-/* Consulta de medios para pantallas de hasta 400px de ancho */
-@media (max-width: 768px) {
-    header .logo img {
-        width: 120px;
-        /* Tamaño del logo en pantallas aún más pequeñas */
-        margin-top: -40px;
-        /* Ajusta el margen si es necesario */
-    }
-}
-
-.hero h1 {
-    font-size: 3rem;
-    border-bottom: 2px solid var(--accent-color);
-    color: var(--secondary-color);
-}
-
-header nav ul {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    /* Añadido para eliminar padding por defecto */
-    margin: 0;
-    /* Añadido para eliminar margin por defecto */
-}
-
-header nav ul li {
-    margin: 0 1rem;
-    padding: 5px;
-}
-
-header nav ul li a {
-    color: var(--light-color);
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 20px;
-    transition: color 0.3s ease;
-    margin-right: -30px;
-    font-family: "DynaPuff", sans-serif;
-}
-
-
-
-
-.ti-brand-facebook::before {
-    width: 48px;
-    height: 48px;
-    content: "\ec1a";
-
-}
-
-.sectionslider {
-    border-radius: 10px;
-
-
-}
-
-/* Media query para pantallas pequeñas */
-
-
-/* Estilo para los enlaces de la barra de navegación principal */
-.navbar-nav .nav-link {
-    color: #ffffff;
-
-    /* Cambia al color blanco */
-}
-
-
-/* Estilo para los enlaces del submenú */
-.navbar-nav .dropdown-menu .dropdown-item {
-    color: #ffffff;
-    font-size: 16px;
-    text-align: center;
-    background-color: var(--secondary-color);
-}
-
-/* Cambia el color del texto y el fondo al pasar el ratón por encima */
-.navbar-nav .dropdown-menu .dropdown-item:hover {
-    color: var(--primary-color);
-    background-color: var(--accent-color);
-    border-radius: 10px;
-    padding: 4px;
-
-}
-
-/* Asegúrate de que el submenú tenga un fondo oscuro */
-.navbar-nav .dropdown-menu {
-    background-color: var(--secondary-color);
-}
-
-@media (max-width: 768px) {
-    .navbar-nav .dropdown-menu {
-        position: absolute;
-        top: 0;
-        left: 0;
-        transform: translateX(-100%);
-        width: 100%;
-        background-color: var(--secondary-color);
-        opacity: 0;
-        transition: transform 0.3s ease, opacity 0.3s ease;
-    }
-
-    .navbar-nav .dropdown-menu.show {
-        transform: translateX(-10%);
-        opacity: 1;
-    }
-
-    /* Ocultar la flecha desplegable en pantallas pequeñas */
-    .navbar-nav .dropdown-toggle::after {
-        display: none;
-    }
-
-    .custom-submenu {
-        width: 200px;
-        /* Ajusta el valor según tus necesidades */
-        max-width: 100%;
-    }
-}
-
-@media (min-width: 768px) {
-    .navbar-nav .dropdown-menu {
-        position: absolute;
-        display: none;
-        width: 50%;
-    }
-
-    .navbar-nav .dropdown-menu.show {
-        display: block;
-    }
-
-    /* Ocultar la flecha desplegable en pantallas grandes */
-    .navbar-nav .dropdown-toggle::after {
-        display: none;
-    }
-}
-
-
-
-
-@media (max-width: 768px) {
-    header nav ul {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 100%;
-        right: -30px;
-        background: var(--primary-color);
-        width: auto;
-        text-align: center;
-        padding: auto;
-        padding-right: 50px;
-        padding-left: 50px;
-        border-radius: 10px;
-    }
-
-    header nav ul.active {
-        display: flex;
-    }
-
-    header nav ul li {
-        margin: 0.25rem 0;
-        padding: 0.5px;
-        /* Añadido para mejor espacio entre elementos */
-    }
-
-    .menu-toggle {
-        display: flex;
-        align-items: stretch;
-        justify-content: center;
-        background: var(--primary-color);
-        border: none;
-        padding: 0.5rem;
-        cursor: pointer;
-
-    }
-
-    .menu-toggle span {
-        display: block;
-        width: 25px;
-        height: 3px;
-        background: var(--light-color);
-        margin: 5px 0;
-    }
-}
-
-.hero {
-    background: url('hero.jpg') no-repeat center center/cover;
-    color: var(--light-color);
-    height: 80vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 0 1rem;
-}
-
-.hero h1 {
-    font-size: 3rem;
-    border-bottom: 2px solid var(--accent-color);
-}
 
 .about, .programs, .news, .contact {
     padding: 2rem 0;
@@ -450,7 +111,7 @@ header nav ul li a {
 .program, .news-item {
     background: var(--light-color);
     padding: 1rem;
-    border: 2px solid var(--primary-color);
+    border: 2px var(--primary-color);
     border-radius: 5px;
     transition: transform 0.3s ease;
 }
@@ -534,25 +195,7 @@ section h2 {
     /* Ajusta el color según tus necesidades */
 }
 
-.custom-navbar {
-    background: linear-gradient(to right, rgba(255, 255, 255, 0.8), blue);
-    /* O puedes usar colores hexadecimales */
-    /* background: linear-gradient(to right, #ffffff, #0000ff); */
-}
 
-/* Opcional: Ajustar los colores del texto para mejor visibilidad */
-.navbar-dark .navbar-nav .nav-link {
-    color: #fff;
-}
-
-.navbar-dark .navbar-nav .nav-link:hover {
-    color: #ddd;
-}
-
-.custom-ul-padding {
-    padding-left: 20px;
-
-}
 
 .logo-move-left {
     margin-left: -5px;
@@ -666,7 +309,7 @@ footer {
 .footer-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
+    gap: 30px;
     /* Reduce el espacio entre los bloques */
     padding: 0;
 }
@@ -674,7 +317,7 @@ footer {
 .footer-block {
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    padding: 20px;
     /* Añade un pequeño padding para el contenido interno */
 }
 
@@ -691,6 +334,7 @@ footer {
 .navbar-iconsfooter {
     display: flex;
     gap: 8px;
+    margin-left: 120px;
     /* Reduce el espacio entre los íconos */
 }
 

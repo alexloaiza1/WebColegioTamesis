@@ -72,3 +72,46 @@
     margin: 0;
     /* Elimina el margen predeterminado de la lista */
 }
+
+/* Estilos generales */
+.titulo-sedes {
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin: 0;
+    padding-bottom: 10px;
+    /* Aumentar separación de la línea */
+    padding: 0;
+
+    /* Añade una línea inferior */
+}
+
+
+.titulo-sedes h2 {
+    color: #3190f0;
+    font-size: 185%;
+    font-weight: bold;
+    /* Color del texto */
+}
+
+
+
+#mission-vision .container {
+    max-width: 1200px;
+    /* Ancho máximo del contenedor */
+    margin: auto;
+    /* Centrar el contenedor */
+}
+
+
+.text-center {
+    text-align: center;
+    /* Centrar el texto */
+}
+
+@media (max-width: 768px) {
+    p {
+        font-size: 0.9rem;
+        /* Tamaño del texto en pantallas pequeñas */
+    }
+}

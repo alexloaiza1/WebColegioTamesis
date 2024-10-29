@@ -9,6 +9,15 @@
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="stylesheet" href="css/proyectos.css" />
   <link rel="stylesheet" href="css/talento.css">
+  <link rel="stylesheet" href="css/stylenav.css" />
+  <link rel="stylesheet" href="css/media-queri.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,527 +31,549 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
   <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
-
 </head>
 
-<body>
-  <header class="custom-header">
-    <div class="container d-flex justify-content-between align-items-center py-2">
-      <div class="logo" style="margin-left: -60px; margin-top:20px;">
-        <img src="images/logo.png" alt="Logo Institución">
-      </div>
-      <div class="title ms-3">
-        <h2 class="titulo" style="margin-top: -10px;">
-          Institución Educativa San Antonio de Padua Támesis
-        </h2>
-      </div>
-
-      <section>
-        <div>
-          <div class="navbar-icons">
-            <a href="https://www.facebook.com/notiiesap" target="_blank" rel="noopener noreferrer">
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="icon icon-tabler icons-tabler-outline icon-tabler-brand-facebook">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
-              </svg>
-            </a>
-
-
-
-            <a href="https://www.instagram.com/iesanantoniodepaduatamesis/" target="_blank" rel="noopener noreferrer">
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="icon icon-tabler icons-tabler-outline icon-tabler-brand-instagram">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
-                <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
-                <path d="M16.5 7.5l0 .01" />
-              </svg>
-            </a>
-
-
-            <a href="https://youtube.com/@vocesiesap?si=u3nR9WDO0X5cb4Dy" target="_blank" rel="noopener noreferrer">
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-              class="icon icon-tabler icons-tabler-outline icon-tabler-brand-youtube">
-              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-              <path d="M2 8a4 4 0 0 1 4 -4h12a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-12a4 4 0 0 1 -4 -4v-8z" />
-              <path d="M10 9l5 3l-5 3z" />
-            </svg>
-            </a>
-            <!-- Puedes añadir más iconos aquí -->
-          </div>
-          <nav class="navbar navbar-expand-lg navbar-dark">
-            <button style="margin-left: 35px;" class="navbar-toggler" type="button" data-bs-toggle="collapse"
-              data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-              aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav ms-auto custom-ul-padding">
-                <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="navbarDropdown" role="button"
-                    data-bs-toggle="dropdown" aria-expanded="false">
-                    Nuestro Colegio <span class="ms-1"><i class="ti ti-chevron-down"></i></span>
-                  </a>
-                  <ul class="dropdown-menu custom-submenu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="corporativo.html">Misión</a></li>
-                    <li><a class="dropdown-item" href="corporativo.html">Visión</a></li>
-                    <li><a class="dropdown-item" href="corporativo.html#historia">Historia</a></li>
-                    <li>
-                      <a class="dropdown-item" href="corporativo.html#historia" style="font-size: 0.875rem;">
-                        <span class="line-break">Gestión</span>
-                        <span class="line-break">Administrativa</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="gobierno.html" style="font-size: 0.875rem;">
-                        <span class="line-break">Gobierno</span>
-                        <span class="line-break">Estudiantil</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#docentes" style="font-size: 0.875rem;">
-                        <span class="line-break">Talento</span>
-                        <span class="line-break">Humano</span>
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="nav-item"><a class="nav-link" href="proyectos.html">Proyectos</a></li>
-                <li class="nav-item"><a class="nav-link" href="sedes.html">Sedes</a></li>
-                <li class="nav-item"><a class="nav-link" href="index.html#noticias">Noticias</a></li>
-                <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
-              </ul>
-
-            </div>
-          </nav>
+<header>
+  <section class="navbarsection">
+    <header class="header">
+      <nav class="navbar">
+        <div class="logo">
+          <a href="#"></a><img src="images/newlogo3.png" alt="" style="height: 100px" />
         </div>
-      </section>
+        <ul class="links">
+          <li><a href="index.html">Inicio</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">Nuestro Colegio</a>
+            <ul class="dropdown-menu custom-submenu" aria-labelledby="navbarDropdown">
+              <li>
+                <a class="dropdown-item" href="corporativo.html#mision">Misión</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="corporativo.html#mision">Visión</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="corporativo.html#historia">Historia</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="administrativos.html">
+                  <span class="line-break">Gestión</span>
+                  <span class="line-break">Administrativa</span>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="gobierno.html">
+                  <span class="line-break">Gobierno</span>
+                  <span class="line-break">Estudiantil</span>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="talentohumano.html">
+                  <span class="line-break">Talento</span>
+                  <span class="line-break">Humano</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li><a href="sedes.html">Sedes</a></li>
+          <li><a href="proyectos.html">Proyectos</a></li>
+          <li><a href="contacto.html">PQRS</a></li>
+          <li><a href="index.html#noticias">Noticias</a></li>
+        </ul>
+
+        <a href="#" class="action_btn">Últimos Comunicados</a>
+        <div class="toggle_btn"><i class="fa-solid fa-bars"></i></div>
+      </nav>
+      <div class="dropdown_menu">
+        <li class="item"><a href="#nosotros">Nosotros</a></li>
+        <li class="nav-item dropdown item">
+          <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="navbarDropdown" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">Nuestro Colegio</a>
+          <ul class="dropdown-menu custom-submenu" aria-labelledby="navbarDropdown">
+            <li>
+              <a class="dropdown-item" href="corporativo.html#mision">Misión</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="corporativo.html#mision">Visión</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="corporativo.html#historia">Historia</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="administrativos.html">
+                <span class="line-break">Gestión</span>
+                <span class="line-break">Administrativa</span>
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="gobierno.html">
+                <span class="line-break">Gobierno</span>
+                <span class="line-break">Estudiantil</span>
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="talentohumano.html">
+                <span class="line-break">Talento</span>
+                <span class="line-break">Humano</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="item"><a href="sedes.html">Sedes</a></li>
+        <li class="item"><a href="proyectos.html">Proyectos</a></li>
+        <li class="item"><a href="contacto.html">PQRS</a></li>
+        <li class="item"><a href="index.html#noticias">Noticias</a></li>
+
+        <a href="#" class="action_btn">Últimos Comunicados</a>
+      </div>
+    </header>
+  </section>
+</header>
+
+
+<body>
+  <section id="mision-vision" class="py-1">
+    <br>
+    <div id="docentes" class="titulo-sedes">
+      <h2>Docentes IESAP</h2>
+    </div>
+    <!-- Contenedor principal -->
+    <div class="talento-container">
+
+      <!-- Tarjeta de presentación -->
+      <div class="talento-card">
+        <!-- Foto del docente -->
+        <div class="talento-card-image">
+          <img height="500" width="400" src="images/perfiles/docente deisy.jpeg" alt="Foto del docente">
+        </div>
+        <!-- Información del docente -->
+        <div class="talento-card-info">
+          <h5>María Deicy Giraldo Alzate </h5>
+          <p>Área: Primaria</p>
+          <p>Licenciada en Humanidades y Lengua Castellana</p>
+        </div>
+      </div>
+
+      <!-- Más tarjetas de presentación... -->
+      <div class="talento-card">
+        <!-- Foto del docente -->
+        <div class="talento-card-image">
+          <img src="images/perfiles/ANDRESHOYOSLOPEZ.jpg" alt="Foto del docente" style="max-width: 100%; height: auto">
+
+        </div>
+        <!-- Información del docente -->
+        <div class="talento-card-info">
+          <h5>Andrés Felipe Hoyos Castro</h5>
+          <p>Área: Primaria</p>
+          <p>Magister En Motricidad y Dllo Humano</p>
+        </div>
+      </div>
+      <!-- Más tarjetas de presentación... -->
+
+      <div class="talento-card">
+        <!-- Foto del docente -->
+        <div class="talento-card-image">
+          <img src="images/perfiles/DORISALEIDAVARGAS.JPG" alt="Foto del docente" style="max-width: 100%; height: auto">
+        </div>
+        <!-- Información del docente -->
+        <div class="talento-card-info">
+          <h5>Doris Aleida Vargas Navarro </h5>
+          <p>Área: Primaria</p>
+          <p>Licenciada en Educación Básica-Lengua Castellana</p>
+        </div>
+      </div>
+      <!-- Más tarjetas de presentación... -->
+
+
+      <div class="talento-card">
+        <!-- Foto del docente -->
+        <div class="talento-card-image">
+          <img src="images/perfiles/CARLOSMARIOVESLASQUEZ.JPG" alt="Foto del docente"
+            style="max-width: 100%; height: auto">
+        </div>
+        <!-- Información del docente -->
+        <div class="talento-card-info">
+          <h5>Carlos Mario Velasquez Ramirez </h5>
+          <p>Área: Secundaria</p>
+          <p></p>
+        </div>
+      </div>
+      <!-- Más tarjetas de presentación... -->
+
+
+
+      <div class="talento-card">
+        <!-- Foto del docente -->
+        <div class="talento-card-image">
+          <img src="images/perfiles/ELISENRIQUEKERGUELEN.JPG " alt="Foto del docente"
+            style="max-width: 100%; height: auto">
+        </div>
+        <!-- Información del docente -->
+        <div class="talento-card-info">
+          <h5>Elís Enrique Kerguelen Cogollo</h5>
+          <p>Área: Secundaria</p>
+          <p>Licenciado en Biología y Quimica</p>
+        </div>
+      </div>
+      <!-- Más tarjetas de presentación... -->
+
+      <div class="talento-card">
+        <!-- Foto del docente -->
+        <div class="talento-card-image">
+          <img src="images/perfiles/HECTORHENRYROMAN.JPG" alt="Foto del docente" style="max-width: 100%; height: auto">
+        </div>
+        <!-- Información del docente -->
+        <div class="talento-card-info">
+          <h5> Hector Henry Roman Toro</h5>
+          <p>Área: Secundaria</p>
+          <p>Mag. en Recursos Digitales aplicados a la Educacion</p>
+        </div>
+      </div>
+      <!-- Más tarjetas de presentación... -->
+
+
+      <div class="talento-card">
+        <!-- Foto del docente -->
+        <div class="talento-card-image">
+          <img src="images/perfiles/EDGARALONSOJARAMILLO.JPG " alt="Foto del docente"
+            style="max-width: 100%; height: auto">
+        </div>
+        <!-- Información del docente -->
+        <div class="talento-card-info">
+          <h5>Edgar Alonso Jaramillo Holguin </h5>
+          <p>Área: Secundaria</p>
+          <p>Mag. en Pedagogía Musical</p>
+        </div>
+      </div>
+      <!-- Más tarjetas de presentación... -->
+
+
+
+      <div class="talento-card">
+        <!-- Foto del docente -->
+        <div class="talento-card-image">
+          <img src="images/perfiles/AMALIAISABELLONDONO.JPG" alt="Foto del docente"
+            style="max-width: 100%; height: auto">
+        </div>
+        <!-- Información del docente -->
+        <div class="talento-card-info">
+          <h5>Amalia Isabel Londoño Echeverry</h5>
+          <p>Área: Secundaria</p>
+          <p></p>
+        </div>
+      </div>
+      <!-- Más tarjetas de presentación... -->
+
+
+      <div class="talento-card">
+        <!-- Foto del docente -->
+        <div class="talento-card-image">
+          <img src="images/perfiles/KARMINAPEREZGARCIA.JPG" alt="Foto del docente"
+            style="max-width: 100%; height: auto">
+        </div>
+        <!-- Información del docente -->
+        <div class="talento-card-info">
+          <h5>Karmiña Perez Garcia </h5>
+          <p>Área: Primaria</p>
+          <p>Mag. en Gestion de la Informatica Educativa</p>
+        </div>
+      </div>
+      <!-- Más tarjetas de presentación... -->
+
+
+      <div class="talento-card">
+        <!-- Foto del docente -->
+        <div class="talento-card-image">
+          <img src="images/perfiles/ADRIANAMARIAURIBE.JPG" alt="Foto del docente" style="max-width: 100%; height: auto">
+        </div>
+        <!-- Información del docente -->
+        <div class="talento-card-info">
+          <h5>Adriana Maria Uribe</h5>
+          <p>Área: Primaria</p>
+          <p>Mag. en Gestion de la Informatica Educativa</p>
+        </div>
+      </div>
+      <!-- Más tarjetas de presentación... -->
+
+
+
+      <div class="talento-card">
+        <!-- Foto del docente -->
+        <div class="talento-card-image">
+          <img src="images/perfiles/MARIAEUGENIARAMIREZ.JPG" alt="Foto del docente"
+            style="max-width: 100%; height: auto">
+        </div>
+        <!-- Información del docente -->
+        <div class="talento-card-info">
+          <h5>María Eugenia Ramirez Velasquez </h5>
+          <p>Área: Primaria</p>
+          <p></p>
+        </div>
+      </div>
+      <!-- Más tarjetas de presentación... -->
+
+
+
+
+      <div class="talento-card">
+        <!-- Foto del docente -->
+        <div class="talento-card-image">
+          <img src="images/perfiles/JUANANGELARIAS.JPG" alt="Foto del docente" style="max-width: 100%; height: auto">
+        </div>
+        <!-- Información del docente -->
+        <div class="talento-card-info">
+          <h5>Juan Ángel Arias Orozco</h5>
+          <p>Área: Primaria</p>
+          <p>Mag.en Educación</p>
+        </div>
+      </div>
+      <!-- Más tarjetas de presentación... -->
+
+
+      <div class="talento-card">
+        <!-- Foto del docente -->
+        <div class="talento-card-image">
+          <img src="images/perfiles/GLORIAMARIAGUERRA.JPG " alt="Foto del docente"
+            style="max-width: 100%; height: auto">
+        </div>
+        <!-- Información del docente -->
+        <div class="talento-card-info">
+          <h5>Gloria María Guerra Gómez</h5>
+          <p>Área: Primaria</p>
+          <p></p>
+        </div>
+      </div>
+      <!-- Más tarjetas de presentación... -->
+
+      <div class="talento-card">
+        <!-- Foto del docente -->
+        <div class="talento-card-image">
+          <img src="images/perfiles/PAULAANDREACASTANEDA.jpg" alt="Foto del docente"
+            style="max-width: 100%; height: auto">
+        </div>
+        <!-- Información del docente -->
+        <div class="talento-card-info">
+          <h5>Paula Andrea Castañeda Pérez </h5>
+          <p>Área: Primaria</p>
+          <p></p>
+        </div>
+      </div>
+      <!-- Más tarjetas de presentación... -->
+
+
+      <div class="talento-card">
+        <!-- Foto del docente -->
+        <div class="talento-card-image">
+          <img src="images/perfiles/FRANCYELENAMONTOYA.JPG" alt="Foto del docente"
+            style="max-width: 100%; height: auto">
+
+        </div>
+        <!-- Información del docente -->
+        <div class="talento-card-info">
+          <h5>Francy Elena Montoya Usuga</h5>
+          <p>Área: Primaria</p>
+          <p>Esp. en Pedagogía de la Docencia</p>
+        </div>
+      </div>
+      <!-- Más tarjetas de presentación... -->
+
+
+      <div class="talento-card">
+        <!-- Foto del docente -->
+        <div class="talento-card-image">
+          <img src="images/perfiles/AMPAROCARMONASANCHEZ.jpeg" alt="Foto del docente"
+            style="max-width: 100%; height: auto">
+
+        </div>
+        <!-- Información del docente -->
+        <div class="talento-card-info">
+          <h5>Amparo del Socorro Carmona Sánchez </h5>
+          <p>Área: Sede rural Río Claro</p>
+          <p>Especialista en Pedagogía de la Recreación Ecológica.</p>
+        </div>
+      </div>
+      <!-- Más tarjetas de presentación... -->
+
+
+
+      <div class="talento-card">
+        <!-- Foto del docente -->
+        <div class="talento-card-image">
+          <img src="images/perfiles/JITZHAKCLARENADAVILA.jpeg" alt="Foto del docente"
+            style="max-width: 100%; height: auto">
+
+        </div>
+        <!-- Información del docente -->
+        <div class="talento-card-info">
+          <h5>Jitzhak Clarena Dávila Rentería </h5>
+          <h6>
+            <p>Área: La Joaquina Montoya</p>
+          </h6>
+          <h6>
+            <p>Especialista en Administración de la informática educativa.</p>
+          </h6>
+        </div>
+      </div>
+      <!-- Más tarjetas de presentación... -->
+
+
+
+      <div class="talento-card">
+        <!-- Foto del docente -->
+        <div class="talento-card-image">
+          <img src="images/perfiles/MARYLUZMARIN.jpeg" alt="Foto del docente" style="max-width: 100%; height: auto">
+
+        </div>
+        <!-- Información del docente -->
+        <div class="talento-card-info">
+          <h5>Mary Luz Marín Espinosa </h5>
+          <p>Área: Sede rural La Mesa</p>
+          <p>Licenciada en Pedagogía Infantil</p>
+        </div>
+      </div>
+      <!-- Más tarjetas de presentación... -->
+
+
+
+      <div class="talento-card">
+        <!-- Foto del docente -->
+        <div class="talento-card-image">
+          <img src="images/perfiles/YESIDJOHANAGONZALEZ.jpeg" alt="Foto del docente"
+            style="max-width: 100%; height: auto">
+
+        </div>
+        <!-- Información del docente -->
+        <div class="talento-card-info">
+          <h5>Yesid Johana Gonzalez </h5>
+          <p>Área: Sede rural Otrabanda</p>
+          <h6>
+            <p>Licenciada en Educación Básica con énfasis en Ciencias Naturales.</p>
+          </h6>
+        </div>
+      </div>
+      <!-- Más tarjetas de presentación... -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     </div>
-  </header>
-  <br>
-  <div id="docentes" class="titulo-sedes">
-    <h2>Docentes IESAP</h2>
-  </div>
-  <!-- Contenedor principal -->
-  <div class="talento-container">
+    <br>
 
-    <!-- Tarjeta de presentación -->
-    <div class="talento-card">
-      <!-- Foto del docente -->
-      <div class="talento-card-image">
-        <img height="500" width="400" src="images/perfiles/docente deisy.jpeg" alt="Foto del docente">
-      </div>
-      <!-- Información del docente -->
-      <div class="talento-card-info">
-        <h5>María Deicy Giraldo Alzate </h5>
-        <p>Área: Primaria</p>
-        <p>Licenciada en Humanidades y Lengua Castellana</p>
-      </div>
+    <div id="docentes" class="titulo-sedes">
+      <h2>Psicólogos</h2>
     </div>
+    <br>
+    <div class="talento-container">
 
-    <!-- Más tarjetas de presentación... -->
-    <div class="talento-card">
-      <!-- Foto del docente -->
-      <div class="talento-card-image">
-        <img src="images/perfiles/ANDRESHOYOSLOPEZ.jpg" alt="Foto del docente" style="max-width: 100%; height: auto">
+      <div class="talento-card">
+        <!-- Foto del docente -->
+        <div class="talento-card-image">
+          <img src="images/perfiles/psicologo1.jpeg" alt="Foto del docente" style="max-width: 100%; height: auto">
 
+        </div>
+        <!-- Información del docente -->
+        <div class="talento-card-info">
+          <h5>Jose David Rúa</h5>
+          <p>Área: Fundación Fraternidad Medellín</p>
+          <p>Psicólogo Construyendo Futuro</p>
+        </div>
       </div>
-      <!-- Información del docente -->
-      <div class="talento-card-info">
-        <h5>Andrés Felipe Hoyos Castro</h5>
-        <p>Área: Primaria</p>
-        <p>Titulo</p>
+
+
+
+
+      <div class="talento-card">
+        <!-- Foto del docente -->
+        <div class="talento-card-image">
+          <img src="images/perfiles/psicologo2.jpeg" alt="Foto del docente" style="max-width: 100%; height: auto">
+
+        </div>
+        <!-- Información del docente -->
+        <div class="talento-card-info">
+          <h5>Lina Pinzón</h5>
+          <p>Área: Fundación Fraternidad Medellín</p>
+          <p>Psicóloga Construyendo Futuro</p>
+        </div>
       </div>
-    </div>
-    <!-- Más tarjetas de presentación... -->
-
-    <div class="talento-card">
-      <!-- Foto del docente -->
-      <div class="talento-card-image">
-        <img src="images/perfiles/DORISALEIDAVARGAS.JPG" alt="Foto del docente" style="max-width: 100%; height: auto">
-      </div>
-      <!-- Información del docente -->
-      <div class="talento-card-info">
-        <h5>Doris Aleida Vargas Navarro </h5>
-        <p>Área: Primaria</p>
-        <p>Titulo</p>
-      </div>
-    </div>
-    <!-- Más tarjetas de presentación... -->
-
-
-    <div class="talento-card">
-      <!-- Foto del docente -->
-      <div class="talento-card-image">
-        <img src="images/perfiles/CARLOSMARIOVESLASQUEZ.JPG" alt="Foto del docente" style="max-width: 100%; height: auto">
-      </div>
-      <!-- Información del docente -->
-      <div class="talento-card-info">
-        <h5>Carlos Mario Velasquez Ramirez </h5>
-        <p>Área: Secundaria</p>
-        <p>Titulo</p>
-      </div>
-    </div>
-    <!-- Más tarjetas de presentación... -->
-
-
-
-    <div class="talento-card">
-      <!-- Foto del docente -->
-      <div class="talento-card-image">
-        <img src="images/perfiles/ELISENRIQUEKERGUELEN.JPG " alt="Foto del docente" style="max-width: 100%; height: auto">
-      </div>
-      <!-- Información del docente -->
-      <div class="talento-card-info">
-        <h5>Elís Enrique Kerguelen Cogollo</h5>
-        <p>Área: Primaria</p>
-        <p>Titulo</p>
-      </div>
-    </div>
-    <!-- Más tarjetas de presentación... -->
-
-    <div class="talento-card">
-      <!-- Foto del docente -->
-      <div class="talento-card-image">
-        <img src="images/perfiles/HECTORHENRYROMAN.JPG" alt="Foto del docente" style="max-width: 100%; height: auto">
-      </div>
-      <!-- Información del docente -->
-      <div class="talento-card-info">
-        <h5> Hector Henry Roman Toro</h5>
-        <p>Área: Primaria</p>
-        <p></p>
-      </div>
-    </div>
-    <!-- Más tarjetas de presentación... -->
-
-
-    <div class="talento-card">
-      <!-- Foto del docente -->
-      <div class="talento-card-image">
-        <img src="images/perfiles/EDGARALONSOJARAMILLO.JPG " alt="Foto del docente" style="max-width: 100%; height: auto">
-      </div>
-      <!-- Información del docente -->
-      <div class="talento-card-info">
-        <h5>Edgar Alonso Jaramillo Holguin </h5>
-        <p>Área: Primaria</p>
-        <p>Titulo</p>
-      </div>
-    </div>
-    <!-- Más tarjetas de presentación... -->
-
-
-
-    <div class="talento-card">
-      <!-- Foto del docente -->
-      <div class="talento-card-image">
-        <img  src="images/perfiles/AMALIAISABELLONDONO.JPG" alt="Foto del docente" style="max-width: 100%; height: auto">
-      </div>
-      <!-- Información del docente -->
-      <div class="talento-card-info">
-        <h5>Amalia Isabel Londoño Echeverry</h5>
-        <p>Área: Primaria</p>
-        <p>Titulo</p>
-      </div>
-    </div>
-    <!-- Más tarjetas de presentación... -->
-
-
-    <div class="talento-card">
-      <!-- Foto del docente -->
-      <div class="talento-card-image">
-        <img src="images/perfiles/KARMINAPEREZGARCIA.JPG" alt="Foto del docente" style="max-width: 100%; height: auto">
-      </div>
-      <!-- Información del docente -->
-      <div class="talento-card-info">
-        <h5>Karmiña Perez Garcia </h5>
-        <p>Área: Primaria</p>
-        <p>Titulo</p>
-      </div>
-    </div>
-    <!-- Más tarjetas de presentación... -->
-
-
-    <div class="talento-card">
-      <!-- Foto del docente -->
-      <div class="talento-card-image">
-        <img src="images/perfiles/ADRIANAMARIAURIBE.JPG" alt="Foto del docente" style="max-width: 100%; height: auto">
-      </div>
-      <!-- Información del docente -->
-      <div class="talento-card-info">
-        <h5>Adriana Maria Uribe</h5>
-        <p>Área: Primaria</p>
-        <p>Titulo</p>
-      </div>
-    </div>
-    <!-- Más tarjetas de presentación... -->
-
-
-
-    <div class="talento-card">
-      <!-- Foto del docente -->
-      <div class="talento-card-image">
-        <img src="images/perfiles/MARIAEUGENIARAMIREZ.JPG" alt="Foto del docente" style="max-width: 100%; height: auto">
-      </div>
-      <!-- Información del docente -->
-      <div class="talento-card-info">
-        <h5>María Eugenia Ramirez Velasquez </h5>
-        <p>Área: Primaria</p>
-        <p>Titulo</p>
-      </div>
-    </div>
-    <!-- Más tarjetas de presentación... -->
 
 
 
 
-    <div class="talento-card">
-      <!-- Foto del docente -->
-      <div class="talento-card-image">
-        <img src="images/perfiles/JUANANGELARIAS.JPG" alt="Foto del docente" style="max-width: 100%; height: auto">
-      </div>
-      <!-- Información del docente -->
-      <div class="talento-card-info">
-        <h5>Juan Ángel Arias Orozco</h5>
-        <p>Área: Primaria</p>
-        <p>Titulo</p>
-      </div>
-    </div>
-    <!-- Más tarjetas de presentación... -->
-
-
-    <div class="talento-card">
-      <!-- Foto del docente -->
-      <div class="talento-card-image">
-        <img src="images/perfiles/GLORIAMARIAGUERRA.JPG " alt="Foto del docente" style="max-width: 100%; height: auto">
-      </div>
-      <!-- Información del docente -->
-      <div class="talento-card-info">
-        <h5>Gloria María Guerra Gómez</h5>
-        <p>Área: Primaria</p>
-        <p>Titulo</p>
-      </div>
-    </div>
-    <!-- Más tarjetas de presentación... -->
-
-    <div class="talento-card">
-      <!-- Foto del docente -->
-      <div class="talento-card-image">
-        <img src="images/perfiles/PAULAANDREACASTANEDA.jpg" alt="Foto del docente" style="max-width: 100%; height: auto">
-      </div>
-      <!-- Información del docente -->
-      <div class="talento-card-info">
-        <h5>Paula Andrea Castañeda Pérez </h5>
-        <p>Área: Primaria</p>
-        <p>Titulo</p>
-      </div>
-    </div>
-    <!-- Más tarjetas de presentación... -->
-
-
-    <div class="talento-card">
-      <!-- Foto del docente -->
-      <div class="talento-card-image">
-        <img src="images/perfiles/FRANCYELENAMONTOYA.JPG" alt="Foto del docente" style="max-width: 100%; height: auto">
-        
-      </div>
-      <!-- Información del docente -->
-      <div class="talento-card-info">
-        <h5>Francy Elena Montoya Usuga</h5>
-        <p>Área: Primaria</p>
-        <p>Titulo</p>
-      </div>
-    </div>
-    <!-- Más tarjetas de presentación... -->
-
-
-    <div class="talento-card">
-      <!-- Foto del docente -->
-      <div class="talento-card-image">
-        <img src="images/perfiles/AMPAROCARMONASANCHEZ.jpeg" alt="Foto del docente" style="max-width: 100%; height: auto">
-        
-      </div>
-      <!-- Información del docente -->
-      <div class="talento-card-info">
-        <h5>Amparo del Socorro Carmona Sánchez </h5>
-        <p>Área: Sede rural Río Claro</p>
-        <p>Especialista en Pedagogía de la Recreación Ecológica.</p>
-      </div>
-    </div>
-    <!-- Más tarjetas de presentación... -->
-
-
-
-    <div class="talento-card">
-      <!-- Foto del docente -->
-      <div class="talento-card-image">
-        <img src="images/perfiles/JITZHAKCLARENADAVILA.jpeg" alt="Foto del docente" style="max-width: 100%; height: auto">
-        
-      </div>
-      <!-- Información del docente -->
-      <div class="talento-card-info">
-        <h5>Jitzhak Clarena Dávila Rentería </h5>
-       <h6><p>Área: La Joaquina Montoya</p></h6> 
-        <h6><p>Especialista en Administración de la informática educativa.</p></h6>
-      </div>
-    </div>
-    <!-- Más tarjetas de presentación... -->
-
-
-
-    <div class="talento-card">
-      <!-- Foto del docente -->
-      <div class="talento-card-image">
-        <img src="images/perfiles/MARYLUZMARIN.jpeg" alt="Foto del docente" style="max-width: 100%; height: auto">
-        
-      </div>
-      <!-- Información del docente -->
-      <div class="talento-card-info">
-        <h5>Mary Luz Marín Espinosa </h5>
-        <p>Área: Sede rural La Mesa</p>
-        <p>Licenciada en Pedagogía Infantil</p>
-      </div>
-    </div>
-    <!-- Más tarjetas de presentación... -->
-
-
-
-    <div class="talento-card">
-      <!-- Foto del docente -->
-      <div class="talento-card-image">
-        <img src="images/perfiles/YESIDJOHANAGONZALEZ.jpeg" alt="Foto del docente" style="max-width: 100%; height: auto">
-        
-      </div>
-      <!-- Información del docente -->
-      <div class="talento-card-info">
-        <h5>Yesid Johana Gonzalez </h5>
-        <p>Área: Sede rural Otrabanda</p>
-        <h6><p>Licenciada en Educación Básica con énfasis en Ciencias Naturales.</p></h6>
-      </div>
-    </div>
-    <!-- Más tarjetas de presentación... -->
-
-
-
-
-    
-
-
-
-    
-
-
-
-    
-
-        
-    
-  </div>
-<br>
-
-  <div id="docentes" class="titulo-sedes">
-    <h2>Psicólogos</h2>
-  </div>
-  <br>
-  <div class="talento-container">
-
-    <div class="talento-card">
-      <!-- Foto del docente -->
-      <div class="talento-card-image">
-        <img src="images/perfiles/psicologo1.jpeg" alt="Foto del docente" style="max-width: 100%; height: auto">
-        
-      </div>
-      <!-- Información del docente -->
-      <div class="talento-card-info">
-        <h5>Jose David Rúa</h5>
-        <p>Área: Fundación Fraternidad Medellín</p>
-        <p>Psicólogo Construyendo Futuro</p>
-      </div>
     </div>
 
 
+    <br>
+    <div id="docentes" class="titulo-sedes">
+      <h2>Servicios Generales</h2>
+    </div>
+    <br>
+    <div class="talento-container">
+
+      <div class="talento-card">
+        <!-- Foto del docente -->
+        <div class="talento-card-image">
+          <img src="images/perfiles/OLGAEUGENIAHINCAPIE.JPG" alt="Foto del docente"
+            style="max-width: 100%; height: auto">
+
+        </div>
+        <!-- Información del docente -->
+        <div class="talento-card-info">
+          <h5>Olga Eugenia Hincapié Restrepo</h5>
+          <p>Área: Servicios Generales Primaria</p>
+
+        </div>
+      </div>
 
 
-    <div class="talento-card">
-      <!-- Foto del docente -->
-      <div class="talento-card-image">
-        <img src="images/perfiles/psicologo2.jpeg" alt="Foto del docente" style="max-width: 100%; height: auto">
-        
+
+
+      <div class="talento-card">
+        <!-- Foto del docente -->
+        <div class="talento-card-image">
+          <img src="images/perfiles/ELKINURIELAGUDELO.JPG" alt="Foto del docente" style="max-width: 100%; height: auto">
+
+        </div>
+        <!-- Información del docente -->
+        <div class="talento-card-info">
+          <h5>Elkin Uriel Agudelo Bustamante</h5>
+          <p>Área: Servicios Generales Secundaria</p>
+
+        </div>
       </div>
-      <!-- Información del docente -->
-      <div class="talento-card-info">
-        <h5>Lina Pinzón</h5>
-        <p>Área: Fundación Fraternidad Medellín</p>
-        <p>Psicóloga Construyendo Futuro</p>
+
+
+      <div class="talento-card">
+        <!-- Foto del docente -->
+        <div class="talento-card-image">
+          <img src="images/perfiles/RICARDOANTONIOESCALANTE.JPG" alt="Foto del docente"
+            style="max-width: 100%; height: auto">
+
+        </div>
+        <!-- Información del docente -->
+        <div class="talento-card-info">
+          <h5>Ricardo Antonio Escalante Salazar</h5>
+          <p>Área: Servicios Generales Primaria</p>
+
+        </div>
       </div>
+
     </div>
 
+  </section>
 
-   
-
-  </div>
-
-
-  <br>
-  <div id="docentes" class="titulo-sedes">
-    <h2>Servicios Generales</h2>
-  </div>
-  <br>
-  <div class="talento-container">
-
-    <div class="talento-card">
-      <!-- Foto del docente -->
-      <div class="talento-card-image">
-        <img src="images/perfiles/OLGAEUGENIAHINCAPIE.JPG" alt="Foto del docente" style="max-width: 100%; height: auto">
-        
-      </div>
-      <!-- Información del docente -->
-      <div class="talento-card-info">
-        <h5>Olga Eugenia Hincapié Restrepo</h5>
-        <p>Área: Servicios Generales Primaria</p>
-        
-      </div>
-    </div>
-
-
-
-
-    <div class="talento-card">
-      <!-- Foto del docente -->
-      <div class="talento-card-image">
-        <img src="images/perfiles/ELKINURIELAGUDELO.JPG" alt="Foto del docente" style="max-width: 100%; height: auto">
-        
-      </div>
-      <!-- Información del docente -->
-      <div class="talento-card-info">
-        <h5>Elkin Uriel Agudelo Bustamante</h5>
-        <p>Área: Servicios Generales Secundaria</p>
-        
-      </div>
-    </div>
-
-
-    <div class="talento-card">
-      <!-- Foto del docente -->
-      <div class="talento-card-image">
-        <img src="images/perfiles/RICARDOANTONIOESCALANTE.JPG" alt="Foto del docente" style="max-width: 100%; height: auto">
-        
-      </div>
-      <!-- Información del docente -->
-      <div class="talento-card-info">
-        <h5>Ricardo Antonio Escalante Salazar</h5>
-        <p>Área: Servicios Generales Primaria</p>
-        
-      </div>
-    </div>
-
-  </div>
 
 
 
@@ -563,6 +594,7 @@
 
 <!-- Archivo JavaScript externo -->
 <script src="js/script.js"></script>
+<script src="js/scriptnav.js"></script>
 
 <!-- Bootstrap JS Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
