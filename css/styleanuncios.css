@@ -1,0 +1,169 @@
+.article-background-1 {
+    position: relative;
+    /* Necesario para el overlay */
+    background-image: url('../images/sedes/LaAlacena1.jpeg');
+    /* Cambia a la imagen deseada */
+    background-size: cover;
+    /* Asegura que la imagen cubra todo el área */
+    background-position: center;
+    /* Centra la imagen de fondo */
+    height: 300px;
+    /* Ajusta la altura según sea necesario */
+    color: white;
+    /* Color del texto */
+    padding: 20px;
+    /* Espaciado interno */
+    overflow: hidden;
+    /* Oculta contenido que sobresale */
+}
+
+.article-background-2 {
+    position: relative;
+    /* Necesario para el overlay */
+    background-image: url('../images/sedes/LaAlacena2.jpeg');
+    /* Cambia a la imagen deseada */
+    background-size: cover;
+    /* Asegura que la imagen cubra todo el área */
+    background-position: center;
+    /* Centra la imagen de fondo */
+    height: 300px;
+    /* Ajusta la altura según sea necesario */
+    color: white;
+    /* Color del texto */
+    padding: 20px;
+    /* Espaciado interno */
+    overflow: hidden;
+    /* Oculta contenido que sobresale */
+}
+
+.article-background-3 {
+    position: relative;
+    /* Necesario para el overlay */
+    background-image: url('../images/buho.jpeg');
+    /* Cambia a la imagen deseada */
+    background-size: cover;
+    /* Asegura que la imagen cubra todo el área */
+    background-position: center;
+    /* Centra la imagen de fondo */
+    height: 300px;
+    /* Ajusta la altura según sea necesario */
+    color: white;
+    /* Color del texto */
+    padding: 20px;
+    /* Espaciado interno */
+    overflow: hidden;
+    /* Oculta contenido que sobresale */
+}
+
+.article-background-4 {
+    position: relative;
+    /* Necesario para el overlay */
+    background-image: url('../images/buho.jpeg');
+    /* Cambia a la imagen deseada */
+    background-size: cover;
+    /* Asegura que la imagen cubra todo el área */
+    background-position: center;
+    /* Centra la imagen de fondo */
+    height: 300px;
+    /* Ajusta la altura según sea necesario */
+    color: white;
+    /* Color del texto */
+    padding: 20px;
+    /* Espaciado interno */
+    overflow: hidden;
+    /* Oculta contenido que sobresale */
+}
+
+.overlay1 {
+    position: absolute;
+    /* Posición absoluta para superponer el color */
+    top: 0;
+    /* Alineado en la parte superior */
+    left: 0;
+    /* Alineado a la izquierda */
+    width: 100%;
+    /* Ancho completo */
+    height: 100%;
+    /* Altura completa */
+    background-color: rgba(131, 24, 188, 0.508);
+    /* Color semitransparente */
+    z-index: 1;
+    /* Asegúrate de que esté por encima de la imagen */
+}
+
+.overlay2 {
+    position: absolute;
+    /* Posición absoluta para superponer el color */
+    top: 0;
+    /* Alineado en la parte superior */
+    left: 0;
+    /* Alineado a la izquierda */
+    width: 100%;
+    /* Ancho completo */
+    height: 100%;
+    /* Altura completa */
+    background-color: rgba(24, 60, 188, 0.584);
+    /* Color semitransparente */
+    z-index: 1;
+    /* Asegúrate de que esté por encima de la imagen */
+}
+
+.overlay3 {
+    position: absolute;
+    /* Posición absoluta para superponer el color */
+    top: 0;
+    /* Alineado en la parte superior */
+    left: 0;
+    /* Alineado a la izquierda */
+    width: 100%;
+    /* Ancho completo */
+    height: 100%;
+    /* Altura completa */
+    background-color: rgba(21, 130, 53, 0.625);
+    /* Color semitransparente */
+    z-index: 1;
+    /* Asegúrate de que esté por encima de la imagen */
+}
+
+.overlay4 {
+    position: absolute;
+    /* Posición absoluta para superponer el color */
+    top: 0;
+    /* Alineado en la parte superior */
+    left: 0;
+    /* Alineado a la izquierda */
+    width: 100%;
+    /* Ancho completo */
+    height: 100%;
+    /* Altura completa */
+    background-color: rgba(233, 121, 16, 0.6);
+    /* Color semitransparente */
+    z-index: 1;
+    /* Asegúrate de que esté por encima de la imagen */
+}
+
+
+h5,
+.badge,
+a {
+    position: relative;
+    /* Relativa para que estén por encima de la superposición */
+    z-index: 2;
+    /* Asegúrate de que el texto esté por encima de la superposición */
+    margin: 0;
+    /* Elimina márgenes predeterminados */
+    font-size: small;
+}
+
+.badge {
+    display: inline-block;
+    /* Asegura que se comporte como un bloque */
+
+    /* Fondo para la insignia */
+    padding: 5px 10px;
+    /* Espaciado interno para la insignia */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    margin-bottom: 10px;
+    /* Espacio debajo de la insignia */
+}

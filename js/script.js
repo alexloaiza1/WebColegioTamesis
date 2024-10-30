@@ -51,4 +51,4 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       });
     });
-});
+}); // Seleccionar el contenedor dentro de la sección
