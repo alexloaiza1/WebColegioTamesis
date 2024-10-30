@@ -138,6 +138,7 @@
 <body>
 
 
+
   <section id="mision-vision" class="py-3">
     <div class="titulo-sedes">
       <h2>Radica tu PQRS</h2>
@@ -146,7 +147,8 @@
     <section id="contacto" class="contact" style="padding: 0;">
       <p style="text-align: center;">Si ya has agotado las diferentes instancias de contacto con nuestra institución y
         aún no has recibido una
-        solución satisfactoria, completa el siguiente formulario. Te daremos una respuesta en un plazo máximo de 15 días
+        solución satisfactoria, completa el siguiente formulario. Te daremos una respuesta en un plazo máximo de 15
+        días
         hábiles.</p>
       <div class="container">
         <iframe id="pqrForm"
@@ -170,15 +172,21 @@
       </script>
     </section>
     <br>
+  </section>
 
-    <div id="footer-placeholder"></div>
-    <script>
-      document.getElementById("footer-placeholder").innerHTML = fetch('footer.html')
-        .then(response => response.text())
-        .then(data => document.getElementById("footer-placeholder").innerHTML = data);
-    </script>
+
+
+
 
 </body>
+
+
+<div id="footer-placeholder"></div>
+<script>
+  document.getElementById("footer-placeholder").innerHTML = fetch('footer.html')
+    .then(response => response.text())
+    .then(data => document.getElementById("footer-placeholder").innerHTML = data);
+</script>
 <!-- Swiper JS -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
