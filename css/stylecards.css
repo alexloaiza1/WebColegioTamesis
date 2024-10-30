@@ -51,7 +51,7 @@
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: var(--direction);
-	gap: 41px;
+	gap: 20px;
 	min-height: 60vh;
 	margin: 0 auto;
 	justify-content: center;
@@ -69,8 +69,8 @@
 	padding: 2rem;
 	aspect-ratio: 330 / 400;
 	border-radius: var(--border-radius);
-	min-width: 248px;
-	max-width: 248px;
+	min-width: 260px;
+	max-width: 260px;
 	display: flex;
 	flex-direction: column;
 	gap: 0.25rem;
