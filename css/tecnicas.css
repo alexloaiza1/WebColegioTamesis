@@ -1,0 +1,74 @@
+/* Estilos para la sección Técnica en Sistemas */
+.seccion-tecnica-sistemas {
+    background-color: #ffffff;
+    /* Fondo blanco para la sección */
+    border-radius: 10px;
+    /* Bordes redondeados */
+    padding: 20px;
+    /* Espaciado interno */
+    margin: 20px auto;
+    /* Margen superior e inferior */
+    max-width: 800px;
+    /* Ancho máximo de la sección */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* Sombra suave */
+    transition: transform 0.3s;
+    /* Transición suave al pasar el mouse */
+}
+
+.seccion-tecnica-sistemas:hover {
+    transform: translateY(-5px);
+    /* Efecto de elevación al pasar el mouse */
+}
+
+/* Estilo para el título */
+.seccion-tecnica-sistemas h2 {
+    color: #007BFF;
+    /* Color azul */
+    font-size: 2em;
+    /* Tamaño de fuente */
+    margin-bottom: 10px;
+    /* Espaciado inferior */
+}
+
+/* Estilo para el párrafo */
+.seccion-tecnica-sistemas p {
+    color: #333;
+    /* Color de texto */
+    line-height: 1.6;
+    /* Espaciado entre líneas */
+    font-size: 1.1em;
+    /* Tamaño de fuente */
+    margin-bottom: 20px;
+    /* Espaciado inferior */
+}
+
+/* Estilo para la imagen */
+.seccion-tecnica-sistemas img {
+    max-width: 100%;
+    /* Ancho máximo de la imagen */
+    height: auto;
+    /* Altura automática */
+    border-radius: 10px;
+    /* Bordes redondeados */
+    margin-bottom: 20px;
+    /* Espaciado inferior */
+}
+
+/* Estilo para el video */
+.seccion-tecnica-sistemas video {
+    max-width: 100%;
+    /* Ancho máximo del video */
+    border-radius: 10px;
+    /* Bordes redondeados */
+}
+
+/* Estilo para el contenedor de imagen y video */
+.seccion-tecnica-sistemas .media-container {
+    display: flex;
+    /* Flexbox para la alineación */
+    flex-direction: column;
+    /* Colocar los elementos en columna */
+    align-items: center;
+    /* Centramos los elementos */
+}
