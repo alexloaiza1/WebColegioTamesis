@@ -39,7 +39,7 @@
 .article-background-3 {
     position: relative;
     /* Necesario para el overlay */
-    background-image: url('../images/buho.jpeg');
+    background-image: url('../images/proyectos/musica.jpeg');
     /* Cambia a la imagen deseada */
     background-size: cover;
     /* Asegura que la imagen cubra todo el área */
