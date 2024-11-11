@@ -172,7 +172,7 @@ a {
     @media (max-width: 768px) {
         width: 100%;
         height: 20% !important;
-        max-height: 8% !important;
+        max-height: 5.2% !important;
         margin-top: -3px;
     }
 
