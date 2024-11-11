@@ -23,3 +23,13 @@ a {
   vertical-align: middle;
   /* Para asegurarte de que estén alineados en vertical */
 }
+
+@media (max-width: 768px) {
+  .icon-responsive {
+    margin-top: 10px;
+    margin-bottom: -40px;
+    width: 40px !important;
+    /* Ajusta el tamaño según tu preferencia */
+    height: 40px !important;
+  }
+}
