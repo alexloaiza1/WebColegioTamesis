@@ -261,17 +261,23 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	gap: 20px;
-	padding: 0.5rem;
+	gap: var(--spacing-lg);
+	padding: var(--spacing-sm);
 }
 
 .sectioncards article {
-	padding: 2rem;
+	padding: var(--spacing-xl);
 	border-radius: var(--border-radius);
 	flex: 1 1 260px;
-	/* Cambiado para ocupar el espacio disponible */
 	max-width: 100%;
-	/* Asegura que no exceda el ancho de su contenedor */
+	background: var(--bg-primary);
+	box-shadow: var(--shadow-sm);
+	transition: var(--transition-normal);
+}
+
+.sectioncards article:hover {
+	transform: translateY(-4px);
+	box-shadow: var(--shadow-lg);
 }
 
 @media (max-width: 600px) {

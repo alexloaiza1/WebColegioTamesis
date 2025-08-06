@@ -31,29 +31,33 @@
 
 .invitation-section button {
     display: inline-block;
-    margin-top: 20px;
-    background-color: #007bff;
-    color: #ffffff;
-    padding: 20px;
+    margin-top: var(--spacing-lg);
+    background-color: var(--primary-blue);
+    color: var(--text-white);
+    padding: var(--spacing-lg);
     border: none;
-    border-radius: 8px;
+    border-radius: var(--radius-md);
     font-size: 18px;
+    font-family: var(--font-primary);
+    font-weight: 600;
     cursor: pointer;
     width: 100%;
     max-width: 300px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s, box-shadow 0.3s;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition-normal);
 }
 
 .invitation-section button:hover,
 .invitation-section button:focus {
-    background-color: #0056b3;
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    background-color: var(--primary-blue-dark);
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
 }
 
 .invitation-section button:active {
-    background-color: #004494;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    background-color: var(--primary-blue-dark);
+    box-shadow: var(--shadow-sm);
+    transform: translateY(0);
 }
 
 /* Asegúrate de que las secciones estén una al lado de la otra en pantallas grandes */
