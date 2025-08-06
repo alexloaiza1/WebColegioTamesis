@@ -2,6 +2,15 @@
 <html lang="es">
 
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-M0WEETSV22"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-M0WEETSV22');
+  </script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Institución Educativa San Antonio de Padua</title>
@@ -9,6 +18,16 @@
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="stylesheet" href="css/styles2.css" />
   <link rel="stylesheet" href="css/gobierno.css">
+  <link rel="stylesheet" href="css/stylenav.css" />
+  <link rel="stylesheet" href="css/media-queri.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+
 
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,151 +46,211 @@
 
 </head>
 
-<body>
-  <header class="custom-header">
-    <div class="container d-flex justify-content-between align-items-center py-2">
-      <div class="logo" style="margin-left: -60px; margin-top:20px;">
-        <img src="images/logo.png" alt="Logo Institución">
-      </div>
-      <div class="title ms-3">
-        <h2 class="titulo" style="margin-top: -10px;">
-          Institución Educativa San Antonio de Padua Támesis
-        </h2>
-      </div>
-
-      <section>
-        <div>
-          <div class="navbar-icons">
-            <a href="https://www.facebook.com/notiiesap" target="_blank" rel="noopener noreferrer">
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="icon icon-tabler icons-tabler-outline icon-tabler-brand-facebook">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
-              </svg>
-            </a>
-
-
-
-            <a href="https://www.instagram.com/iesanantoniodepaduatamesis/" target="_blank" rel="noopener noreferrer">
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="icon icon-tabler icons-tabler-outline icon-tabler-brand-instagram">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
-                <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
-                <path d="M16.5 7.5l0 .01" />
-              </svg>
-            </a>
-
-
-            <a href="https://youtube.com/@vocesiesap?si=u3nR9WDO0X5cb4Dy" target="_blank" rel="noopener noreferrer">
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-              class="icon icon-tabler icons-tabler-outline icon-tabler-brand-youtube">
-              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-              <path d="M2 8a4 4 0 0 1 4 -4h12a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-12a4 4 0 0 1 -4 -4v-8z" />
-              <path d="M10 9l5 3l-5 3z" />
-            </svg>
-          </a>
-            <!-- Puedes añadir más iconos aquí -->
-          </div>
-          <nav class="navbar navbar-expand-lg navbar-dark">
-            <button style="margin-left: 35px;" class="navbar-toggler" type="button" data-bs-toggle="collapse"
-              data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-              aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav ms-auto custom-ul-padding">
-                <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                    data-bs-toggle="dropdown" aria-expanded="false">
-                    Nuestro Colegio
-                  </a>
-                  <ul class="dropdown-menu custom-submenu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="corporativo.html">Misión</a></li>
-                    <li><a class="dropdown-item" href="corporativo.html">Visión</a></li>
-                    <li><a class="dropdown-item" href="corporativo.html#historia">Historia</a></li>
-                    <li>
-                      <a class="dropdown-item" href="corporativo.html#historia" style="font-size: 0.875rem;">
-                        <span class="line-break">Gestión</span>
-                        <span class="line-break">Administrativa</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#gobierno" style="font-size: 0.875rem;">
-                        <span class="line-break">Gobierno</span>
-                        <span class="line-break">Estudiantil</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="talentohumano.html" style="font-size: 0.875rem;">
-                        <span class="line-break">Talento</span>
-                        <span class="line-break">Humano</span>
-                      </a>
-                    </li>
-
-                  </ul>
-                </li>
-                <li class="nav-item"><a class="nav-link" href="sedes.html">Sedes</a></li>
-                <li class="nav-item"><a class="nav-link" href="proyectos.html">Proyectos</a></li>
-                <li class="nav-item"><a class="nav-link" href="index.html#noticias">Noticias</a></li>
-                <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
-              </ul>
-            </div>
-          </nav>
+<header>
+  <section class="navbarsection">
+    <header class="header">
+      <nav class="navbar">
+        <div class="logo">
+          <a href="#"></a><img src="images/newlogo3.png" alt="" style="height: 100px" />
         </div>
-      </section>
+        <ul class="links">
+          <li><a href="index.html">Inicio</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">Nuestro Colegio</a>
+            <ul class="dropdown-menu custom-submenu" aria-labelledby="navbarDropdown">
+              <li>
+                <a class="dropdown-item" href="corporativo.html#mision">Misión</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="corporativo.html#mision">Visión</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="corporativo.html#historia">Historia</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="directivos.html">
+                  <span class="line-break">Gestión</span>
+                  <span class="line-break">Administrativa</span>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="gobierno.html">
+                  <span class="line-break">Gobierno</span>
+                  <span class="line-break">Estudiantil</span>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="talentohumano.html">
+                  <span class="line-break">Talento</span>
+                  <span class="line-break">Humano</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li><a href="sedes.html">Sedes</a></li>
+          <li><a href="proyectos.html">Proyectos</a></li>
+          <li><a href="contacto.html">PQRS</a></li>
+          <li><a href="index.html#noticias">Noticias</a></li>
+        </ul>
+
+        <a href="index.html#comunicados" class="action_btn">Últimos Comunicados</a>
+        <div class="toggle_btn"><i class="fa-solid fa-bars"></i></div>
+      </nav>
+      <div class="dropdown_menu">
+        <li class="item"><a href="index.html">Inicio</a></li>
+        <li class="nav-item dropdown item">
+          <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="navbarDropdown" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">Nuestro Colegio</a>
+          <ul class="dropdown-menu custom-submenu" aria-labelledby="navbarDropdown">
+            <li>
+              <a class="dropdown-item" href="corporativo.html#mision">Misión</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="corporativo.html#mision">Visión</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="corporativo.html#historia">Historia</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="directivos.html">
+                <span class="line-break">Gestión</span>
+                <span class="line-break">Administrativa</span>
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="gobierno.html">
+                <span class="line-break">Gobierno</span>
+                <span class="line-break">Estudiantil</span>
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="talentohumano.html">
+                <span class="line-break">Talento</span>
+                <span class="line-break">Humano</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="item"><a href="sedes.html">Sedes</a></li>
+        <li class="item"><a href="proyectos.html">Proyectos</a></li>
+        <li class="item"><a href="contacto.html">PQRS</a></li>
+        <li class="item"><a href="index.html#noticias">Noticias</a></li>
+
+        <a href="index.html#comunicados" class="action_btn">Últimos Comunicados</a>
+      </div>
+    </header>
+  </section>
+</header>
+
+
+<body>
+  <section id="mision-vision" class="py-1">
+    <br>
+    <div id="gobierno" class="titulo-sedes">
+      <h2>Gobierno Estudiantil</h2>
+    </div>
+    <div class="talento-container" style="background-color:rgba(237, 240, 247, 0.401) ;">
+
+      <!-- Tarjeta de presentación -->
+      <div class="talento-card">
+        <!-- Foto del docente -->
+        <div class="talento-card-image">
+          <img height="500" width="400" src="images/perfiles/Personera2025.jpeg" alt="Foto del docente">
+        </div>
+        <!-- Información del docente -->
+        <div class="talento-card-info">
+          <h5>Maria Salomé Román</h5>
+          <p>Personera 2025</p>
+          <p>Estudiante 11°</p>
+        </div>
+      </div>
+
+      <!-- Tarjeta de presentación -->
+      <div class="talento-card">
+        <!-- Foto del docente -->
+        <div class="talento-card-image">
+          <img height="500" width="400" src="images/perfiles/Rdirectivo.jpeg" alt="Foto del docente">
+        </div>
+        <!-- Información del docente -->
+        <div class="talento-card-info">
+          <h5>Samuel Martinez Zapata</h5>
+          <p>Representante al Consejo Directivo</p>
+          <p>Estudiante 11°</p>
+        </div>
+      </div>
+
+      <div class="talento-card">
+        <!-- Foto del docente -->
+        <div class="talento-card-image">
+          <img height="500" width="400" src="images/perfiles/Contralor2025.jpeg" alt="Foto del docente">
+        </div>
+        <!-- Información del docente -->
+        <div class="talento-card-info">
+          <h5>Stiven Henao Bermudez</h5>
+          <p>Contralor estudiantil</p>
+          <p>Estudiante 11°</p>
+        </div>
+      </div>
 
     </div>
-  </header>
+
+    <div id="gobierno" class="titulo-sedes">
+      <h2>Año 2024</h2>
+    </div>
+
+    <div class="talento-container" style="background-color:rgba(237, 240, 247, 0.401) ;">
+
+      <!-- Tarjeta de presentación -->
+      <div class="talento-card">
+        <!-- Foto del docente -->
+        <div class="talento-card-image">
+          <img height="500" width="400" src="images/perfiles/Personera.jpeg" alt="Foto del docente">
+        </div>
+        <!-- Información del docente -->
+        <div class="talento-card-info">
+          <h5>Jakelin Andrea Toro Patiño </h5>
+          <p>Personera 2024</p>
+          <p>Estudiante 11°</p>
+        </div>
+      </div>
+
+      <!-- Tarjeta de presentación -->
+      <div class="talento-card">
+        <!-- Foto del docente -->
+        <div class="talento-card-image">
+          <img height="500" width="400" src="images/perfiles/consejodirectivo.jpeg" alt="Foto del docente">
+        </div>
+        <!-- Información del docente -->
+        <div class="talento-card-info">
+          <h5>Lucas Escobar Sepúlveda </h5>
+          <p>Representante al Consejo Directivo</p>
+          <p>Estudiante 11°</p>
+        </div>
+      </div>
+
+      <div class="talento-card">
+        <!-- Foto del docente -->
+        <div class="talento-card-image">
+          <img height="500" width="400" src="images/perfiles/contralor.jpeg" alt="Foto del docente">
+        </div>
+        <!-- Información del docente -->
+        <div class="talento-card-info">
+          <h5>Santiago Andrés Otálvaro Otálvaro</h5>
+          <p>Contralor estudiantil</p>
+          <p>Estudiante 11°</p>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
 
   <br>
-  <div id="gobierno"class="titulo-sedes">
-    <h2>Gobierno Estudiantil</h2>
-  </div>
 
   <!-- Contenedor principal -->
-  <div class="talento-container" style="background-color:rgba(237, 240, 247, 0.401) ;">
 
-    <!-- Tarjeta de presentación -->
-    <div class="talento-card">
-      <!-- Foto del docente -->
-      <div class="talento-card-image">
-        <img height="500" width="400" src="images/perfiles/Personera.jpeg" alt="Foto del docente">
-      </div>
-      <!-- Información del docente -->
-      <div class="talento-card-info">
-        <h5>Jakelin Andrea Toro Patiño </h5>
-        <p>Personera 2024</p>
-        <p>Estudiante 11°</p>
-      </div>
-    </div>
-
-    <!-- Tarjeta de presentación -->
-    <div class="talento-card">
-      <!-- Foto del docente -->
-      <div class="talento-card-image">
-        <img height="500" width="400" src="images/perfiles/consejodirectivo.jpeg" alt="Foto del docente">
-      </div>
-      <!-- Información del docente -->
-      <div class="talento-card-info">
-        <h5>Lucas Escobar Sepúlveda </h5>
-        <p>Representante al Consejo Directivo</p>
-        <p>Estudiante 11°</p>
-      </div>
-    </div>
-
-
-
-
-
-
-  </div>
-<br>
-  
   <div class="carta container">
     <section class="carta-section">
       <div class="carta">
@@ -180,19 +259,30 @@
           Querida comunidad del Colegio San Antonio de Padua,
         </p>
         <p class="carta-cuerpo">
-          Hoy quiero expresar mi más sincero agradecimiento a toda la institución que, a lo largo de los años, no solo me ha formado académicamente, sino también como persona. Ser la personera de este colegio ha sido un honor y una responsabilidad que asumo con orgullo, gracias a los valores y principios que nos inculcan diariamente.
+          Hoy quiero expresar mi más sincero agradecimiento a toda la institución que, a lo largo de los años, no solo
+          me ha formado académicamente, sino también como persona. Ser la personera de este colegio ha sido un honor y
+          una responsabilidad que asumo con orgullo, gracias a los valores y principios que nos inculcan diariamente.
         </p>
         <p class="carta-cuerpo">
-          Agradezco profundamente a los directivos, quienes con su visión y liderazgo nos guían hacia un futuro lleno de posibilidades. A nuestros profesores, quienes con su dedicación y paciencia nos brindan el conocimiento y las herramientas necesarias para enfrentar los desafíos de la vida. No solo son mentores en las aulas, sino también ejemplos a seguir, enseñándonos la importancia de la disciplina, el esfuerzo y la empatía.
+          Agradezco profundamente a los directivos, quienes con su visión y liderazgo nos guían hacia un futuro lleno de
+          posibilidades. A nuestros profesores, quienes con su dedicación y paciencia nos brindan el conocimiento y las
+          herramientas necesarias para enfrentar los desafíos de la vida. No solo son mentores en las aulas, sino
+          también ejemplos a seguir, enseñándonos la importancia de la disciplina, el esfuerzo y la empatía.
         </p>
         <p class="carta-cuerpo">
-          Quiero también agradecer a mis compañeros, quienes con su energía, apoyo y amistad, hacen del día a día una experiencia más enriquecedora y significativa. Juntos hemos compartido momentos inolvidables que siempre llevaré en mi corazón.
+          Quiero también agradecer a mis compañeros, quienes con su energía, apoyo y amistad, hacen del día a día una
+          experiencia más enriquecedora y significativa. Juntos hemos compartido momentos inolvidables que siempre
+          llevaré en mi corazón.
         </p>
         <p class="carta-cuerpo">
-          Finalmente, no puedo dejar de mencionar a todas las personas que, desde sus diferentes roles, hacen posible el funcionamiento de nuestra querida institución. Su trabajo, muchas veces silencioso pero siempre esencial, es fundamental para que podamos disfrutar de un ambiente de aprendizaje óptimo y seguro.
+          Finalmente, no puedo dejar de mencionar a todas las personas que, desde sus diferentes roles, hacen posible el
+          funcionamiento de nuestra querida institución. Su trabajo, muchas veces silencioso pero siempre esencial, es
+          fundamental para que podamos disfrutar de un ambiente de aprendizaje óptimo y seguro.
         </p>
         <p class="carta-cuerpo">
-          Este colegio no solo es un lugar de formación académica, es una comunidad que fomenta los valores de respeto, solidaridad y responsabilidad. Valores que llevaré conmigo a lo largo de mi vida, recordando siempre que parte de quien soy se lo debo a este colegio y a todas las personas que forman parte de él.
+          Este colegio no solo es un lugar de formación académica, es una comunidad que fomenta los valores de respeto,
+          solidaridad y responsabilidad. Valores que llevaré conmigo a lo largo de mi vida, recordando siempre que parte
+          de quien soy se lo debo a este colegio y a todas las personas que forman parte de él.
         </p>
         <p class="carta-cuerpo">
           Con gratitud y cariño,
@@ -214,12 +304,14 @@
       .then(data => document.getElementById("footer-placeholder").innerHTML = data);
   </script>
 
+
 </body>
 <!-- Swiper JS -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 <!-- Archivo JavaScript externo -->
 <script src="js/script.js"></script>
+<script src="js/scriptnav.js"></script>
 
 <!-- Bootstrap JS Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

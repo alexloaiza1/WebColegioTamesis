@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Quicksand:wght@300..700&display=swap');
+
+
+a {
+  text-decoration: none !important;
+}
+
+
+
+
+.footer {
+  text-align: center;
+  /* Para centrar si lo deseas */
+  margin-top: -25px;
+  margin-bottom: 5px;
+  padding: 5px;
+}
+
+.footer-logo {
+  display: inline-block;
+  margin-right: 10px;
+  /* Espacio entre logos, ajustable */
+  vertical-align: middle;
+  /* Para asegurarte de que estén alineados en vertical */
+}
+
+@media (max-width: 768px) {
+  .icon-responsive {
+    margin-top: 10px;
+    margin-bottom: -40px;
+    width: 40px !important;
+    /* Ajusta el tamaño según tu preferencia */
+    height: 40px !important;
+  }
+
+  .marginf {
+    margin-bottom: 30px !important;
+  }
+
+  .marginx {
+    margin-top: -30px !important;
+  }
+}

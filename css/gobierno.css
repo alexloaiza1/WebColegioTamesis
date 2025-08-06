@@ -4,7 +4,10 @@
     text-align: center;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     margin: 0;
-    padding-bottom: 10px;
+    padding-bottom: -5px;
+
+
+
     /* Aumentar separación de la línea */
 
     /* Añade una línea inferior */
@@ -152,4 +155,36 @@
 .carta .carta-firma strong {
     font-size: 20px;
     /* Tamaño de nombre */
+}
+
+#mision-vision {
+    background-color: #f8f9fa;
+    /* Color de fondo suave */
+    border-radius: 10px;
+    /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* Sombra sutil */
+    padding: 30px 15px;
+    /* Espaciado interno */
+
+}
+
+#mission-vision .container {
+    max-width: 1200px;
+    /* Ancho máximo del contenedor */
+    margin: auto;
+    /* Centrar el contenedor */
+}
+
+
+.text-center {
+    text-align: center;
+    /* Centrar el texto */
+}
+
+@media (max-width: 768px) {
+    p {
+        font-size: 0.9rem;
+        /* Tamaño del texto en pantallas pequeñas */
+    }
 }
