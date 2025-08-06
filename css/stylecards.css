@@ -30,24 +30,18 @@
 }
 
 .sectioncards {
-	background: #fff;
-	/* Color de fondo */
+	background: var(--bg-primary);
 	display: grid;
 	place-items: center;
 	min-height: 60vh;
-	/* Altura mínima */
-	font-family: "Geist Sans", "SF Pro Text", "SF Pro Icons", "AOS Icons", "Helvetica Neue", Helvetica, Arial, sans-serif, system-ui;
-	font-weight: 70;
-	color: var(--color);
-	margin: 10px auto;
-	/* Margen */
-	padding: 20px;
-	/* Relleno */
-	transition: transform 0.3s ease;
-	border-radius: 15px;
-	/* Bordes redondeados */
-	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-	/* Sombra para dar profundidad */
+	font-family: var(--font-primary);
+	font-weight: 400;
+	color: var(--text-primary);
+	margin: var(--spacing-sm) auto;
+	padding: var(--spacing-lg);
+	transition: var(--transition-normal);
+	border-radius: var(--radius-lg);
+	box-shadow: var(--shadow-md);
 }
 
 

@@ -16,10 +16,9 @@
 
 
 .titulo-sedes h2 {
-    color: #3190f0;
+    color: var(--primary-blue);
     font-size: 185%;
     font-weight: bold;
-    /* Color del texto */
 }
 
 
