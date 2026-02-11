@@ -1,0 +1,252 @@
+.navbarSection {
+  align-items: center;
+  min-height: 120px;
+  background-color: #1a237e;
+  color: #fff;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #1a237e;
+}
+
+.navbar {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logoImg {
+  height: 100px;
+  width: auto;
+}
+
+.links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.links li a,
+.links li button {
+  font-size: 1.125rem;
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-family: inherit;
+}
+
+.links li a:before {
+  position: absolute;
+  content: '';
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  transition: width 0.3s ease;
+}
+
+.links li a:hover:before {
+  width: 100%;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdownToggle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.125rem;
+  color: #fff;
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-family: inherit;
+  padding: 0;
+}
+
+.dropdownIcon {
+  transition: transform 0.3s ease;
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #283593;
+  min-width: 200px;
+  list-style: none;
+  padding: 0.5rem 0;
+  margin: 0;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+
+.dropdownMenu li {
+  padding: 0;
+}
+
+.dropdownMenu li a {
+  display: block;
+  padding: 0.75rem 1.5rem;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  font-size: 1rem;
+}
+
+.dropdownMenu li a:hover {
+  background-color: #3949ab;
+}
+
+.dropdownMenu li a:before {
+  display: none;
+}
+
+.lineBreak {
+  display: block;
+}
+
+.actionBtn {
+  padding: 0.75rem 1.5rem;
+  background-color: #ffc107;
+  color: #1a237e;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  white-space: nowrap;
+}
+
+.actionBtn:hover {
+  background-color: #ffca28;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.toggleBtn {
+  display: none;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.dropdownMenuMobile {
+  display: none;
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 1024px) {
+  .links {
+    display: none;
+  }
+
+  .actionBtn {
+    display: none;
+  }
+
+  .toggleBtn {
+    display: block;
+  }
+
+  .dropdownMenuMobile {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    list-style: none;
+    padding: 1rem 0;
+    margin: 1rem 0 0 0;
+    background-color: #283593;
+    border-radius: 0.5rem;
+  }
+
+  .item {
+    list-style: none;
+  }
+
+  .item a,
+  .item button {
+    display: block;
+    padding: 1rem 2rem;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    background: none;
+    border: none;
+    width: 100%;
+    text-align: left;
+    font-size: 1.125rem;
+    cursor: pointer;
+  }
+
+  .item a:hover,
+  .item button:hover {
+    background-color: #3949ab;
+  }
+
+  .dropdownMobile {
+    position: relative;
+  }
+
+  .dropdownMenuInner {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #1a237e;
+  }
+
+  .dropdownMenuInner li a {
+    padding: 0.75rem 3rem;
+    font-size: 1rem;
+  }
+
+  .dropdownMenuMobile .actionBtn {
+    display: block;
+    margin: 1rem 2rem;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 0 1rem;
+  }
+
+  .logoImg {
+    height: 80px;
+  }
+
+  .navbarSection {
+    min-height: 100px;
+  }
+}
