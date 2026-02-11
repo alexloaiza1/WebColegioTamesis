@@ -1,0 +1,90 @@
+.sliderSection {
+  padding: 0;
+  height: auto;
+  position: relative;
+}
+
+.swiper {
+  width: 100%;
+  height: auto;
+}
+
+.slideImage {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.socialIcons {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  gap: 10px;
+  z-index: 10;
+}
+
+.socialIcons a {
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.socialIcons a:hover {
+  transform: translateY(-3px);
+  color: #ffc107;
+}
+
+.slideText {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(26, 35, 126, 0.9);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-family: 'Montserrat', sans-serif;
+  z-index: 10;
+}
+
+.slideText:hover {
+  background-color: rgba(26, 35, 126, 1);
+  transform: translateX(-50%) translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Swiper pagination custom styles */
+:global(.swiper-pagination-bullet) {
+  background-color: white;
+  opacity: 0.5;
+  width: 12px;
+  height: 12px;
+}
+
+:global(.swiper-pagination-bullet-active) {
+  opacity: 1;
+  background-color: #ffc107;
+}
+
+@media screen and (max-width: 768px) {
+  .slideText {
+    font-size: 1.125rem;
+    padding: 0.75rem 1.5rem;
+    bottom: 30px;
+  }
+
+  .socialIcons {
+    top: 5px;
+    right: 5px;
+    gap: 5px;
+  }
+
+  .socialIcons a svg {
+    width: 28px;
+    height: 28px;
+  }
+}
